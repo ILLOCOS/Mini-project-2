@@ -5,7 +5,7 @@ File Placement:
 2. All js files should be inside the [js folder](/js/).
 3. All css files should be inside the [css folder](/css/).
 4. All media files (photos, videos, etc.) should be inside the [media folder](/media/).
-5. All other notes or documentations may be placed inside the [readme folder](/readme/).
+5. All other notes or documentations may be placed inside the [readme folder](/README/).
 
 File Naming Convention:
 1. Use camelCase
