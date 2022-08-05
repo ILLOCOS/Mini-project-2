@@ -11,8 +11,11 @@
 </head>
 <body>
 
-    <!--testimonial 3D Flip Box (Horizontal)-->
-    
+    <!--testimonial 3D Flip Box (Vertical)-->
+    <!DOCTYPE html>
+    <html>
+    <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <style>
     body {
       font-family: Arial, Helvetica, sans-serif;
@@ -36,7 +39,7 @@
     }
     
     .flip-box:hover .flip-box-inner {
-      transform: rotateY(180deg);
+      transform: rotateX(180deg);
     }
     
     .flip-box-front, .flip-box-back {
@@ -55,11 +58,13 @@
     .flip-box-back {
       background-color: dodgerblue;
       color: white;
-      transform: rotateY(180deg);
+      transform: rotateX(180deg);
     }
     </style>
+    </head>
+    <body>
     
-    <h1>3D Flip Box (Horizontal)</h1>
+    <h1>3D Flip Box (Vertical)</h1>
     <h3>Hover over the box below:</h3>
     
     <div class="flip-box">
@@ -73,6 +78,9 @@
       </div>
     </div>
     
+    </body>
+    </html>
+
         <!---->
     <div class="container-fluid">
         <div class="container bg-light">
