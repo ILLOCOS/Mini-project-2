@@ -1,6 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400&display=swap');
 body{
-	background: #eeeeee=;
-	font-family: 'Varela Round', sans-serif;
+	background: #eeeeee;
+	font-family: 'Poppins', sans-serif;
 }
 .form-inline {
 	display: inline-block;
@@ -112,4 +113,12 @@ body{
 	.input-group {
 		width: 100%;
 	}
+}
+	/* text reset footer*/
+.text-reset {
+	text-decoration: none;
+}
+	/* link in accordion*/
+.accordion-body a {
+	text-decoration: none;
 }
