@@ -161,8 +161,8 @@ const insertTemplates = () => {
     modalLocation.insertAdjacentHTML("afterend", modals);
 
     //Insert header
-    const headerLocation = document.getElementById("headerLoc");
-    headerLocation.insertAdjacentHTML("afterend", header);
+    //const headerLocation = document.getElementById("headerLoc");
+    //headerLocation.insertAdjacentHTML("afterend", header);
 };
 
 insertTemplates();
