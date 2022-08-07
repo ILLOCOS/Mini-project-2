@@ -122,3 +122,14 @@ body{
 .accordion-body a {
 	text-decoration: none;
 }
+
+
+.showHide { display: block; }
+
+@media screen and (min-width: 992px) and (max-width: 1130px) {
+  .showHide  { display: none; }
+}
+
+.modal {
+	background-color: rgba(127,205,255, 50%);
+}
