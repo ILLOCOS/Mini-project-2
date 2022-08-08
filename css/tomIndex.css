@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400&display=swap');
 body{
-	background: #eeeeee;
+	background: white;
 	font-family: 'Poppins', sans-serif;
 }
 .form-inline {
@@ -136,3 +136,18 @@ body{
 .modal {
 	background-color: rgba(127,205,255, 50%);
 }
+/* banner */
+.banner{
+    background-color: rgba(222,243,246,1);
+}
+	/* text reset footer*/
+    .text-reset {
+        text-decoration: none;
+    }
+    .text-reset:hover {
+        text-decoration: none;
+    }
+        /* link in accordion*/
+    .accordion-body a {
+        text-decoration: none;
+    }
