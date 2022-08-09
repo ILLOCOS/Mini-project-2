@@ -126,7 +126,6 @@ body{
 	text-decoration: none;
 }
 
-
 .showHide { display: block; }
 
 @media screen and (min-width: 992px) and (max-width: 1130px) {
@@ -136,18 +135,31 @@ body{
 .modal {
 	background-color: rgba(127,205,255, 50%);
 }
+
 /* banner */
 .banner{
     background-color: rgba(222,243,246,1);
+	font-size: calc(1.5rem + 1vw);
 }
-	/* text reset footer*/
-    .text-reset {
-        text-decoration: none;
-    }
-    .text-reset:hover {
-        text-decoration: none;
-    }
-        /* link in accordion*/
-    .accordion-body a {
-        text-decoration: none;
-    }
+
+.banner2 {
+	background-color: rgba(127,205,255,.5);
+	font-size: calc(1.5rem + 1vw);
+}
+
+.banner2 img {
+	width: calc(22rem + 2vw);
+}
+
+.banner3 {
+	background-color: rgba(118,182,196,.5);
+	font-size: calc(1.5rem + 1vw);
+}
+
+.btn {
+	width: 8rem;
+}
+
+.ms-7 {
+	margin-left: 10vw;
+}
