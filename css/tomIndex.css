@@ -171,3 +171,8 @@ body{
 .rfs {
 	font-size: calc(1.5rem + 1vw);
 }
+.blob{
+	background-image: url('/media/blob.png');
+	background-repeat: no-repeat;
+	background-size: contain;
+}
