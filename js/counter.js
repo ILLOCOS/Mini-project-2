@@ -28,7 +28,7 @@ const counter = () => {
         function startTimer() {
             counter1+=50;
             counter2++;
-            counter3+=50;
+            counter3+=100;
     
             if (counter1 <= 2500) {
                 appendCounter1.innerHTML = counter1;
@@ -43,10 +43,10 @@ const counter = () => {
                 appendCounter2.innerHTML = 150;
             }
     
-            if (counter3 <= 2500) {
+            if (counter3 <= 4300) {
                 appendCounter3.innerHTML = counter3;
             } else {
-                appendCounter3.innerHTML = 2500;
+                appendCounter3.innerHTML = 4300;
             }
     
             if (counter1 == 2500 && counter2 == 150 && counter3 == 2500) {
