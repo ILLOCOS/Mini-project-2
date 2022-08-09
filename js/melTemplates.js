@@ -1,3 +1,4 @@
+// Insert Templates
 const insertTemplates = () => {
     //Create Variables for Templates
     const header = `
@@ -475,19 +476,18 @@ const insertTemplates = () => {
     </div>
 
     `;
-
-    
+ 
     //Insert Header
     const headerLocation = document.getElementById("headerLoc");
     headerLocation.insertAdjacentHTML("afterend", header);
+
+    //Insert Sidebar
+    const sideBarLocation = document.getElementById("sideBarLoc");
+    sideBarLocation.insertAdjacentHTML("afterend", sideBar);
     
     //Insert Footer
     const footerLocation = document.getElementById("footerLoc");
     footerLocation.insertAdjacentHTML("afterend", footer);
-    
-    //Insert Sidebar
-    const sideBarLocation = document.getElementById("sideBarLoc");
-    sideBarLocation.insertAdjacentHTML("afterend", sideBar);
     
     //Insert modal templates
     const modalLocation = document.getElementById("modalLoc");
@@ -496,4 +496,3 @@ const insertTemplates = () => {
 };
 
 insertTemplates();
-
