@@ -491,20 +491,20 @@ const insertTemplates = () => {
     `;
  
     //Insert Header
-    const headerLocation = document.getElementById("headerLoc");
-    headerLocation.insertAdjacentHTML("afterend", header);
+    const insertHeader = document.getElementById("headerLoc");
+    insertHeader.insertAdjacentHTML("afterend", header);
 
     //Insert Sidebar
-    const sideBarLocation = document.getElementById("sideBarLoc");
-    sideBarLocation.insertAdjacentHTML("afterend", sideBar);
+    const insertSideBar = document.getElementById("sideBarLoc");
+    insertSideBar.insertAdjacentHTML("afterend", sideBar);
     
     //Insert Footer
-    const footerLocation = document.getElementById("footerLoc");
-    footerLocation.insertAdjacentHTML("afterend", footer);
+    const insertFooter = document.getElementById("footerLoc");
+    insertFooter.insertAdjacentHTML("afterend", footer);
     
     //Insert modal templates
-    const modalLocation = document.getElementById("modalLoc");
-    modalLocation.insertAdjacentHTML("afterend", modals);
+    const insertModal = document.getElementById("modalLoc");
+    insertModal.insertAdjacentHTML("afterend", modals);
     
 };
 
