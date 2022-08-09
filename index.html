@@ -34,7 +34,7 @@
         </div>
         <div class="col-md-3 px-4 py-1 text-end">
             <button type="button" class="btn btn-outline-light me-2" style="font-size: 0.7rem;" data-bs-toggle="modal" data-bs-target="#modalSignIn">Sign-In</button>
-            <button type="button" class="btn btn-primary" style="font-size: 0.7rem;" data-bs-toggle="modal" data-bs-target="#modalSignUp">Sign-Up</button>
+            <button type="button" class="btn btn-primary me-2" style="font-size: 0.7rem;" data-bs-toggle="modal" data-bs-target="#modalSignUp">Sign-Up</button>
         </div>
         </div>
     </div>
@@ -42,7 +42,7 @@
     <!--Nav bar-->
     <nav class="navbar navbar-expand-lg navbar-light sticky-top">
         <img src="/media/tomBrandlogo.png" alt="logo" height="50px">
-        <a class="navbar-brand ms-1" href="#"><strong>Brain</strong><b>Tech</b></a>  		
+        <a class="navbar-brand mx-1 px-0" href="#"><strong>Brain</strong><b>Tech</b></a>  		
         <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
             <span class="navbar-toggler-icon"></span>
         </button>
@@ -290,7 +290,74 @@
     </div>
 
     <!--Carousel Banner-->
+    <div id="carouselBanner" class="carousel slide" data-bs-ride="true">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselBanner" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselBanner" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselBanner" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+            <div class="banner row">
+                <div class="col-sm-6 d-flex align-items-center">
+                    <div class="pb-5 mt-5 ms-7">
+                        <p class="pb-3"><i>“Striving for excellence motivates you.” <br><sub>-Harriet Braiker</sub></i></p>
+                     
+                        <button type="button" class="btn btn-primary">Contact Us</button>
+                        <button type="button" class="btn btn-primary">Enroll Now</button> 
+                    </div>
+                </div>
+                <div class="col-sm-6">
+                  <img src="media/melBanner1.svg" alt="img" class="w-100 my-5">
+                </div>
+            </div>
+        </div>
+        <div class="carousel-item">
+          <div class="banner2 row">
+            <div class="col-sm-6">
+              <img src="media/melBanner2.svg" alt="img" class="w-100 my-5">
+            </div>
+            <div class="col-sm-6 d-flex align-items-center">
+              <div class="pb-5 mt-5 mx-5">
+                <p class="pb-3"><i>Learn More, Stress Less!
+                <br><sub>At BrainTech, every course is a playground!</sub></i></p>
+             
+                <button type="button" class="btn btn-primary">Contact Us</button>
+                <button type="button" class="btn btn-primary">Enroll Now</button> 
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="banner3 row">
+            <div class="col-sm-6 d-flex align-items-center">
+              <div class="pb-5 mt-5 ms-7">
+                  <p class="pb-3"><i>Because Learning Need Not Be Daunting! <br><sub>Be cool at school with BrainTech!</sub></i></p>
+               
+                  <button type="button" class="btn btn-primary">Contact Us</button>
+                  <button type="button" class="btn btn-primary">Enroll Now</button> 
+              </div>
+            </div>
+            <div class="col-sm-6">
+              <img src="media/melBanner3.svg" alt="img" class="w-100 my-5">
+            </div>
+          </div>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselBanner" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselBanner" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
 
+
+
+
+<!--
     <div class="container-fluid">
       <div class="banner row">
           <div class="col-sm-6 p-5">
@@ -300,19 +367,20 @@
                
                   <button type="button" class="btn btn-primary ">Contact Us</button>
                   <button type="button" class="btn btn-primary ">Enroll Now</button>
-               
-
+              
               </div>
           </div>
 
           <div class="col-sm-6 p-2">
               <div class="p-5">
-                  <img src="media/21.svg" alt="img" class="img-fluid">
+                  <img src="media/melBanner1.svg" alt="img" class="img-fluid">
               </div>
           </div>
       </div>
+    </div>
+-->
 
-  </div>
+
 
     <!-- <div id="carouselBanner" class="carousel slide" data-bs-ride="true" style="margin-top: -4.25rem;">
         <div class="carousel-indicators">
@@ -364,12 +432,10 @@
           <span class="visually-hidden">Next</span>
         </button>
     </div> -->
+ 
     
+
     <br><br>
-
-
-
-    
     <!--Learning outcomes-->
     <br><br>
     <div class="container">
@@ -396,102 +462,102 @@
 
     <br><br>
 
-       <!--Course Offered-->
-       <div class="container">
-        <div class="row">
-          <div class="col-sm-3 d-flex justify-content-center p-2">
-            <img src="media/tomCourseImg.svg" alt="image" class="img-fluid">
-            
-          </div>
-          <div class="col-sm-3 p-3">
-            <div>
-              <h3>Computer Basics</h3>
-            </div>
-            <div>
-              <br>
-              <h6><strong>Start:</strong> September 1 2022 <br><br>
-                  <strong>Class hour:</strong> 8 AM - 5PM <br><br>
-                 <strong> Duration:</strong> 12-15 weeks <br><br>
-                 <!-- Share this course <br><br>
-                 <a href="#" class="me-3 text-reset "><i class="fa fa-facebook"></i></a>
-                 <a href="#" class="me-3 text-reset"><i class="fa fa-instagram"></i></a>
-                 <a href="#" class="me-3 text-reset"><i class="fa fa-twitter"></i></a>
-                 <a href="#" class="me-3 text-reset"><i class="fa fa-google-plus"></i></a> -->
-                 <button type="button" class="btn btn-primary">Details</button>
-              </h6>
-            </div>
-          </div>
-  
-          <div class="col-sm-3 d-flex justify-content-center p-2">
-            <img src="media/tomPhotoshop.svg" alt="image" class="img-fluid">
-          </div>
-          <div class="col-sm-3">
-            <div>
-              <h3>Photoshop</h3>
-            </div>
-            <br>
-            <div>
-              <h6><strong>Start:</strong> October 24 2022 <br><br>
-                <strong>Class hour:</strong> 8 AM - 5PM <br><br>
-               <strong> Duration:</strong> 12-15 weeks <br><br>
-               <!-- Share this course <br><br>
-               <a href="#" class="me-3 text-reset "><i class="fa fa-facebook"></i></a>
-               <a href="#" class="me-3 text-reset"><i class="fa fa-instagram"></i></a>
-               <a href="#" class="me-3 text-reset"><i class="fa fa-twitter"></i></a>
-               <a href="#" class="me-3 text-reset"><i class="fa fa-google-plus"></i></a> -->
-               <button type="button" class="btn btn-primary">Details</button>
-            </h6>
-            </div>
-          </div>
+    <!--Course Offered-->
+    <div class="container">
+    <div class="row">
+      <div class="col-sm-3 d-flex justify-content-center p-2">
+        <img src="media/tomCourseImg.svg" alt="image" class="img-fluid">
+        
+      </div>
+      <div class="col-sm-3 p-3">
+        <div>
+          <h3>Computer Basics</h3>
         </div>
-  
-        <div class="row">
-          <div class="col-sm-3 d-flex justify-content-center p-2">
-            <img src="media/tomGraphicDesign.svg" alt="image" class="img-fluid">
-          </div>
-          <div class="col-sm-3 p-3">
-            <div>
-              <h3>Graphic Design</h3>
-            </div>
-            <div>
-              <br>
-              <h6><strong>Start:</strong> November 1 2022 <br><br>
-                  <strong>Class hour:</strong> 8 AM - 5PM <br><br>
-                 <strong> Duration:</strong> 12-15 weeks <br><br>
-                 <!-- Share this course <br><br>
-                 <a href="#" class="me-3 text-reset "><i class="fa fa-facebook"></i></a>
-                 <a href="#" class="me-3 text-reset"><i class="fa fa-instagram"></i></a>
-                 <a href="#" class="me-3 text-reset"><i class="fa fa-twitter"></i></a>
-                 <a href="#" class="me-3 text-reset"><i class="fa fa-google-plus"></i></a> -->
-                 <button type="button" class="btn btn-primary">Details</button>
-              </h6>
-            </div>
-          </div>
-  
-          <div class="col-sm-3 d-flex justify-content-center p-2">
-            <img src="media/tomMobileMarketing.svg" alt="image" class="img-fluid">
-          </div>
-          <div class="col-sm-3">
-            <div>
-              <h3>Digital Marketing</h3>
-            </div>
-            <br>
-            <div>
-              <br>
-              <h6><strong>Start:</strong> November 11 2022 <br><br>
-                <strong>Class hour:</strong> 8 AM - 5PM <br><br>
-               <strong> Duration:</strong> 12-15 weeks <br><br>
-               <!-- Share this course <br><br>
-               <a href="#" class="me-3 text-reset "><i class="fa fa-facebook"></i></a>
-               <a href="#" class="me-3 text-reset"><i class="fa fa-instagram"></i></a>
-               <a href="#" class="me-3 text-reset"><i class="fa fa-twitter"></i></a>
-               <a href="#" class="me-3 text-reset"><i class="fa fa-google-plus"></i></a> -->
-               <button type="button" class="btn btn-primary">Details</button>
-            </h6>
-            </div>
-          </div>
+        <div>
+          <br>
+          <h6><strong>Start:</strong> September 1 2022 <br><br>
+              <strong>Class hour:</strong> 8 AM - 5PM <br><br>
+              <strong> Duration:</strong> 12-15 weeks <br><br>
+              <!-- Share this course <br><br>
+              <a href="#" class="me-3 text-reset "><i class="fa fa-facebook"></i></a>
+              <a href="#" class="me-3 text-reset"><i class="fa fa-instagram"></i></a>
+              <a href="#" class="me-3 text-reset"><i class="fa fa-twitter"></i></a>
+              <a href="#" class="me-3 text-reset"><i class="fa fa-google-plus"></i></a> -->
+              <button type="button" class="btn btn-primary">Details</button>
+          </h6>
         </div>
       </div>
+
+      <div class="col-sm-3 d-flex justify-content-center p-2">
+        <img src="media/tomPhotoshop.svg" alt="image" class="img-fluid">
+      </div>
+      <div class="col-sm-3">
+        <div>
+          <h3>Photoshop</h3>
+        </div>
+        <br>
+        <div>
+          <h6><strong>Start:</strong> October 24 2022 <br><br>
+            <strong>Class hour:</strong> 8 AM - 5PM <br><br>
+            <strong> Duration:</strong> 12-15 weeks <br><br>
+            <!-- Share this course <br><br>
+            <a href="#" class="me-3 text-reset "><i class="fa fa-facebook"></i></a>
+            <a href="#" class="me-3 text-reset"><i class="fa fa-instagram"></i></a>
+            <a href="#" class="me-3 text-reset"><i class="fa fa-twitter"></i></a>
+            <a href="#" class="me-3 text-reset"><i class="fa fa-google-plus"></i></a> -->
+            <button type="button" class="btn btn-primary">Details</button>
+        </h6>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-sm-3 d-flex justify-content-center p-2">
+        <img src="media/tomGraphicDesign.svg" alt="image" class="img-fluid">
+      </div>
+      <div class="col-sm-3 p-3">
+        <div>
+          <h3>Graphic Design</h3>
+        </div>
+        <div>
+          <br>
+          <h6><strong>Start:</strong> November 1 2022 <br><br>
+              <strong>Class hour:</strong> 8 AM - 5PM <br><br>
+              <strong> Duration:</strong> 12-15 weeks <br><br>
+              <!-- Share this course <br><br>
+              <a href="#" class="me-3 text-reset "><i class="fa fa-facebook"></i></a>
+              <a href="#" class="me-3 text-reset"><i class="fa fa-instagram"></i></a>
+              <a href="#" class="me-3 text-reset"><i class="fa fa-twitter"></i></a>
+              <a href="#" class="me-3 text-reset"><i class="fa fa-google-plus"></i></a> -->
+              <button type="button" class="btn btn-primary">Details</button>
+          </h6>
+        </div>
+      </div>
+
+      <div class="col-sm-3 d-flex justify-content-center p-2">
+        <img src="media/tomMobileMarketing.svg" alt="image" class="img-fluid">
+      </div>
+      <div class="col-sm-3">
+        <div>
+          <h3>Digital Marketing</h3>
+        </div>
+        <br>
+        <div>
+          <br>
+          <h6><strong>Start:</strong> November 11 2022 <br><br>
+            <strong>Class hour:</strong> 8 AM - 5PM <br><br>
+            <strong> Duration:</strong> 12-15 weeks <br><br>
+            <!-- Share this course <br><br>
+            <a href="#" class="me-3 text-reset "><i class="fa fa-facebook"></i></a>
+            <a href="#" class="me-3 text-reset"><i class="fa fa-instagram"></i></a>
+            <a href="#" class="me-3 text-reset"><i class="fa fa-twitter"></i></a>
+            <a href="#" class="me-3 text-reset"><i class="fa fa-google-plus"></i></a> -->
+            <button type="button" class="btn btn-primary">Details</button>
+        </h6>
+        </div>
+      </div>
+    </div>
+    </div>
 
 
     <br><br>
@@ -540,208 +606,208 @@
     </div>
     <br><br>
 
-  <!-- Footer -->
-  <footer class="text-center text-lg-start bg-light text-muted">
-    <!-- Section: Social media -->
-    <section
-      class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
-      <!-- Left -->
-      <div class="me-5 d-none d-lg-block">
-        <span>Get connected with us on social networks:</span>
-      </div>
-      <!-- Left -->
-  
-      <!-- Right -->
-      <div>
-        <a href="" class="me-4 text-reset">
-          <i class="fa fa-facebook"></i>
-        </a>
-        <a href="" class="me-4 text-reset">
-          <i class="fa fa-instagram"></i>
-        </a>
-        <a href="" class="me-4 text-reset">
-          <i class="fa fa-twitter"></i>
-        </a>
-        <a href="" class="me-4 text-reset">
-          <i class="fa fa-google-plus"></i>
-        </a>
-        <a href="" class="me-4 text-reset">
-          <i class="fa fa-github"></i>
-        </a>
-      </div>
-      <!-- Right -->
-
-    </section>
-    <!-- Section: Social media -->
-  
-    <!-- Section: Links  -->
-    <section class="myfooter">
-      <div class="container text-center text-md-start mt-5">
-        <!-- Grid row -->
-        <div class="row mt-3 " style="text-align: center;">
-            <!-- Grid column -->
-            <div class="col-sm-3 col-lg-4 col-xl-3 mx-auto mb-4">
-              <!-- Content -->
-              <h6 class="text-uppercase fw-bold mb-4 ">
-                <i class="fas fa-gem me-3"></i><img src="media/tomBrandlogo.png" alt="logo" height="75px">
-              </h6>
-              <p>
-              <b>BrainTech</b><br>
-              <i> “Striving for excellence motivates you.” <br>-Harriet Braiker</i>
-              </p>
-            </div>
-            <!-- Grid column -->
-
-            <!-- Grid column -->
-            <div class="col-sm-3 col-lg-2 col-xl-2 mx-auto mb-4">
-              <!-- Links -->
-              <h6 class="text-uppercase fw-bold mb-4">
-                Page
-              </h6>
-              <p>
-                <a href="#" class="text-reset">Home</a>
-              </p>
-              <p>
-                <a href="#" class="text-reset">About</a>
-              </p>
-              <p>
-                <a href="#" class="text-reset">Contact</a>
-              </p>
-              <p>
-                <a href="#" class="text-reset">News</a>
-              </p>
-            </div>
-    
-            <!-- Grid column -->
-            <div class="footercourses col-sm-3 col-lg-2 col-xl-2 mx-auto mb-4">
-              <!-- Links -->
-              <h6 class="text-uppercase fw-bold mb-4">
-                Courses
-              </h6>
-              <p>
-                <a href="#" class="text-reset">Computer Basics</a>
-              </p>
-              <p>
-                <a href="#" class="text-reset">Photoshop</a>
-              </p>
-              <p>
-                <a href="#" class="text-reset">Graphic Design</a>
-              </p>
-              <p>
-                <a href="#" class="text-reset">Digital Marketing</a>
-              </p>
-            </div>
-            <!-- Grid column -->
-      
-            <!-- Grid column -->
-            <div class="col-sm-3 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
-              <!-- Links -->
-              <h6 class="text-uppercase fw-bold mb-4">
-                Contact
-              </h6>
-              <p><i class="fa-phone-alt"></i> Pampanga, San Fernando 2010, Phil</p>
-              <p>
-                <i class="fa-phone-alt"></i>
-                BrainTech@e-Learning.com
-              </p>
-              <p><i class="fa-phone-alt"></i> + 01 654 345</p>
-              <p><i class="fa-phone-alt"></i> + 03 435 455</p>
-            </div>
-            <!-- Grid column -->
+    <!-- Footer -->
+    <footer class="text-center text-lg-start bg-light text-muted">
+      <!-- Section: Social media -->
+      <section
+        class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
+        <!-- Left -->
+        <div class="me-5 d-none d-lg-block">
+          <span>Get connected with us on social networks:</span>
         </div>
-      </div>
-    </section>
-   <!-- Copyright -->
-   <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05);">
-    © 2022 Copyright:
-    <a class="text-reset fw-bold" href="#" style="text-decoration:none ;">BrainTech</a>
-  </div>
-  <!-- Copyright -->
-  </footer>
+        <!-- Left -->
+    
+        <!-- Right -->
+        <div>
+          <a href="" class="me-4 text-reset">
+            <i class="fa fa-facebook"></i>
+          </a>
+          <a href="" class="me-4 text-reset">
+            <i class="fa fa-instagram"></i>
+          </a>
+          <a href="" class="me-4 text-reset">
+            <i class="fa fa-twitter"></i>
+          </a>
+          <a href="" class="me-4 text-reset">
+            <i class="fa fa-google-plus"></i>
+          </a>
+          <a href="" class="me-4 text-reset">
+            <i class="fa fa-github"></i>
+          </a>
+        </div>
+        <!-- Right -->
+
+      </section>
+      <!-- Section: Social media -->
+    
+      <!-- Section: Links  -->
+      <section class="myfooter">
+        <div class="container text-center text-md-start mt-5">
+          <!-- Grid row -->
+          <div class="row mt-3 " style="text-align: center;">
+              <!-- Grid column -->
+              <div class="col-sm-3 col-lg-4 col-xl-3 mx-auto mb-4">
+                <!-- Content -->
+                <h6 class="text-uppercase fw-bold mb-4 ">
+                  <i class="fas fa-gem me-3"></i><img src="media/tomBrandlogo.png" alt="logo" height="75px">
+                </h6>
+                <p>
+                <b>BrainTech</b><br>
+                <i> “Striving for excellence motivates you.” <br>-Harriet Braiker</i>
+                </p>
+              </div>
+              <!-- Grid column -->
+
+              <!-- Grid column -->
+              <div class="col-sm-3 col-lg-2 col-xl-2 mx-auto mb-4">
+                <!-- Links -->
+                <h6 class="text-uppercase fw-bold mb-4">
+                  Page
+                </h6>
+                <p>
+                  <a href="#" class="text-reset">Home</a>
+                </p>
+                <p>
+                  <a href="#" class="text-reset">About</a>
+                </p>
+                <p>
+                  <a href="#" class="text-reset">Contact</a>
+                </p>
+                <p>
+                  <a href="#" class="text-reset">News</a>
+                </p>
+              </div>
+      
+              <!-- Grid column -->
+              <div class="footercourses col-sm-3 col-lg-2 col-xl-2 mx-auto mb-4">
+                <!-- Links -->
+                <h6 class="text-uppercase fw-bold mb-4">
+                  Courses
+                </h6>
+                <p>
+                  <a href="#" class="text-reset">Computer Basics</a>
+                </p>
+                <p>
+                  <a href="#" class="text-reset">Photoshop</a>
+                </p>
+                <p>
+                  <a href="#" class="text-reset">Graphic Design</a>
+                </p>
+                <p>
+                  <a href="#" class="text-reset">Digital Marketing</a>
+                </p>
+              </div>
+              <!-- Grid column -->
+        
+              <!-- Grid column -->
+              <div class="col-sm-3 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+                <!-- Links -->
+                <h6 class="text-uppercase fw-bold mb-4">
+                  Contact
+                </h6>
+                <p><i class="fa-phone-alt"></i> Pampanga, San Fernando 2010, Phil</p>
+                <p>
+                  <i class="fa-phone-alt"></i>
+                  BrainTech@e-Learning.com
+                </p>
+                <p><i class="fa-phone-alt"></i> + 01 654 345</p>
+                <p><i class="fa-phone-alt"></i> + 03 435 455</p>
+              </div>
+              <!-- Grid column -->
+          </div>
+        </div>
+      </section>
+    <!-- Copyright -->
+    <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05);">
+      © 2022 Copyright:
+      <a class="text-reset fw-bold" href="#" style="text-decoration:none ;">BrainTech</a>
+    </div>
+    <!-- Copyright -->
+    </footer>
 
 
 <!--Template Source Section ▼ -->
 
-    <!--SignUp-->
-    <div class="modal fade" tabindex="-1" role="dialog" id="modalSignUp">
-      <div class="modal-dialog">
-        <div class="modal-content rounded-4 shadow">
-          <div class="modal-header pt-5 px-5 pb-0 border-bottom-0">
-            <div>
-              <h2 class="fw-bold mb-2">Sign up for free</h2>
-              <h5>and start learning today!</h5>
-            </div>
-            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-          </div>
-    
-          <div class="modal-body p-5 pt-0">
-            <form class="">
-              <div class="form-floating mb-3">
-                <input type="email" class="form-control rounded-3" id="signUpEmailInput" placeholder="name@example.com">
-                <label for="signUpEmailInput">Email address</label>
-              </div>
-              <div class="form-floating mb-3">
-                <input type="password" class="form-control rounded-3" id="signUpPassword" placeholder="Password">
-                <label for="signUpPassword">Password</label>
-              </div>
-              <div class="form-floating mb-3">
-                <input type="password" class="form-control rounded-3" id="floatingConfirmPassword" placeholder="confirmPassword">
-                <label for="floatingConfirmPassword">Confirm Password</label>
-              </div>
-              <button class="w-100 mb-2 btn btn-lg rounded-3 btn-primary" type="submit">Sign up</button>
-              <small class="text-muted">By clicking Sign up, you agree to the <a href=#>terms of use.</a></small>
-              <hr class="my-4">
-              <h2 class="fs-5 fw-bold mb-3">Or use a third-party</h2>
-              <button class="w-100 py-2 mb-2 btn btn-outline-primary rounded-3" type="submit">
-              <a href="#" class="me-4 text-reset pt-2"><i class="fa fa-facebook"></i></a>
-                Sign up with Facebook
-              </button>
-              <button class="w-100 py-2 mb-2 btn btn-outline-primary rounded-3" type="submit">
-                  <a href="#" class="me-4 text-reset pt-2"><i class="fa fa-github"></i></a>
-                Sign up with GitHub
-              </button>
-              <button class="w-100 py-2 mb-2 btn btn-outline-primary rounded-3" type="submit">
-                  <a href="#" class="me-4 text-reset pt-2"><i class="fa fa-google-plus"></i></a>
-                Sign up with Google
-              </button>
-              <hr>
-              <p class="text-center">Already have an account? <a href=#modalSignIn data-bs-toggle="modal">Sign-in</a></p>
-            </form>
-          </div>
+<!--SignUp-->
+<div class="modal fade" tabindex="-1" role="dialog" id="modalSignUp">
+  <div class="modal-dialog">
+    <div class="modal-content rounded-4 shadow">
+      <div class="modal-header pt-5 px-5 pb-0 border-bottom-0">
+        <div>
+          <h2 class="fw-bold mb-2">Sign up for free</h2>
+          <h5>and start learning today!</h5>
         </div>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
-  </div>
 
-  <!--SignIn-->
-  <div class="modal fade" tabindex="-1" role="dialog" id="modalSignIn">
-      <div class="modal-dialog">
-        <div class="modal-content rounded-4 shadow">
-          <div class="modal-header pt-5 px-5 pb-0 border-bottom-0">
-            <div>
-              <h2 class="fw-bold mb-2">Sign-In</h2>
-              <h5>Continue learning today!</h5>
-            </div>
-            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      <div class="modal-body p-5 pt-0">
+        <form class="">
+          <div class="form-floating mb-3">
+            <input type="email" class="form-control rounded-3" id="signUpEmailInput" placeholder="name@example.com">
+            <label for="signUpEmailInput">Email address</label>
           </div>
-    
-          <div class="modal-body p-5 pt-0">
-            <form class="">
-              <div class="form-floating mb-3">
-                <input type="email" class="form-control rounded-3" id="signInEmailInput" placeholder="name@example.com">
-                <label for="signInEmailInput">Email address</label>
-              </div>
-              <div class="form-floating mb-3">
-                <input type="password" class="form-control rounded-3" id="signInPassword" placeholder="Password">
-                <label for="signInPassword">Password</label>
-              </div>
-              <button class="w-100 mb-2 btn btn-lg rounded-3 btn-primary" type="submit">Sign In</button>
-              <hr class="my-4">
-              <p class="text-center">New to BrainTech? <a href=#modalSignUp data-bs-toggle="modal">Create an Account</a></p>
-            </form>
+          <div class="form-floating mb-3">
+            <input type="password" class="form-control rounded-3" id="signUpPassword" placeholder="Password">
+            <label for="signUpPassword">Password</label>
           </div>
-        </div>
+          <div class="form-floating mb-3">
+            <input type="password" class="form-control rounded-3" id="floatingConfirmPassword" placeholder="confirmPassword">
+            <label for="floatingConfirmPassword">Confirm Password</label>
+          </div>
+          <button class="w-100 mb-2 btn btn-lg rounded-3 btn-primary" type="submit">Sign up</button>
+          <small class="text-muted">By clicking Sign up, you agree to the <a href=#>terms of use.</a></small>
+          <hr class="my-4">
+          <h2 class="fs-5 fw-bold mb-3">Or use a third-party</h2>
+          <button class="w-100 py-2 mb-2 btn btn-outline-primary rounded-3" type="submit">
+          <a href="#" class="me-4 text-reset pt-2"><i class="fa fa-facebook"></i></a>
+            Sign up with Facebook
+          </button>
+          <button class="w-100 py-2 mb-2 btn btn-outline-primary rounded-3" type="submit">
+              <a href="#" class="me-4 text-reset pt-2"><i class="fa fa-github"></i></a>
+            Sign up with GitHub
+          </button>
+          <button class="w-100 py-2 mb-2 btn btn-outline-primary rounded-3" type="submit">
+              <a href="#" class="me-4 text-reset pt-2"><i class="fa fa-google-plus"></i></a>
+            Sign up with Google
+          </button>
+          <hr>
+          <p class="text-center">Already have an account? <a href=#modalSignIn data-bs-toggle="modal">Sign-in</a></p>
+        </form>
       </div>
+    </div>
   </div>
+</div>
+
+<!--SignIn-->
+<div class="modal fade" tabindex="-1" role="dialog" id="modalSignIn">
+  <div class="modal-dialog">
+    <div class="modal-content rounded-4 shadow">
+      <div class="modal-header pt-5 px-5 pb-0 border-bottom-0">
+        <div>
+          <h2 class="fw-bold mb-2">Sign-In</h2>
+          <h5>Continue learning today!</h5>
+        </div>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+
+      <div class="modal-body p-5 pt-0">
+        <form class="">
+          <div class="form-floating mb-3">
+            <input type="email" class="form-control rounded-3" id="signInEmailInput" placeholder="name@example.com">
+            <label for="signInEmailInput">Email address</label>
+          </div>
+          <div class="form-floating mb-3">
+            <input type="password" class="form-control rounded-3" id="signInPassword" placeholder="Password">
+            <label for="signInPassword">Password</label>
+          </div>
+          <button class="w-100 mb-2 btn btn-lg rounded-3 btn-primary" type="submit">Sign In</button>
+          <hr class="my-4">
+          <p class="text-center">New to BrainTech? <a href=#modalSignUp data-bs-toggle="modal">Create an Account</a></p>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
 
 
 
