@@ -1,3 +1,16 @@
+//To be pasted to other pages except index.html (These are the markers)
+
+//<div id="headerLoc"></div><!--Marker for Header Section-->
+//<div id="sideBarLoc"></div><!--Marker for Sidebar-->
+
+//<div id="footerLoc"></div><!--Marker for Footer-->
+//<div id="modalLoc"></div> <!--Marker for Modals-->
+
+//<!--External JS-->
+//<script src="/js/melTemplates.js"></script>
+
+
+// Insert Templates
 const insertTemplates = () => {
     //Create Variables for Templates
     const header = `
@@ -69,127 +82,6 @@ const insertTemplates = () => {
             </div>		
         </div>
     </nav>
-    `;
-
-    const footer = `
-    <!-- Footer -->
-    <footer class="text-center text-lg-start bg-light text-muted">
-      <!-- Section: Social media -->
-      <section
-        class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
-        <!-- Left -->
-        <div class="me-5 d-none d-lg-block">
-          <span>Get connected with us on social networks:</span>
-        </div>
-        <!-- Left -->
-    
-        <!-- Right -->
-        <div>
-          <a href="" class="me-4 text-reset">
-            <i class="fa fa-facebook"></i>
-          </a>
-          <a href="" class="me-4 text-reset">
-            <i class="fa fa-instagram"></i>
-          </a>
-          <a href="" class="me-4 text-reset">
-            <i class="fa fa-twitter"></i>
-          </a>
-          <a href="" class="me-4 text-reset">
-            <i class="fa fa-google-plus"></i>
-          </a>
-          <a href="" class="me-4 text-reset">
-            <i class="fa fa-github"></i>
-          </a>
-        </div>
-        <!-- Right -->
-  
-      </section>
-      <!-- Section: Social media -->
-    
-      <!-- Section: Links  -->
-      <section class="myfooter">
-        <div class="container text-center text-md-start mt-5">
-          <!-- Grid row -->
-          <div class="row mt-3 " style="text-align: center;">
-              <!-- Grid column -->
-              <div class="col-sm-3 col-lg-4 col-xl-3 mx-auto mb-4">
-                <!-- Content -->
-                <h6 class="text-uppercase fw-bold mb-4 ">
-                  <i class="fas fa-gem me-3"></i><img src="media/tomBrandlogo.png" alt="logo" height="75px">
-                </h6>
-                <p>
-                <b>BrainTech</b><br>
-                <i> “Striving for excellence motivates you.” <br>-Harriet Braiker</i>
-                </p>
-              </div>
-              <!-- Grid column -->
-  
-              <!-- Grid column -->
-              <div class="col-sm-3 col-lg-2 col-xl-2 mx-auto mb-4">
-                <!-- Links -->
-                <h6 class="text-uppercase fw-bold mb-4">
-                  Page
-                </h6>
-                <p>
-                  <a href="#" class="text-reset">Home</a>
-                </p>
-                <p>
-                  <a href="#" class="text-reset">About</a>
-                </p>
-                <p>
-                  <a href="#" class="text-reset">Contact</a>
-                </p>
-                <p>
-                  <a href="#" class="text-reset">News</a>
-                </p>
-              </div>
-      
-              <!-- Grid column -->
-              <div class="footercourses col-sm-3 col-lg-2 col-xl-2 mx-auto mb-4">
-                <!-- Links -->
-                <h6 class="text-uppercase fw-bold mb-4">
-                  Courses
-                </h6>
-                <p>
-                  <a href="#" class="text-reset">Computer Basics</a>
-                </p>
-                <p>
-                  <a href="#" class="text-reset">Photoshop</a>
-                </p>
-                <p>
-                  <a href="#" class="text-reset">Graphic Design</a>
-                </p>
-                <p>
-                  <a href="#" class="text-reset">Digital Marketing</a>
-                </p>
-              </div>
-              <!-- Grid column -->
-        
-              <!-- Grid column -->
-              <div class="col-sm-3 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
-                <!-- Links -->
-                <h6 class="text-uppercase fw-bold mb-4">
-                  Contact
-                </h6>
-                <p><i class="fa-phone-alt"></i> Pampanga, San Fernando 2010, Phil</p>
-                <p>
-                  <i class="fa-phone-alt"></i>
-                  BrainTech@e-Learning.com
-                </p>
-                <p><i class="fa-phone-alt"></i> + 01 654 345</p>
-                <p><i class="fa-phone-alt"></i> + 03 435 455</p>
-              </div>
-              <!-- Grid column -->
-          </div>
-        </div>
-      </section>
-     <!-- Copyright -->
-     <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05);">
-      © 2022 Copyright:
-      <a class="text-reset fw-bold" href="#" style="text-decoration:none ;">BrainTech</a>
-    </div>
-    <!-- Copyright -->
-    </footer>  
     `;
 
     const sideBar = `
@@ -392,99 +284,220 @@ const insertTemplates = () => {
     </div>
     `;
 
-    const modals = `
-    <!--SignUp-->
-    <div class="modal fade" tabindex="-1" role="dialog" id="modalSignUp">
-        <div class="modal-dialog">
-          <div class="modal-content rounded-4 shadow">
-            <div class="modal-header pt-5 px-5 pb-0 border-bottom-0">
-              <div>
-                <h2 class="fw-bold mb-2">Sign up for free</h2>
-                <h5>and start learning today!</h5>
+    const footer = `
+    <!-- Footer -->
+    <footer class="text-center text-lg-start bg-light text-muted">
+      <!-- Section: Social media -->
+      <section
+        class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
+        <!-- Left -->
+        <div class="me-5 d-none d-lg-block">
+          <span>Get connected with us on social networks:</span>
+        </div>
+        <!-- Left -->
+    
+        <!-- Right -->
+        <div>
+          <a href="" class="me-4 text-reset">
+            <i class="fa fa-facebook"></i>
+          </a>
+          <a href="" class="me-4 text-reset">
+            <i class="fa fa-instagram"></i>
+          </a>
+          <a href="" class="me-4 text-reset">
+            <i class="fa fa-twitter"></i>
+          </a>
+          <a href="" class="me-4 text-reset">
+            <i class="fa fa-google-plus"></i>
+          </a>
+          <a href="" class="me-4 text-reset">
+            <i class="fa fa-github"></i>
+          </a>
+        </div>
+        <!-- Right -->
+
+      </section>
+      <!-- Section: Social media -->
+    
+      <!-- Section: Links  -->
+      <section class="myfooter">
+        <div class="container text-center text-md-start mt-5">
+          <!-- Grid row -->
+          <div class="row mt-3 " style="text-align: center;">
+              <!-- Grid column -->
+              <div class="col-sm-3 col-lg-4 col-xl-3 mx-auto mb-4">
+                <!-- Content -->
+                <h6 class="text-uppercase fw-bold mb-4 ">
+                  <i class="fas fa-gem me-3"></i><img src="media/tomBrandlogo.png" alt="logo" height="75px">
+                </h6>
+                <p>
+                <b>BrainTech</b><br>
+                <i> “Striving for excellence motivates you.” <br>-Harriet Braiker</i>
+                </p>
               </div>
-              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-            </div>
+              <!-- Grid column -->
+
+              <!-- Grid column -->
+              <div class="col-sm-3 col-lg-2 col-xl-2 mx-auto mb-4">
+                <!-- Links -->
+                <h6 class="text-uppercase fw-bold mb-4">
+                  Page
+                </h6>
+                <p>
+                  <a href="#" class="text-reset">Home</a>
+                </p>
+                <p>
+                  <a href="#" class="text-reset">About</a>
+                </p>
+                <p>
+                  <a href="#" class="text-reset">Contact</a>
+                </p>
+                <p>
+                  <a href="#" class="text-reset">News</a>
+                </p>
+              </div>
       
-            <div class="modal-body p-5 pt-0">
-              <form class="">
-                <div class="form-floating mb-3">
-                  <input type="email" class="form-control rounded-3" id="signUpEmailInput" placeholder="name@example.com">
-                  <label for="signUpEmailInput">Email address</label>
-                </div>
-                <div class="form-floating mb-3">
-                  <input type="password" class="form-control rounded-3" id="signUpPassword" placeholder="Password">
-                  <label for="signUpPassword">Password</label>
-                </div>
-                <div class="form-floating mb-3">
-                  <input type="password" class="form-control rounded-3" id="floatingConfirmPassword" placeholder="confirmPassword">
-                  <label for="floatingConfirmPassword">Confirm Password</label>
-                </div>
-                <button class="w-100 mb-2 btn btn-lg rounded-3 btn-primary" type="submit">Sign up</button>
-                <small class="text-muted">By clicking Sign up, you agree to the <a href=#>terms of use.</a></small>
-                <hr class="my-4">
-                <h2 class="fs-5 fw-bold mb-3">Or use a third-party</h2>
-                <button class="w-100 py-2 mb-2 btn btn-outline-primary rounded-3" type="submit">
-                <a href="#" class="me-4 text-reset pt-2"><i class="fa fa-facebook"></i></a>
-                  Sign up with Facebook
-                </button>
-                <button class="w-100 py-2 mb-2 btn btn-outline-primary rounded-3" type="submit">
-                    <a href="#" class="me-4 text-reset pt-2"><i class="fa fa-github"></i></a>
-                  Sign up with GitHub
-                </button>
-                <button class="w-100 py-2 mb-2 btn btn-outline-primary rounded-3" type="submit">
-                    <a href="#" class="me-4 text-reset pt-2"><i class="fa fa-google-plus"></i></a>
-                  Sign up with Google
-                </button>
-                <hr>
-                <p class="text-center">Already have an account? <a href=#modalSignIn data-bs-toggle="modal">Sign-in</a></p>
-              </form>
-            </div>
+              <!-- Grid column -->
+              <div class="footercourses col-sm-3 col-lg-2 col-xl-2 mx-auto mb-4">
+                <!-- Links -->
+                <h6 class="text-uppercase fw-bold mb-4">
+                  Courses
+                </h6>
+                <p>
+                  <a href="#" class="text-reset">Computer Basics</a>
+                </p>
+                <p>
+                  <a href="#" class="text-reset">Photoshop</a>
+                </p>
+                <p>
+                  <a href="#" class="text-reset">Graphic Design</a>
+                </p>
+                <p>
+                  <a href="#" class="text-reset">Digital Marketing</a>
+                </p>
+              </div>
+              <!-- Grid column -->
+        
+              <!-- Grid column -->
+              <div class="col-sm-3 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+                <!-- Links -->
+                <h6 class="text-uppercase fw-bold mb-4">
+                  Contact
+                </h6>
+                <p><i class="fa-phone-alt"></i> Pampanga, San Fernando 2010, Phil</p>
+                <p>
+                  <i class="fa-phone-alt"></i>
+                  BrainTech@e-Learning.com
+                </p>
+                <p><i class="fa-phone-alt"></i> + 01 654 345</p>
+                <p><i class="fa-phone-alt"></i> + 03 435 455</p>
+              </div>
+              <!-- Grid column -->
           </div>
         </div>
+      </section>
+    <!-- Copyright -->
+    <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05);">
+      © 2022 Copyright:
+      <a class="text-reset fw-bold" href="#" style="text-decoration:none ;">BrainTech</a>
     </div>
-
-    <!--SignIn-->
-    <div class="modal fade" tabindex="-1" role="dialog" id="modalSignIn">
-        <div class="modal-dialog">
-          <div class="modal-content rounded-4 shadow">
-            <div class="modal-header pt-5 px-5 pb-0 border-bottom-0">
-              <div>
-                <h2 class="fw-bold mb-2">Sign-In</h2>
-                <h5>Continue learning today!</h5>
-              </div>
-              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-            </div>
-      
-            <div class="modal-body p-5 pt-0">
-              <form class="">
-                <div class="form-floating mb-3">
-                  <input type="email" class="form-control rounded-3" id="signInEmailInput" placeholder="name@example.com">
-                  <label for="signInEmailInput">Email address</label>
-                </div>
-                <div class="form-floating mb-3">
-                  <input type="password" class="form-control rounded-3" id="signInPassword" placeholder="Password">
-                  <label for="signInPassword">Password</label>
-                </div>
-                <button class="w-100 mb-2 btn btn-lg rounded-3 btn-primary" type="submit">Sign In</button>
-                <hr class="my-4">
-                <p class="text-center">New to BrainTech? <a href=#modalSignUp data-bs-toggle="modal">Create an Account</a></p>
-              </form>
-            </div>
-          </div>
-        </div>
-    </div>
-
+    <!-- Copyright -->
+    </footer>
     `;
 
+    const modals = `
+    <!--Template Source Section ▼ -->
+
+    <!--SignUp-->
+    <div class="modal fade" tabindex="-1" role="dialog" id="modalSignUp">
+      <div class="modal-dialog">
+        <div class="modal-content rounded-4 shadow">
+          <div class="modal-header pt-5 px-5 pb-0 border-bottom-0">
+            <div>
+              <h2 class="fw-bold mb-2">Sign up for free</h2>
+              <h5>and start learning today!</h5>
+            </div>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
     
+          <div class="modal-body p-5 pt-0">
+            <form class="">
+              <div class="form-floating mb-3">
+                <input type="email" class="form-control rounded-3" id="signUpEmailInput" placeholder="name@example.com">
+                <label for="signUpEmailInput">Email address</label>
+              </div>
+              <div class="form-floating mb-3">
+                <input type="password" class="form-control rounded-3" id="signUpPassword" placeholder="Password">
+                <label for="signUpPassword">Password</label>
+              </div>
+              <div class="form-floating mb-3">
+                <input type="password" class="form-control rounded-3" id="floatingConfirmPassword" placeholder="confirmPassword">
+                <label for="floatingConfirmPassword">Confirm Password</label>
+              </div>
+              <button class="w-100 mb-2 btn btn-lg rounded-3 btn-primary" type="submit">Sign up</button>
+              <small class="text-muted">By clicking Sign up, you agree to the <a href=#>terms of use.</a></small>
+              <hr class="my-4">
+              <h2 class="fs-5 fw-bold mb-3">Or use a third-party</h2>
+              <button class="w-100 py-2 mb-2 btn btn-outline-primary rounded-3" type="submit">
+              <a href="#" class="me-4 text-reset pt-2"><i class="fa fa-facebook"></i></a>
+                Sign up with Facebook
+              </button>
+              <button class="w-100 py-2 mb-2 btn btn-outline-primary rounded-3" type="submit">
+                  <a href="#" class="me-4 text-reset pt-2"><i class="fa fa-github"></i></a>
+                Sign up with GitHub
+              </button>
+              <button class="w-100 py-2 mb-2 btn btn-outline-primary rounded-3" type="submit">
+                  <a href="#" class="me-4 text-reset pt-2"><i class="fa fa-google-plus"></i></a>
+                Sign up with Google
+              </button>
+              <hr>
+              <p class="text-center">Already have an account? <a href=#modalSignIn data-bs-toggle="modal">Sign-in</a></p>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <!--SignIn-->
+    <div class="modal fade" tabindex="-1" role="dialog" id="modalSignIn">
+      <div class="modal-dialog">
+        <div class="modal-content rounded-4 shadow">
+          <div class="modal-header pt-5 px-5 pb-0 border-bottom-0">
+            <div>
+              <h2 class="fw-bold mb-2">Sign-In</h2>
+              <h5>Continue learning today!</h5>
+            </div>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+    
+          <div class="modal-body p-5 pt-0">
+            <form class="">
+              <div class="form-floating mb-3">
+                <input type="email" class="form-control rounded-3" id="signInEmailInput" placeholder="name@example.com">
+                <label for="signInEmailInput">Email address</label>
+              </div>
+              <div class="form-floating mb-3">
+                <input type="password" class="form-control rounded-3" id="signInPassword" placeholder="Password">
+                <label for="signInPassword">Password</label>
+              </div>
+              <button class="w-100 mb-2 btn btn-lg rounded-3 btn-primary" type="submit">Sign In</button>
+              <hr class="my-4">
+              <p class="text-center">New to BrainTech? <a href=#modalSignUp data-bs-toggle="modal">Create an Account</a></p>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>    
+    `;
+ 
     //Insert Header
     const headerLocation = document.getElementById("headerLoc");
     headerLocation.insertAdjacentHTML("afterend", header);
-    
+
     //Insert Sidebar
     const sideBarLocation = document.getElementById("sideBarLoc");
     sideBarLocation.insertAdjacentHTML("afterend", sideBar);
-
+    
     //Insert Footer
     const footerLocation = document.getElementById("footerLoc");
     footerLocation.insertAdjacentHTML("afterend", footer);
@@ -496,4 +509,6 @@ const insertTemplates = () => {
 };
 
 insertTemplates();
+
+
 
