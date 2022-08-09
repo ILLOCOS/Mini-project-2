@@ -73,11 +73,11 @@ const insertTemplates = () => {
                     </form>
                 </div>
                 <div class="showHide p-0 pt-2">
-                <a href="#" class="me-4 text-reset"><i class="fa fa-facebook"></i></a>
-                <a href="#" class="me-4 text-reset"><i class="fa fa-instagram"></i></a>
-                <a href="#" class="me-4 text-reset"><i class="fa fa-twitter"></i></a>
-                <a href="#" class="me-4 text-reset"><i class="fa fa-google-plus"></i></a>
-                <a href="#" class="me-4 text-reset"><i class="fa fa-github"></i></a>
+                <a href="#" class="me-4 text-reset"><img src="/media/facebook.png" class="icons"></a>
+                <a href="#" class="me-4 text-reset"><img src="/media/instagram.png" class="icons"></a>
+                <a href="#" class="me-4 text-reset"><img src="/media/twitter.png" class="icons"></a>
+                <a href="#" class="me-4 text-reset"><img src="/media/google.png" class="icons"></a>
+                <a href="#" class="me-4 text-reset"><img src="/media/github.png" class="icons"></a>
                 </div>
             </div>		
         </div>
@@ -298,21 +298,11 @@ const insertTemplates = () => {
     
         <!-- Right -->
         <div>
-          <a href="" class="me-4 text-reset">
-            <i class="fa fa-facebook"></i>
-          </a>
-          <a href="" class="me-4 text-reset">
-            <i class="fa fa-instagram"></i>
-          </a>
-          <a href="" class="me-4 text-reset">
-            <i class="fa fa-twitter"></i>
-          </a>
-          <a href="" class="me-4 text-reset">
-            <i class="fa fa-google-plus"></i>
-          </a>
-          <a href="" class="me-4 text-reset">
-            <i class="fa fa-github"></i>
-          </a>
+          <a href="#" class="me-4 text-reset"><img src="/media/facebook.png" class="icons"></a>
+          <a href="#" class="me-4 text-reset"><img src="/media/instagram.png" class="icons"></a>
+          <a href="#" class="me-4 text-reset"><img src="/media/twitter.png" class="icons"></a>
+          <a href="#" class="me-4 text-reset"><img src="/media/google.png" class="icons"></a>
+          <a href="#" class="me-4 text-reset"><img src="/media/github.png" class="icons"></a>
         </div>
         <!-- Right -->
 
