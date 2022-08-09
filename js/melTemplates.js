@@ -14,7 +14,7 @@ const insertTemplates = () => {
         </div>
         <div class="col-md-3 px-4 py-1 text-end">
             <button type="button" class="btn btn-outline-light me-2" style="font-size: 0.7rem;" data-bs-toggle="modal" data-bs-target="#modalSignIn">Sign-In</button>
-            <button type="button" class="btn btn-primary" style="font-size: 0.7rem;" data-bs-toggle="modal" data-bs-target="#modalSignUp">Sign-Up</button>
+            <button type="button" class="btn btn-primary me-2" style="font-size: 0.7rem;" data-bs-toggle="modal" data-bs-target="#modalSignUp">Sign-Up</button>
         </div>
         </div>
     </div>
@@ -22,7 +22,7 @@ const insertTemplates = () => {
     <!--Nav bar-->
     <nav class="navbar navbar-expand-lg navbar-light sticky-top">
         <img src="/media/tomBrandlogo.png" alt="logo" height="50px">
-        <a class="navbar-brand ms-1" href="#"><strong>Brain</strong><b>Tech</b></a>  		
+        <a class="navbar-brand mx-1 px-0" href="#"><strong>Brain</strong><b>Tech</b></a>  		
         <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
             <span class="navbar-toggler-icon"></span>
         </button>
@@ -30,7 +30,7 @@ const insertTemplates = () => {
         <div id="navbarCollapse" class="collapse navbar-collapse justify-content-start">
             <div class="navbar-nav mx-auto">
                 <a href="index.html" class="nav-item nav-link text-dark active">Home</a>
-                <a href="#" class="nav-item nav-link text-dark">About</a>			
+                <a href="AboutUs.html" class="nav-item nav-link text-dark">About</a>			
 
                 <div class="nav-item dropdown">
                     <a href="#" class="nav-item nav-link dropdown-toggle text-dark" data-toggle="dropdown">Courses</a>
@@ -228,31 +228,31 @@ const insertTemplates = () => {
             </h2>
             <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
             <div class="accordion-body">
-                <strong ><a href="#">3. Basic parts of a Computer</a></strong><br> Learn the basic parts of computer, including the monitor, computer case, and keyboard.
+                <strong ><a href="ComputerBasics3.html">3. Basic parts of a Computer</a></strong><br> Learn the basic parts of computer, including the monitor, computer case, and keyboard.
             </div>
             </div>
 
             <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
             <div class="accordion-body">
-                <strong ><a href="#">4. Buttons and Ports on a Computer</a></strong><br> Learn the various ports and buttons on a computer.
+                <strong ><a href="ComputerBasics4.html">4. Buttons and Ports on a Computer</a></strong><br> Learn the various ports and buttons on a computer.
             </div>
             </div>
 
             <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
             <div class="accordion-body">
-                <strong ><a href="#">5. Inside a Computer</a></strong><br> Learn what's inside a computer.
+                <strong ><a href="ComputerBasics5.html">5. Inside a Computer</a></strong><br> Learn what's inside a computer.
             </div>
             </div>
 
             <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
             <div class="accordion-body">
-                <strong ><a href="#">6. Laptop Computers</a></strong><br> Learn more about laptop computers and how they differ from traditional desktop computers.
+                <strong ><a href="ComputeBasics6.html">6. Laptop Computers</a></strong><br> Learn more about laptop computers and how they differ from traditional desktop computers.
             </div>
             </div>
 
             <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
             <div class="accordion-body">
-                <strong ><a href="#">7. Mobile Devices</a></strong><br> Learn how mobile devices work.
+                <strong ><a href="ComputeBasics7.html">7. Mobile Devices</a></strong><br> Learn how mobile devices work.
             </div>
             </div>
         </div>
@@ -265,13 +265,13 @@ const insertTemplates = () => {
             </h2>
             <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
             <div class="accordion-body">
-                <strong ><a href="#">8. Understanding operating Systems</a></strong><br> Get a better understanding of operating systems and how they functions.
+                <strong ><a href="ComputerBasics8.html">8. Understanding operating Systems</a></strong><br> Get a better understanding of operating systems and how they functions.
             </div>
             </div>
 
             <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
             <div class="accordion-body">
-                <strong ><a href="#">9. Understanding Applications</a></strong><br> Better understand applications and how they work.
+                <strong ><a href="ComputerBasics9.html">9. Understanding Applications</a></strong><br> Better understand applications and how they work.
             </div>
             </div>
         </div>
@@ -284,13 +284,13 @@ const insertTemplates = () => {
             </h2>
             <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#accordionExample">
             <div class="accordion-body">
-                <strong ><a href="#">10. Setting Up a Computer</a></strong><br> Learn how to set up a computer
+                <strong ><a href="ComputeBasics10.html">10. Setting Up a Computer</a></strong><br> Learn how to set up a computer
             </div>
             </div>
 
             <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#accordionExample">
             <div class="accordion-body">
-                <strong ><a href="#">11. Getting Started with your First Computer</a></strong><br> Get started with your first computer.
+                <strong ><a href="ComputeBasics11.html">11. Getting Started with your First Computer</a></strong><br> Get started with your first computer.
             </div>
             </div>
 
