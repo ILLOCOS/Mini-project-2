@@ -138,22 +138,53 @@ body{
 
 /* banner */
 .banner{
+	position: relative;
     background-color: rgba(222,243,246,1);
 	font-size: calc(1.5rem + 1vw);
 }
 
+.banner::before {
+	background-position-y: 10rem;
+}
+
+
 .banner2 {
+	position: relative;
 	background-color: rgba(127,205,255,.5);
 	font-size: calc(1.5rem + 1vw);
 }
 
-.banner2 img {
-	width: calc(22rem + 2vw);
+.banner2::before {
+	background-position: center;
+	background-position-y: -25rem;
 }
 
 .banner3 {
-	background-color: rgba(118,182,196,.5);
+	position: relative;
+	background-color: rgba(29,162,216,.3);
 	font-size: calc(1.5rem + 1vw);
+}
+
+.banner3::before {
+	background-position: top;
+	background-position-y: -10rem;
+}
+
+.banner::before, .banner2::before, .banner3::before {
+	content: "";
+	background-image: url(/media/melWaveBg1.png);
+	background-size: cover;
+	position: absolute;
+	top: 0px;
+	right: 0px;
+	bottom: 0px;
+	left: 0px;
+	opacity: 0.7;
+}
+
+.flip {
+	-webkit-transform: scaleX(-1);
+	transform: scaleX(-1);
 }
 
 .btn {
@@ -164,6 +195,7 @@ body{
 	margin-left: 10vw;
 }
 
+/* Awards */
 .awards {
 	background-color: rgba(222,243,246,.4);
 }
@@ -171,8 +203,21 @@ body{
 .rfs {
 	font-size: calc(1.5rem + 1vw);
 }
+<<<<<<< HEAD
 /* .blob{
 	background-image: url('/media/blob.png');
 	background-repeat: no-repeat;
 	background-size: contain;
 } */
+=======
+
+/* Achievement Counter */
+#counter {
+	background-color: rgba(127,205,255,.5);
+	font-size: calc(1.5rem + 1vw);
+}
+
+.icons {
+	width: 1.25rem;
+}
+>>>>>>> 9ad374d8492e120868836294328513d938c63320
