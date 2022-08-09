@@ -29,7 +29,7 @@ const insertTemplates = () => {
         <div id="navbarCollapse" class="collapse navbar-collapse justify-content-start">
             <div class="navbar-nav mx-auto">
                 <a href="index.html" class="nav-item nav-link text-dark active">Home</a>
-                <a href="#" class="nav-item nav-link text-dark">About</a>			
+                <a href="AboutUs.html" class="nav-item nav-link text-dark">About</a>			
 
                 <div class="nav-item dropdown">
                     <a href="#" class="nav-item nav-link dropdown-toggle text-dark" data-toggle="dropdown">Courses</a>
