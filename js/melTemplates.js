@@ -1,14 +1,7 @@
 //To be pasted to other pages except index.html (These are the markers)
 
-//<div id="headerLoc"></div><!--Marker for Header Section-->
-//<div id="sideBarLoc"></div><!--Marker for Sidebar-->
-
-//<div id="footerLoc"></div><!--Marker for Footer-->
-//<div id="modalLoc"></div> <!--Marker for Modals-->
-
 //<!--External JS-->
 //<script src="/js/melTemplates.js"></script>
-
 
 // Insert Templates
 const insertTemplates = () => {
@@ -82,9 +75,7 @@ const insertTemplates = () => {
             </div>		
         </div>
     </nav>
-    `;
 
-    const sideBar = `
     <!--Sidebar-->
     <div class="offcanvas offcanvas-start" data-bs-scroll="true" data-bs-backdrop="false" tabindex="-1" id="offcanvasScrolling" aria-labelledby="offcanvasScrollingLabel">
     <div class="offcanvas-header">
@@ -393,109 +384,98 @@ const insertTemplates = () => {
     </div>
     <!-- Copyright -->
     </footer>
-    `;
 
-    const modals = `
-    <!--Template Source Section ▼ -->
+<!--Template Source Section ▼ -->
 
-    <!--SignUp-->
-    <div class="modal fade" tabindex="-1" role="dialog" id="modalSignUp">
-      <div class="modal-dialog">
-        <div class="modal-content rounded-4 shadow">
-          <div class="modal-header pt-5 px-5 pb-0 border-bottom-0">
-            <div>
-              <h2 class="fw-bold mb-2">Sign up for free</h2>
-              <h5>and start learning today!</h5>
-            </div>
-            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-          </div>
-    
-          <div class="modal-body p-5 pt-0">
-            <form class="">
-              <div class="form-floating mb-3">
-                <input type="email" class="form-control rounded-3" id="signUpEmailInput" placeholder="name@example.com">
-                <label for="signUpEmailInput">Email address</label>
-              </div>
-              <div class="form-floating mb-3">
-                <input type="password" class="form-control rounded-3" id="signUpPassword" placeholder="Password">
-                <label for="signUpPassword">Password</label>
-              </div>
-              <div class="form-floating mb-3">
-                <input type="password" class="form-control rounded-3" id="floatingConfirmPassword" placeholder="confirmPassword">
-                <label for="floatingConfirmPassword">Confirm Password</label>
-              </div>
-              <button class="w-100 mb-2 btn btn-lg rounded-3 btn-primary" type="submit">Sign up</button>
-              <small class="text-muted">By clicking Sign up, you agree to the <a href=#>terms of use.</a></small>
-              <hr class="my-4">
-              <h2 class="fs-5 fw-bold mb-3">Or use a third-party</h2>
-              <button class="w-100 py-2 mb-2 btn btn-outline-primary rounded-3" type="submit">
-              <a href="#" class="me-4 text-reset pt-2"><i class="fa fa-facebook"></i></a>
-                Sign up with Facebook
-              </button>
-              <button class="w-100 py-2 mb-2 btn btn-outline-primary rounded-3" type="submit">
-                  <a href="#" class="me-4 text-reset pt-2"><i class="fa fa-github"></i></a>
-                Sign up with GitHub
-              </button>
-              <button class="w-100 py-2 mb-2 btn btn-outline-primary rounded-3" type="submit">
-                  <a href="#" class="me-4 text-reset pt-2"><i class="fa fa-google-plus"></i></a>
-                Sign up with Google
-              </button>
-              <hr>
-              <p class="text-center">Already have an account? <a href=#modalSignIn data-bs-toggle="modal">Sign-in</a></p>
-            </form>
-          </div>
+<!--SignUp-->
+<div class="modal fade" tabindex="-1" role="dialog" id="modalSignUp">
+  <div class="modal-dialog">
+    <div class="modal-content rounded-4 shadow">
+      <div class="modal-header pt-5 px-5 pb-0 border-bottom-0">
+        <div>
+          <h2 class="fw-bold mb-2">Sign up for free</h2>
+          <h5>and start learning today!</h5>
         </div>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+
+      <div class="modal-body p-5 pt-0">
+        <form class="">
+          <div class="form-floating mb-3">
+            <input type="email" class="form-control rounded-3" id="signUpEmailInput" placeholder="name@example.com">
+            <label for="signUpEmailInput">Email address</label>
+          </div>
+          <div class="form-floating mb-3">
+            <input type="password" class="form-control rounded-3" id="signUpPassword" placeholder="Password">
+            <label for="signUpPassword">Password</label>
+          </div>
+          <div class="form-floating mb-3">
+            <input type="password" class="form-control rounded-3" id="floatingConfirmPassword" placeholder="confirmPassword">
+            <label for="floatingConfirmPassword">Confirm Password</label>
+          </div>
+          <button class="w-100 mb-2 btn btn-lg rounded-3 btn-primary" type="submit">Sign up</button>
+          <small class="text-muted">By clicking Sign up, you agree to the <a href=#>terms of use.</a></small>
+          <hr class="my-4">
+          <h2 class="fs-5 fw-bold mb-3">Or use a third-party</h2>
+          <button class="w-100 py-2 mb-2 btn btn-outline-primary rounded-3" type="submit">
+          <a href="#" class="me-4 text-reset pt-2"><i class="fa fa-facebook"></i></a>
+            Sign up with Facebook
+          </button>
+          <button class="w-100 py-2 mb-2 btn btn-outline-primary rounded-3" type="submit">
+              <a href="#" class="me-4 text-reset pt-2"><i class="fa fa-github"></i></a>
+            Sign up with GitHub
+          </button>
+          <button class="w-100 py-2 mb-2 btn btn-outline-primary rounded-3" type="submit">
+              <a href="#" class="me-4 text-reset pt-2"><i class="fa fa-google-plus"></i></a>
+            Sign up with Google
+          </button>
+          <hr>
+          <p class="text-center">Already have an account? <a href=#modalSignIn data-bs-toggle="modal">Sign-in</a></p>
+        </form>
       </div>
     </div>
-    
-    <!--SignIn-->
-    <div class="modal fade" tabindex="-1" role="dialog" id="modalSignIn">
-      <div class="modal-dialog">
-        <div class="modal-content rounded-4 shadow">
-          <div class="modal-header pt-5 px-5 pb-0 border-bottom-0">
-            <div>
-              <h2 class="fw-bold mb-2">Sign-In</h2>
-              <h5>Continue learning today!</h5>
-            </div>
-            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-          </div>
-    
-          <div class="modal-body p-5 pt-0">
-            <form class="">
-              <div class="form-floating mb-3">
-                <input type="email" class="form-control rounded-3" id="signInEmailInput" placeholder="name@example.com">
-                <label for="signInEmailInput">Email address</label>
-              </div>
-              <div class="form-floating mb-3">
-                <input type="password" class="form-control rounded-3" id="signInPassword" placeholder="Password">
-                <label for="signInPassword">Password</label>
-              </div>
-              <button class="w-100 mb-2 btn btn-lg rounded-3 btn-primary" type="submit">Sign In</button>
-              <hr class="my-4">
-              <p class="text-center">New to BrainTech? <a href=#modalSignUp data-bs-toggle="modal">Create an Account</a></p>
-            </form>
-          </div>
-        </div>
-      </div>
-    </div>    
-    `;
- 
-    //Insert Header
-    const insertHeader = document.getElementById("headerLoc");
-    insertHeader.insertAdjacentHTML("afterend", header);
+  </div>
+</div>
 
-    //Insert Sidebar
-    const insertSideBar = document.getElementById("sideBarLoc");
-    insertSideBar.insertAdjacentHTML("afterend", sideBar);
-    
+<!--SignIn-->
+<div class="modal fade" tabindex="-1" role="dialog" id="modalSignIn">
+  <div class="modal-dialog">
+    <div class="modal-content rounded-4 shadow">
+      <div class="modal-header pt-5 px-5 pb-0 border-bottom-0">
+        <div>
+          <h2 class="fw-bold mb-2">Sign-In</h2>
+          <h5>Continue learning today!</h5>
+        </div>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+
+      <div class="modal-body p-5 pt-0">
+        <form class="">
+          <div class="form-floating mb-3">
+            <input type="email" class="form-control rounded-3" id="signInEmailInput" placeholder="name@example.com">
+            <label for="signInEmailInput">Email address</label>
+          </div>
+          <div class="form-floating mb-3">
+            <input type="password" class="form-control rounded-3" id="signInPassword" placeholder="Password">
+            <label for="signInPassword">Password</label>
+          </div>
+          <button class="w-100 mb-2 btn btn-lg rounded-3 btn-primary" type="submit">Sign In</button>
+          <hr class="my-4">
+          <p class="text-center">New to BrainTech? <a href=#modalSignUp data-bs-toggle="modal">Create an Account</a></p>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+    `;
+
+    //Insert Header
+    const insertHeader = document.querySelector("body");
+    insertHeader.insertAdjacentHTML("afterbegin", header);
+
     //Insert Footer
-    const insertFooter = document.getElementById("footerLoc");
-    insertFooter.insertAdjacentHTML("afterend", footer);
-    
-    //Insert modal templates
-    const insertModal = document.getElementById("modalLoc");
-    insertModal.insertAdjacentHTML("afterend", modals);
-    
+    const insertFooter = document.querySelector("body");
+    insertFooter.insertAdjacentHTML("beforeend", footer);
 };
 
 insertTemplates();
