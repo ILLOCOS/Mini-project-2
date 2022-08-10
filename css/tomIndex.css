@@ -203,13 +203,13 @@ body{
 .rfs {
 	font-size: calc(1.5rem + 1vw);
 }
-<<<<<<< HEAD
+
 /* .blob{
 	background-image: url('/media/blob.png');
 	background-repeat: no-repeat;
 	background-size: contain;
 } */
-=======
+
 
 /* Achievement Counter */
 #counter {
@@ -220,4 +220,4 @@ body{
 .icons {
 	width: 1.25rem;
 }
->>>>>>> 9ad374d8492e120868836294328513d938c63320
+
