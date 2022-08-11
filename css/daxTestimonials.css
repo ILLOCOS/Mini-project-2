@@ -25,11 +25,11 @@
 
 /* Fading animation */
 .fadeTestimonial {
-  animation-name: fade;
+  animation-name: fadeTestimonial;
   animation-duration: 6s;
 }
 
-@keyframes fade {
+@keyframes fadeTestimonial {
   from {opacity: .5} 
   to {opacity: 1}
 }
