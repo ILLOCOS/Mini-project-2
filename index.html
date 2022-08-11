@@ -31,9 +31,12 @@
             <span>email to:</span>
             <a href="mailto: helpdesk@braintech.tk" style="color:#def3f6;">helpdesk@braintech.tk</a>
         </div>
-        <div class="col-md-3 px-4 py-1 text-end">
+        <div class="col-md-3 px-4 py-1 text-end" style="display:block;">
             <button type="button" class="btn btn-outline-light me-2" style="font-size: 0.7rem;" data-bs-toggle="modal" data-bs-target="#modalSignIn">Sign-In</button>
             <button type="button" class="btn btn-primary me-2" style="font-size: 0.7rem;" data-bs-toggle="modal" data-bs-target="#modalSignUp">Sign-Up</button>
+        </div>
+        <div class="col-md-3 px-4 py-1 text-end" style="display:none;">
+          <button type="button" class="btn btn-outline-light me-2" style="font-size: 0.7rem;">Logout</button>
         </div>
         </div>
     </div>
@@ -342,11 +345,11 @@
           </div>
         </div>
       </div>
-      <button class="carousel-control-prev" type="button" data-bs-target="#carouselBanner" data-bs-slide="prev">
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselBanner" data-bs-slide="prev" style="width: 10vw;">
         <span class="carousel-control-prev-icon" aria-hidden="true"></span>
         <span class="visually-hidden">Previous</span>
       </button>
-      <button class="carousel-control-next" type="button" data-bs-target="#carouselBanner" data-bs-slide="next">
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselBanner" data-bs-slide="next" style="width: 10vw;">
         <span class="carousel-control-next-icon" aria-hidden="true"></span>
         <span class="visually-hidden">Next</span>
       </button>
@@ -380,7 +383,7 @@
     <!--Awards-->
     <div class="container-fluid p-5">
     <div class="awards row mt-5 rfs ">
-      <h1 class="text-center pt-5 px-0 ">Awards and Accolades</h1>
+      <h1 class="text-center pt-5 px-0 rfs ">Awards and Accolades</h1>
       <div class="col-md-4 p-5">
         <img src="/media/melAwards1.png" class="img-fluid p-2">
       </div>
@@ -541,15 +544,15 @@
     <br><br>
 
     <!--Testimonials-->
-    <div class="container p-5">
+    <div class="container p-5-fluid">
     <h1 class="text-center rfs mt-3">Hear What Our Students Say</h1>
     <p style="text-align:center">From old school to new school, here are some testimonials from students.</p>
 
     <div class="slideshow-container p-5">
-      <div class="mySlides fade">
+      <div class="mySlides fadeTestimonial">
         <div class="row d-flex justify-content-center testimonialsBg">
           <div class="col-md-6 d-flex align-items-center">
-              <img src="/media/daxTestimonial1.jpeg" class="img-fluid p-2">
+              <img src="/media/daxTestimonial1.jpeg" class="img-fluid p-2 rounded-circle">
           </div>
           <div class="col-md-6 d-flex align-items-center p-5">
             <h3><i>"Here at BrainTech, its nice to learn and to earn"</i>
@@ -559,7 +562,7 @@
         </div>
       </div>
 
-      <div class="mySlides fade">
+      <div class="mySlides fadeTestimonial">
         <div class="row d-flex justify-content-center testimonialsBg">
           <div class="col-md-6 d-flex align-items-center p-5">
             <h3><i>"It's so nice here at BrainTech, learning has never been so easy"</i>
@@ -567,15 +570,15 @@
             </h3>
           </div>
           <div class="col-md-6 d-flex align-items-center">
-            <img src="/media/daxTestimonial3.jpeg" class="flip img-fluid p-2">
+            <img src="/media/daxTestimonial3.jpeg" class="flip img-fluid p-2 rounded-circle">
           </div>
         </div>
       </div>
 
-      <div class="mySlides fade">
+      <div class="mySlides fadeTestimonial">
         <div class="row d-flex justify-content-center testimonialsBg">
           <div class="col-md-6 d-flex align-items-center">
-              <img src="/media/daxTestimonial2.webp" class="img-fluid p-2">
+              <img src="/media/daxTestimonial2.jpg" class="img-fluid p-2 rounded-circle">
           </div>
           <div class="col-md-6 d-flex align-items-center p-5">
             <h3><i>"At BrainTech E-learning, it feels like home, you feel me, homie"</i>
