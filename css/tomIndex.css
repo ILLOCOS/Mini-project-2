@@ -204,6 +204,10 @@ body{
 	font-size: calc(1.5rem + 1vw);
 }
 
+.rfs-2 {
+	font-size: calc(1rem + 1vw);
+}
+
 /* Achievement Counter */
 #counter {
 	background-color: rgba(127,205,255,.5);

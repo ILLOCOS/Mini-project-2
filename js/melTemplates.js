@@ -480,5 +480,8 @@ const insertTemplates = () => {
 
 insertTemplates();
 
-
+const showSidebar = () => {
+  const sidebarList = document.getElementById('offcanvasScrolling').classList;
+  sidebarList.add('show');
+};
 
