@@ -12,6 +12,9 @@ const dashMediaBtn = document.querySelector('#dashMediaBtn');
 //Assignment
 const dashAssignment = document.querySelector('#dashAssignment');
 const dashAssignmentBtn = document.querySelector('#dashAssignmentBtn');
+//Quiz
+const dashQuiz = document.querySelector('#dashQuiz');
+const dashQuizBtn = document.querySelector('#dashQuizBtn');
 //Evaluation
 const dashEvaluation = document.querySelector('#dashEvaluation');
 const dashEvaluationBtn = document.querySelector('#dashEvaluationBtn');
@@ -24,9 +27,7 @@ const dashInboxBtn = document.querySelector('#dashInboxBtn');
 //Profile
 const dashProfile = document.querySelector('#dashProfile');
 const dashProfileBtn = document.querySelector('#dashProfileBtn');
-//Settings
-const dashSettings = document.querySelector('#dashSettings');
-const dashSettingsBtn = document.querySelector('#dashSettingsBtn');
+
 
 const hide = () => {
     dashBoard.forEach(element => {
@@ -54,6 +55,11 @@ const displayAssignment = () => {
     dashAssignment.style.display = '';
 };
 
+const displayQuiz = () => {
+    hide();
+    dashQuiz.style.display = '';
+};
+
 const displayEvaluation = () => {
     hide();
     dashEvaluation.style.display = '';
@@ -74,9 +80,9 @@ const displayProfile = () => {
     dashProfile.style.display = '';
 };
 
-const displaySettings = () => {
+const displayLogout = () => {
     hide();
-    dashSettings.style.display = '';
+    dashLogout.style.display = '';
 };
 
 
@@ -84,8 +90,11 @@ dashCourseBtn.addEventListener('click', displayCourse);
 dashMyStudentsBtn.addEventListener('click', displayMyStudents);
 dashMediaBtn.addEventListener('click', displayMedia);
 dashAssignmentBtn.addEventListener('click', displayAssignment);
+dashQuizBtn.addEventListener('click', displayQuiz);
 dashEvaluationBtn.addEventListener('click', displayEvaluation);
 dashScheduleBtn.addEventListener('click', displaySchedule);
 dashInboxBtn.addEventListener('click', displayInbox);
 dashProfileBtn.addEventListener('click', displayProfile);
-dashSettingsBtn.addEventListener('click', displaySettings);
+
+
+

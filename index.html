@@ -63,7 +63,7 @@
                         <a href="#" class="dropdown-item">Digital Marketing</a>
                     </div>
                 </div>
-                <a href="dashboard.html" class="nav-item nav-link text-dark">Dashboard</a>
+                <a href="dashboard.html" class="nav-item nav-link text-dark" style="display:none;" id="dashBtnMain">Dashboard</a>
                 <a href="#" class="nav-item nav-link text-dark">Contact</a>
             </div>
 
@@ -737,7 +737,7 @@
             <label for="floatingConfirmPassword">Confirm Password</label>
           </div>
           <button class="w-100 mb-2 btn btn-lg rounded-3 btn-primary" type="submit">Sign up</button>
-          <small class="text-muted">By clicking Sign up, you agree to the <a href=#>terms of use.</a></small>
+          <small class="text-muted">By clicking Sign up, you agree to the <a href='#'>terms of use.</a></small>
           <hr class="my-4">
           <h2 class="fs-5 fw-bold mb-3">Or use a third-party</h2>
           <button class="w-100 py-2 mb-2 btn btn-outline-primary rounded-3" type="submit">
@@ -753,7 +753,7 @@
             Sign up with Google
           </button>
           <hr>
-          <p class="text-center">Already have an account? <a href=#modalLogin data-bs-toggle="modal">Sign-in</a></p>
+          <p class="text-center">Already have an account? <a href='#modalLogin' data-bs-toggle="modal">Sign-in</a></p>
         </form>
       </div>
     </div>
@@ -773,7 +773,7 @@
       </div>
 
       <div class="modal-body p-5 pt-0">
-        <form class="">
+        <form class="" action="/dashboard.html">
           <div class="form-floating mb-3">
             <input type="email" class="form-control rounded-3" id="loginEmailInput" placeholder="name@example.com" required="@">
             <label for="loginEmailInput">Email address</label>

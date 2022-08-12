@@ -43,13 +43,13 @@ const insertTemplates = () => {
                 <div class="nav-item dropdown">
                     <a href="#" class="nav-item nav-link dropdown-toggle text-dark" data-toggle="dropdown">Courses</a>
                     <div class="dropdown-menu">					
-                        <a href="#" class="dropdown-item"data-bs-toggle="offcanvas" data-bs-target="#offcanvasScrolling" aria-controls="offcanvasScrolling">Computer Basics</a>
+                        <a href="ComputerBasics.html" class="dropdown-item" aria-controls="offcanvasScrolling">Computer Basics</a>
                         <a href="#" class="dropdown-item">Photoshop</a>
                         <a href="#" class="dropdown-item">Graphic Design</a>
                         <a href="#" class="dropdown-item">Digital Marketing</a>
                     </div>
                 </div>
-                <a href="#" class="nav-item nav-link text-dark">News</a>
+                <a href="dashboard.html" class="nav-item nav-link text-dark" style="display:none;" id="dashBtnMain">Dashboard</a>
                 <a href="#" class="nav-item nav-link text-dark">Contact</a>
             </div>
 
@@ -279,6 +279,7 @@ const insertTemplates = () => {
     `;
 
     const footer = `
+
     <!-- Footer -->
     <footer class="text-center text-lg-start bg-light text-muted">
       <!-- Section: Social media -->
@@ -433,7 +434,7 @@ const insertTemplates = () => {
             Sign up with Google
           </button>
           <hr>
-          <p class="text-center">Already have an account? <a href=#modalLogin data-bs-toggle="modal">Sign-in</a></p>
+          <p class="text-center">Already have an account? <a href='#modalLogin' data-bs-toggle="modal">Sign-in</a></p>
         </form>
       </div>
     </div>
@@ -453,7 +454,7 @@ const insertTemplates = () => {
       </div>
 
       <div class="modal-body p-5 pt-0">
-        <form class="">
+        <form class="" action="/dashboard.html">
           <div class="form-floating mb-3">
             <input type="email" class="form-control rounded-3" id="loginEmailInput" placeholder="name@example.com" required="@">
             <label for="loginEmailInput">Email address</label>
@@ -464,7 +465,7 @@ const insertTemplates = () => {
           </div>
           <button class="w-100 mb-2 btn btn-lg rounded-3 btn-primary" type="submit" id="loginBtn">Sign In</button>
           <hr class="my-4">
-          <p class="text-center">New to BrainTech? <a href=#modalSignUp data-bs-toggle="modal">Create an Account</a></p>
+          <p class="text-center">New to BrainTech? <a href='#modalSignUp' data-bs-toggle="modal">Create an Account</a></p>
         </form>
       </div>
     </div>
@@ -481,9 +482,7 @@ const insertTemplates = () => {
     insertFooter.insertAdjacentHTML("beforeend", footer);
 };
 
-//Insert Template on page load
 insertTemplates();
-
 
 const showSidebar = () => {
   const sidebarList = document.getElementById('offcanvasScrolling').classList;
