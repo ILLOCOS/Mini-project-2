@@ -82,7 +82,7 @@
         
             <div class="col-md-10 p-2" style="min-height: 75vh;"><!--Container for Dashboard Details-->
                 
-                <div id="dashCourse" class="row isTeacher isStudent dash" style="display:'';"><!--Start Course default display-->
+                <div id="dashCourse" class="row isTeacher isStudent dash" style="display:none;"><!--Start Course default display-->
                     <div class="col-md-auto d-flex justify-content-center p-3">
                         <div class="card" style="width: 18rem;">
                             <img src="/media/tomCourseImg.svg" class="card-img-top p-4" alt="...">
@@ -117,14 +117,27 @@
 
                 </div><!--End Course-->
                 
-                <div class="row isTeacher dash" style="display: none;" id="dashMyStudents"><!--Start My Students-->
+                <div class="row isTeacher dash" style="display:'';" id="dashMyStudents"><!--Start My Students-->
 
-                    <div class="col-md-4">
+                    <div class="col-md-auto p-3">
                         <div class="card" style="width: 18rem;">
                             <img src="/media/tomBgteam-2.jpg" class="card-img-top pt-4 px-5 rounded-circle" alt="...">
                             <div class="card-body">
                             <h5 class="card-title">Student 1</h5>
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            <p class="card-text">Progress</p>
+                            <div class="progressBar"></div>
+                            <a href="#" class="btn btn-primary">View</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-auto p-3">
+                        <div class="card" style="width: 18rem;">
+                            <img src="/media/tomBgteam-2.jpg" class="card-img-top pt-4 px-5 rounded-circle" alt="...">
+                            <div class="card-body">
+                            <h5 class="card-title">Student 2</h5>
+                            <p class="card-text">Progress</p>
+                            <div class="progressBar"></div>
                             <a href="#" class="btn btn-primary">View</a>
                             </div>
                         </div>
