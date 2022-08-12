@@ -279,7 +279,6 @@ const insertTemplates = () => {
     `;
 
     const footer = `
-
     <!-- Footer -->
     <footer class="text-center text-lg-start bg-light text-muted">
       <!-- Section: Social media -->
@@ -385,6 +384,7 @@ const insertTemplates = () => {
     <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05);">
       © 2022 Copyright:
       <a class="text-reset fw-bold" href="#" style="text-decoration:none ;">BrainTech</a>
+      <div id="logoutBtn" style="display:none;"></div><!--Placeholder only please don't delete-->
     </div>
     <!-- Copyright -->
     </footer>
@@ -418,7 +418,7 @@ const insertTemplates = () => {
             <label for="floatingConfirmPassword">Confirm Password</label>
           </div>
           <button class="w-100 mb-2 btn btn-lg rounded-3 btn-primary" type="submit">Sign up</button>
-          <small class="text-muted">By clicking Sign up, you agree to the <a href=#>terms of use.</a></small>
+          <small class="text-muted">By clicking Sign up, you agree to the <a href='#'>terms of use.</a></small>
           <hr class="my-4">
           <h2 class="fs-5 fw-bold mb-3">Or use a third-party</h2>
           <button class="w-100 py-2 mb-2 btn btn-outline-primary rounded-3" type="submit">
@@ -465,7 +465,7 @@ const insertTemplates = () => {
           </div>
           <button class="w-100 mb-2 btn btn-lg rounded-3 btn-primary" type="submit" id="loginBtn">Sign In</button>
           <hr class="my-4">
-          <p class="text-center">New to BrainTech? <a href='#modalSignUp' data-bs-toggle="modal">Create an Account</a></p>
+          <p class="text-center">New to BrainTech? <a href=#modalSignUp data-bs-toggle="modal">Create an Account</a></p>
         </form>
       </div>
     </div>
