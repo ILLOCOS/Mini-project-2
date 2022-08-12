@@ -1,0 +1,523 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="/media/tomBrandlogo.png" type="image/icon type">
+    <title>BrainTech</title>
+
+    <!--CSS CDNs-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <!--Fonts/Icons/Misc Web Links-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!--External CSS-->
+    <link rel="stylesheet" href="/css/tomIndex.css">
+    <link rel="stylesheet" href="/css/melDashboard.css">
+
+    
+</head>
+<body>
+
+    <!--Content-->
+    <div class="container-fluid w-100 p-3">
+        <div class="row align-items-center p-2 dashbar"><!--Start of Profile Header-->
+            <div class="col-md-1 p-2 d-inline-flex justify-content-center">
+                <img src="/media/tomBgteam-4.jpg" class="img-fluid rounded-circle">
+            </div>
+            <div class="col-md-11 pt-2 mt-2">
+                <h4 class="userName rfs-2">Mario Penduko</h4>
+                <p class="role mb-0">Computer Basics Teacher</p>
+            </div>
+        </div><!--End of Profile Header-->
+
+        <div class="row">
+            <div class="col-md-2 p-0"><!--Start of Sidebar-->  
+                <div class="flex-shrink-0 p-3 bg-white">
+                    <ul class="list-unstyled ps-0">
+                      <li class="mb-1">
+                        <button class="btn btn-toggle d-inline-flex align-items-center rounded border-0 collapsed px-1 ms-1 py-2" data-bs-toggle="collapse" data-bs-target="#home-collapse" aria-expanded="false">
+                          Dashboard
+                        </button>
+                        <div class="collapse" id="home-collapse">
+                          <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+                            <li><a href="#" class="link-dark d-inline-flex text-decoration-none rounded" id='dashCourseBtn'>Courses</a></li>
+                            <li class="isTeacher"><a href="#" class="link-dark d-inline-flex text-decoration-none rounded" id="dashMyStudentsBtn">My Students</a></li>
+                            <li><a href="#" class="link-dark d-inline-flex text-decoration-none rounded" id="dashMediaBtn">Media</a></li>
+                            <li><a href="#" class="link-dark d-inline-flex text-decoration-none rounded" id="dashAssignmentBtn">Assignment</a></li>
+                            <li><a href="#" class="link-dark d-inline-flex text-decoration-none rounded" id="dashQuizBtn">Quizzes</a></li>
+                            <li><a href="#" class="link-dark d-inline-flex text-decoration-none rounded" id="dashEvaluationBtn">Evaluation</a></li>
+                          </ul>
+                        </div>
+                      </li>
+                      <li class="mb-1">
+                        <button class="btn btn2 btn-toggle2 d-inline-flex align-items-center rounded border-0 collapsed ms-1 ps-4 py-2" data-bs-toggle="collapse" data-bs-target="#dashboard-collapse" aria-expanded="false" id="dashScheduleBtn">
+                        Schedule
+                        </button>
+                      </li>
+                      <li class="mb-1">
+                        <button class="btn btn2 btn-toggle2 d-inline-flex align-items-center rounded border-0 collapsed ms-1 ps-4 py-2" data-bs-toggle="collapse" data-bs-target="#dashboard-collapse" aria-expanded="false" id="dashInboxBtn">
+                        Inbox
+                        </button>
+                      </li>
+                      
+                      <li class="border-top my-3"></li>
+                      <li class="mb-1">
+                        <button class="btn btn-toggle d-inline-flex align-items-center rounded border-0 collapsed px-1 ms-1 py-2" data-bs-toggle="collapse" data-bs-target="#account-collapse" aria-expanded="false">
+                          Account
+                        </button>
+                        <div class="collapse" id="account-collapse" style>
+                          <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+                            <li><a href="#" class="link-dark d-inline-flex text-decoration-none rounded" id="dashProfileBtn">Profile</a></li>
+                            <li><a href="#" class="link-dark d-inline-flex text-decoration-none rounded" id="logoutBtn">Logout</a></li>
+                          </ul>
+                        </div>
+                      </li>
+                    </ul>
+                  </div>
+            </div><!--End of Sidebar-->
+        
+            <div class="col-md-10 p-2" style="min-height: 75vh;"><!--Container for Dashboard Details-->
+                
+                <div id="dashCourse" class="row isTeacher isStudent dash" style="display:'';"><!--Start Course default display-->
+                    <div class="col-md-auto d-flex justify-content-center p-3">
+                        <div class="card" style="width: 18rem;">
+                            <img src="/media/tomCourseImg.svg" class="card-img-top p-4" alt="...">
+                            <div class="card-body">
+                            <h5 class="card-title">Computer Basics</h5>
+                            <p class="card-text">This course will help you understand how computers work and how to use them.
+                            </p>
+                            <a href="ComputerBasics.html" class="btn btn-primary">View</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-auto d-flex justify-content-center p-3">
+                        <div class="card" style="width: 18rem;">
+                            <img src="/media/tomPhotoshop.svg" class="card-img-top p-4" alt="...">
+                            <div class="card-body">
+                            <h5 class="card-title">Photoshop</h5>
+                            <p class="card-text">Learn the art of enhancing images and creating picture elements for websites.</p>
+                            <a href="#" class="btn btn-primary">View</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-auto d-flex justify-content-center p-3">
+                        <div class="card" style="width: 18rem;">
+                            <img src="/media/tomGraphicDesign.svg" class="card-img-top p-4" alt="...">
+                            <div class="card-body">
+                            <h5 class="card-title">Graphic Design</h5>
+                            <p class="card-text">Explore design fundamentals and design programs from real-world experts.</p>
+                            <a href="#" class="btn btn-primary">View</a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div><!--End Course-->
+                
+                <div class="row isTeacher dash" style="display: none;" id="dashMyStudents"><!--Start My Students-->
+
+                    <div class="col-md-auto p-3">
+                        <div class="card" style="width: 18rem;">
+                            <img src="/media/tomBgteam-2.jpg" class="card-img-top pt-4 px-5 rounded-circle" alt="...">
+                            <div class="card-body">
+                            <h5 class="card-title">Student 1</h5>
+                            <p class="card-text">Progress</p>
+                            <div class="progressBar"></div>
+                            <a href="#" class="btn btn-primary">View</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-auto p-3">
+                        <div class="card" style="width: 18rem;">
+                            <img src="/media/tomBgteam-2.jpg" class="card-img-top pt-4 px-5 rounded-circle" alt="...">
+                            <div class="card-body">
+                            <h5 class="card-title">Student 2</h5>
+                            <p class="card-text">Progress</p>
+                            <div class="progressBar"></div>
+                            <a href="#" class="btn btn-primary">View</a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div><!--End My Students-->
+                
+                <div class="row isTeacher dash" style="display: none;" id="dashMedia"><!--Start Media-->
+                    <div class="col-md-4">
+                        <div class="card" style="width: 18rem;">
+                            <img src="/media/tomlesson1Img1.png" class="card-img-top" alt="...">
+                            <div class="card-body">
+                            <h5 class="card-title">Computer Basics</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            <a href="#" class="btn btn-primary">View</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card" style="width: 18rem;">
+                            <img src="/media/tomlesson1Img1.png" class="card-img-top" alt="...">
+                            <div class="card-body">
+                            <h5 class="card-title">Photoshop</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            <a href="#" class="btn btn-primary">View</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card" style="width: 18rem;">
+                            <img src="/media/tomlesson1Img1.png" class="card-img-top" alt="...">
+                            <div class="card-body">
+                            <h5 class="card-title">Graphic Design</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            <a href="#" class="btn btn-primary">View</a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div><!--End Media-->
+                
+                <div class="row isStudent dash" style="display: none;" id="dashAssignment"><!--Start Assignment-->
+                    <div class="col-md-4">
+                        <div class="card" style="width: 18rem;">
+                            <img src="/media/tomlesson1Img1.png" class="card-img-top" alt="...">
+                            <div class="card-body">
+                            <h5 class="card-title">Computer Basics</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            <a href="#" class="btn btn-primary">View</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card" style="width: 18rem;">
+                            <img src="/media/tomlesson1Img1.png" class="card-img-top" alt="...">
+                            <div class="card-body">
+                            <h5 class="card-title">Photoshop</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            <a href="#" class="btn btn-primary">View</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card" style="width: 18rem;">
+                            <img src="/media/tomlesson1Img1.png" class="card-img-top" alt="...">
+                            <div class="card-body">
+                            <h5 class="card-title">Graphic Design</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            <a href="#" class="btn btn-primary">View</a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div><!--End Assignment-->
+
+                
+                <div class="row isStudent dash" style="display: none;" id="dashQuiz"><!--Start Quiz-->
+                    <div class="col-md-4">
+                        <div class="card" style="width: 18rem;">
+                            <img src="/media/tomlesson1Img1.png" class="card-img-top" alt="...">
+                            <div class="card-body">
+                            <h5 class="card-title">Computer Basics</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            <a href="#" class="btn btn-primary">View</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card" style="width: 18rem;">
+                            <img src="/media/tomlesson1Img1.png" class="card-img-top" alt="...">
+                            <div class="card-body">
+                            <h5 class="card-title">Photoshop</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            <a href="#" class="btn btn-primary">View</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card" style="width: 18rem;">
+                            <img src="/media/tomlesson1Img1.png" class="card-img-top" alt="...">
+                            <div class="card-body">
+                            <h5 class="card-title">Graphic Design</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            <a href="#" class="btn btn-primary">View</a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div><!--End Quiz-->
+            
+                <div class="row isTeacher dash" style="display: none;" id="dashEvaluation"><!--Start Evaluation-->
+                    <div class="col-md-4">
+                        <div class="card" style="width: 18rem;">
+                            <img src="/media/tomlesson1Img1.png" class="card-img-top" alt="...">
+                            <div class="card-body">
+                            <h5 class="card-title">Computer Basics</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            <a href="#" class="btn btn-primary">View</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card" style="width: 18rem;">
+                            <img src="/media/tomlesson1Img1.png" class="card-img-top" alt="...">
+                            <div class="card-body">
+                            <h5 class="card-title">Photoshop</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            <a href="#" class="btn btn-primary">View</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card" style="width: 18rem;">
+                            <img src="/media/tomlesson1Img1.png" class="card-img-top" alt="...">
+                            <div class="card-body">
+                            <h5 class="card-title">Graphic Design</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            <a href="#" class="btn btn-primary">View</a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div><!--End Evaluation-->
+                
+                <div class="row isTeacher isStudent dash" style="display:none;" id="dashSchedule"><!--Start Schedule-->
+                    <div class="col-md-4">
+                        <div class="card" style="width: 18rem;">
+                            <img src="/media/tomlesson1Img1.png" class="card-img-top" alt="...">
+                            <div class="card-body">
+                            <h5 class="card-title">Computer Basics</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            <a href="#" class="btn btn-primary">View</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card" style="width: 18rem;">
+                            <img src="/media/tomlesson1Img1.png" class="card-img-top" alt="...">
+                            <div class="card-body">
+                            <h5 class="card-title">Photoshop</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            <a href="#" class="btn btn-primary">View</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card" style="width: 18rem;">
+                            <img src="/media/tomlesson1Img1.png" class="card-img-top" alt="...">
+                            <div class="card-body">
+                            <h5 class="card-title">Graphic Design</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            <a href="#" class="btn btn-primary">View</a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div><!--End Schedule-->
+                
+                <div class="row isTeacher isStudent dash" style="display:none;" id="dashInbox"><!--Start Inbox-->
+                    <div class="col-md-12">
+                        <div class="row me-5 border-top border-bottom">
+                            <div class="col-sm-2"><b>From</b></div>
+                            <div class="col-sm-2"><b>Course</b></div>
+                            <div class="col-sm-5"><b>Message</b></div>
+                            <div class="col-sm-3 text-center"><b>Actions</b></div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-md-12">
+                        <div class="row me-5 border-bottom align-items-center">
+                            <div class="col-sm-2">Student 1</div>
+                            <div class="col-sm-2">Computer Basics</div>
+                            <div class="col-sm-5">Hi teacher! Where can I find the assignment due tomorrow?</div>
+                            <div class="col-sm-3 text-center">
+                                <a type="button" href="#" class="border-end p-2">View</a>
+                                <a type="button" href='#' class="border-end p-2">Reply</a>
+                                <a type="button" href='#' class="p-2">Del</a>
+                            </div>
+                        </div>
+
+                        <div class="row me-5 border-bottom align-items-center">
+                            <div class="col-sm-2">Student 3</div>
+                            <div class="col-sm-2">Computer Basics</div>
+                            <div class="col-sm-5">Hi teacher! Will we have an exam today?</div>
+                            <div class="col-sm-3 text-center">
+                                <a type="button" href="#" class="border-end p-2">View</a>
+                                <a type="button" href='#' class="border-end p-2">Reply</a>
+                                <a type="button" href='#' class="p-2">Del</a>
+                            </div>
+                        </div>
+
+                        <div class="row me-5 border-bottom align-items-center">
+                            <div class="col-sm-2">Student 2</div>
+                            <div class="col-sm-2">Photoshop</div>
+                            <div class="col-sm-5">When is the deadline for our next project?</div>
+                            <div class="col-sm-3 text-center">
+                                <a type="button" href="#" class="border-end p-2">View</a>
+                                <a type="button" href='#' class="border-end p-2">Reply</a>
+                                <a type="button" href='#' class="p-2">Del</a>
+                            </div>
+                        </div>
+
+                        <div class="row me-5 border-bottom align-items-center">
+                            <div class="col-sm-2">Student 1</div>
+                            <div class="col-sm-2">Photoshop</div>
+                            <div class="col-sm-5">Can you critic on my output so far, please?</div>
+                            <div class="col-sm-3 text-center">
+                                <a type="button" href="#" class="border-end p-2">View</a>
+                                <a type="button" href='#' class="border-end p-2">Reply</a>
+                                <a type="button" href='#' class="p-2">Del</a>
+                            </div>
+                        </div>
+
+                    </div>
+                </div><!--End Inbox-->
+                
+                <div class="row isTeacher isStudent dash" style="display:none;" id="dashProfile"><!--Start Profile-->
+
+                    <div class="row justify-content-center">
+                        <div class="col-12 col-lg-10 col-xl-8 mx-auto">
+                            <div class="my-4">
+                                <form>
+                                    <div class="row mt-5 align-items-center">
+                                        <div class="col-md-3 text-center mb-5">
+                                            <div class="avatar avatar-xl">
+                                                <img src="/media/tomBgteam-4.jpg" alt="..." class="rounded-circle img-fluid" />
+                                            </div>
+                                        </div>
+                                        <div class="col">
+                                            <div class="row align-items-center">
+                                                <div class="col-md-7">
+                                                    <h4 class="mb-1">Penduko, Mario</h4>
+                                                    <p class="small mb-3"><span class="badge badge-dark">Manila, PH</span></p>
+                                                </div>
+                                            </div>
+                                            <div class="row mb-4">
+                                                <div class="col-md-7">
+                                                    <p class="text-muted">
+                                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris blandit nisl ullamcorper, rutrum metus in, congue lectus. In hac habitasse platea dictumst. Cras urna quam, malesuada vitae risus at,
+                                                        pretium blandit sapien.
+                                                    </p>
+                                                </div>
+                                                <div class="col">
+                                                    <p class="small mb-0 text-muted">School Company Ltd.</p>
+                                                    <p class="small mb-0 text-muted">P.O. Box 464, 5975 Roxas Avenue</p>
+                                                    <p class="small mb-0 text-muted">(537) 315-1481</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <hr class="my-4" />
+                                    <div class="form-row">
+                                        <div class="form-group col-md-6">
+                                            <label for="firstname">Mario</label>
+                                            <input type="text" id="firstname" class="form-control" placeholder="Mario" />
+                                        </div>
+                                        <div class="form-group col-md-6">
+                                            <label for="lastname">Penduko</label>
+                                            <input type="text" id="lastname" class="form-control" placeholder="Penduko" />
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="inputEmail4">Email</label>
+                                        <input type="email" class="form-control" id="inputEmail4" placeholder="mario@penduko.me" />
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="inputAddress5">Address</label>
+                                        <input type="text" class="form-control" id="inputAddress5" placeholder="P.O. Box 464, 5975 Roxas Avenue" />
+                                    </div>
+                                    <div class="form-row">
+                                        <div class="form-group col-md-6">
+                                            <label for="inputCompany5">Company/School</label>
+                                            <input type="text" class="form-control" id="inputCompany5" placeholder="School Company Ltd" />
+                                        </div>
+                                        <div class="form-group col-md-4">
+                                            <label for="inputState5">Region</label>
+                                            <select id="inputState5" class="form-control">
+                                                <option selected="">Choose...</option>
+                                                <option>Region I</option>
+                                                <option>Region II</option>
+                                                <option>Region III</option>
+                                                <option>Region IV</option>
+                                                <option>Region V</option>
+                                                <option>Region VI</option>
+                                                <option>Region VII</option>
+                                                <option>Region VIII</option>
+                                                <option>Region IX</option>
+                                                <option>Region X</option>
+                                                <option>Region XI</option>
+                                                <option>Region XII</option>
+                                            </select>
+                                        </div>
+                                        <div class="form-group col-md-2">
+                                            <label for="inputZip5">Zip</label>
+                                            <input type="text" class="form-control" id="inputZip5" placeholder="98232" />
+                                        </div>
+                                    </div>
+                                    <hr class="my-4" />
+                                    <div class="row mb-4">
+                                        <div class="col-md-6">
+                                            <div class="form-group">
+                                                <label for="inputPassword4">Old Password</label>
+                                                <input type="password" class="form-control" id="inputPassword5" />
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="inputPassword5">New Password</label>
+                                                <input type="password" class="form-control" id="inputPassword5" />
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="inputPassword6">Confirm Password</label>
+                                                <input type="password" class="form-control" id="inputPassword6" />
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <p class="mb-2">Password requirements</p>
+                                            <p class="small text-muted mb-2">To create a new password, you have to meet all of the following requirements:</p>
+                                            <ul class="small text-muted pl-4 mb-0">
+                                                <li>Minimum 8 character</li>
+                                                <li>At least one special character</li>
+                                                <li>At least one number</li>
+                                                <li>Can’t be the same as a previous password</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <button type="submit" class="btn btn-primary">Save Change</button>
+                                </form>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div><!--End Profile-->
+
+            </div>
+
+        </div>
+
+    </div>
+    
+    </div>
+
+
+
+
+
+    
+<!--External JS-->
+<script src="/js/melTemplates.js"></script>
+<script src="/js/melDashboard.js"></script>
+<script src="/js/permissions.js"></script>
+
+
+<!--JS CDNs-->
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js" integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.min.js" integrity="sha384-ODmDIVzN+pFdexxHEHFBQH3/9/vQ9uori45z4JjnFsRydbmQbmL5t1tQ0culUzyK" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+
+<!--jQuery/other js links-->
+<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+
+</body>
+</html>

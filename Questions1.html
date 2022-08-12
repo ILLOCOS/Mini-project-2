@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="/media/tomBrandlogo.png" type="image/icon type">
+    <title>Introduction to Computer</title>
+    <link rel="stylesheet" href="CSS/tomquestions.css">
+
+      <!--CSS CDNs-->
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  
+      <!--Fonts/Icons/Misc Web Links-->
+      <!--<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto|Varela+Round|Raleway">-->
+      <!--<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">-->
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  
+      <!--External CSS-->
+      <link rel="stylesheet" href="/css/tomIndex.css">
+      <link rel="stylesheet" href="/css/tomquestions.css">
+</head>
+<body>
+
+    <div id="headerLoc"></div><!--Marker for Header Section-->
+
+    <div id="sideBarLoc"></div><!--Marker for Sidebar-->
+
+    <br>
+    <div class="content container d-flex justify-content-center">
+        <div onload="myFunction()">
+            <div class="quiz-container" id="quiz">
+              <div class="quiz-header"> 
+                <h1>Quiz 1 </h1>
+                <h2 id="question">Question Text</h2>
+        
+                <ul>
+                  <li>
+                    <input type="radio" name="answer" id="a" class="answer" />
+                    <label for="a" id="a_text">Answer</label>
+                  </li>
+        
+                  <li>
+                    <input type="radio" name="answer" id="b" class="answer" />
+                    <label for="b" id="b_text">Answer</label>
+                  </li>
+        
+                  <li>
+                    <input type="radio" name="answer" id="c" class="answer" />
+                    <label for="c" id="c_text">Answer</label>
+                  </li>
+        
+                  <li>
+                    <input type="radio" name="answer" id="d" class="answer" />
+                    <label for="d" id="d_text">Answer</label>
+                  </li>
+                </ul>
+              </div>
+        
+              <button id="submit">Submit</button>
+            </div>
+        
+            <script src="js/tomQuestions1.js"></script>
+        </div>
+                
+    </div>
+
+    
+
+     <br><br>
+
+<div id="footerLoc"></div><!--Marker for Footer-->
+<div id="modalLoc"></div> <!--Marker for Modals-->
+
+<!--External JS-->
+<script src="js/melTemplates.js"></script>
+
+
+    
+<!--JS CDNs-->
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js" integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.min.js" integrity="sha384-ODmDIVzN+pFdexxHEHFBQH3/9/vQ9uori45z4JjnFsRydbmQbmL5t1tQ0culUzyK" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+
+<!--jQuery/other js links-->
+<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+
+<!--Questions script-->
+<script src="js/tomQuestions1.js"></script>
+</body>
+
+
+</html>
