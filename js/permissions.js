@@ -29,7 +29,7 @@ loginBtn.addEventListener('click', login);
 logoutBtn.addEventListener('click', logout);
 logoutBtnMain.addEventListener('click', logout);
 
-const dashBtnMain = document.querySelector('#dashBtnMain')
+const dashboardBtnMain = document.querySelector('#dashBtnMain')//Dashboard link in navbar
 
 //Hide Login and SignUp button once logged in
 const userStatus = window.localStorage.getItem('isIn');
@@ -37,6 +37,6 @@ const userStatus = window.localStorage.getItem('isIn');
 if (userStatus == 'true') {
     loginBtnMainContainer.style.display = 'none';
     logoutBtnMainContainer.style.display = '';
-    dashBtnMain.style.display = '';
+    dashboardBtnMain.style.display = '';
 };
 
