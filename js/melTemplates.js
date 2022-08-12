@@ -17,9 +17,12 @@ const insertTemplates = () => {
             <span>email to:</span>
             <a href="mailto: helpdesk@braintech.tk" style="color:#def3f6;">helpdesk@braintech.tk</a>
         </div>
-        <div class="col-md-3 px-4 py-1 text-end">
-            <button type="button" class="btn btn-outline-light me-2" style="font-size: 0.7rem;" data-bs-toggle="modal" data-bs-target="#modalSignIn">Sign-In</button>
-            <button type="button" class="btn btn-primary me-2" style="font-size: 0.7rem;" data-bs-toggle="modal" data-bs-target="#modalSignUp">Sign-Up</button>
+        <div class="col-md-3 px-4 py-1 text-end" style="display:block;" id="loginBtnMainContainer">
+            <button type="button" class="btn btn-outline-light me-2" style="font-size: 0.7rem;" data-bs-toggle="modal" data-bs-target="#modalLogin" id="loginBtnMain">Login</button>
+            <button type="button" class="btn btn-primary me-2" style="font-size: 0.7rem;" data-bs-toggle="modal" data-bs-target="#modalSignUp" id="signUpBtnMain">Sign-Up</button>
+        </div>
+        <div class="col-md-3 px-4 py-1 text-end" style="display:none;" id="logoutBtnMainContainer">
+          <button type="button" class="btn btn-outline-light me-2" style="font-size: 0.7rem;" id="logoutBtnMain">Logout</button>
         </div>
         </div>
     </div>
@@ -430,15 +433,15 @@ const insertTemplates = () => {
             Sign up with Google
           </button>
           <hr>
-          <p class="text-center">Already have an account? <a href=#modalSignIn data-bs-toggle="modal">Sign-in</a></p>
+          <p class="text-center">Already have an account? <a href=#modalLogin data-bs-toggle="modal">Sign-in</a></p>
         </form>
       </div>
     </div>
   </div>
 </div>
 
-<!--SignIn-->
-<div class="modal fade" tabindex="-1" role="dialog" id="modalSignIn">
+<!--Login-->
+<div class="modal fade" tabindex="-1" role="dialog" id="modalLogin">
   <div class="modal-dialog">
     <div class="modal-content rounded-4 shadow">
       <div class="modal-header pt-5 px-5 pb-0 border-bottom-0">
@@ -452,14 +455,14 @@ const insertTemplates = () => {
       <div class="modal-body p-5 pt-0">
         <form class="">
           <div class="form-floating mb-3">
-            <input type="email" class="form-control rounded-3" id="signInEmailInput" placeholder="name@example.com">
-            <label for="signInEmailInput">Email address</label>
+            <input type="email" class="form-control rounded-3" id="loginEmailInput" placeholder="name@example.com" required="@">
+            <label for="loginEmailInput">Email address</label>
           </div>
           <div class="form-floating mb-3">
-            <input type="password" class="form-control rounded-3" id="signInPassword" placeholder="Password">
-            <label for="signInPassword">Password</label>
+            <input type="password" class="form-control rounded-3" id="loginPassword" placeholder="Password" required>
+            <label for="loginPassword">Password</label>
           </div>
-          <button class="w-100 mb-2 btn btn-lg rounded-3 btn-primary" type="submit">Sign In</button>
+          <button class="w-100 mb-2 btn btn-lg rounded-3 btn-primary" type="submit" id="loginBtn">Sign In</button>
           <hr class="my-4">
           <p class="text-center">New to BrainTech? <a href=#modalSignUp data-bs-toggle="modal">Create an Account</a></p>
         </form>
@@ -478,7 +481,9 @@ const insertTemplates = () => {
     insertFooter.insertAdjacentHTML("beforeend", footer);
 };
 
+//Insert Template on page load
 insertTemplates();
+
 
 const showSidebar = () => {
   const sidebarList = document.getElementById('offcanvasScrolling').classList;
