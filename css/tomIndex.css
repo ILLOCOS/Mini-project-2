@@ -218,3 +218,7 @@ body{
 	width: 1.25rem;
 }
 
+.fs-10 {
+	font-size: calc(0.05rem + 1vw)
+};
+
