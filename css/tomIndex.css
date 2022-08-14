@@ -217,4 +217,7 @@ body{
 .icons {
 	width: 1.25rem;
 }
-
+.courseHover{
+	background-color: rgba(6,66,115, .7);
+	border-radius: 30px;
+}
