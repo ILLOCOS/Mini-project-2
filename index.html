@@ -16,11 +16,9 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 
     <!--External CSS-->
-    <link rel="stylesheet" href="/CSS/tomCourse.css">
+    <link rel="stylesheet" href="/css/tomCourse.css">
     <link rel="stylesheet" href="/css/tomIndex.css">
     <link rel="stylesheet" href="/css/daxTestimonials.css">
-
-
 
 
 </head>
@@ -48,8 +46,10 @@
 
     <!--Nav bar-->
     <nav class="navbar navbar-expand-lg navbar-light sticky-top">
-        <img src="/media/tomBrandlogo.png" alt="logo" height="50px">
-        <a class="navbar-brand mx-1 px-0" href="#"><strong>Brain</strong><b>Tech</b></a>  		
+        <a href="index.html">
+          <img src="/media/tomBrandlogo.png" alt="logo" height="50px">
+        </a>
+        <a class="navbar-brand mx-1 px-0" href="index.html"><strong>Brain</strong><b>Tech</b></a>  		
         <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
             <span class="navbar-toggler-icon"></span>
         </button>
@@ -310,8 +310,8 @@
                     <div class="pb-5 mt-5 ms-7">
                         <p class="pb-3"><b>Enroll now!!</b> <br> and get up to <b>20%</b> Discount</p>
                      
-                        <button type="button" class="btn btn-primary">Contact Us</button>
-                        <button type="button" class="btn btn-primary">Enroll Now</button> 
+                        <button type="button" class="btn btn-primary"><a class='text-decoration-none text-light' href='Contact.html'>Contact Us</button></a>
+                        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalSignUp">Enroll Now</button> 
                     </div>
                 </div>
                 <div class="col-md-6">
@@ -407,8 +407,8 @@
       <h1 class="text-center pb-5 rfs">Courses Offered</h1>
     <div class="row">
 
-      <div class="containerImage col-md-3 d-flex justify-content-center p-2 "">
-        <img src="/media/tomCourseImg.svg" alt="Avatar" class="image-fluid p-3">
+      <div class="containerImage col-md-3 d-flex justify-content-center p-2 ">
+        <img src="/media/tomCourseImg.svg" alt="Avatar" class="image p-3">
         <div class="overlay overlayTop" >
             <div class="text">
               Learn what a computer is and how it functions.</div>
@@ -527,7 +527,7 @@
     </div>
     </div>
 
-    <br><br><br>
+    <br id="ourTeachers"><br><br>
     <!--My team -->
     <div class="container p-5">
       <h1 class="text-center rfs">Meet Our Teachers</h1><br>
@@ -679,16 +679,16 @@
                   Page
                 </h6>
                 <p>
-                  <a href="#" class="text-reset">Home</a>
+                  <a href="index.html" class="text-reset">Home</a>
                 </p>
                 <p>
-                  <a href="#" class="text-reset">About</a>
+                  <a href="AboutUs.html" class="text-reset">About</a>
                 </p>
                 <p>
-                  <a href="#" class="text-reset">Contact</a>
+                  <a href="Contact.html" class="text-reset">Contact</a>
                 </p>
                 <p>
-                  <a href="#" class="text-reset">News</a>
+                  <a href="index.html#ourTeachers" class="text-reset">Our Teachers</a>
                 </p>
               </div>
       
@@ -699,7 +699,7 @@
                   Courses
                 </h6>
                 <p>
-                  <a href="#" class="text-reset">Computer Basics</a>
+                  <a href="ComputerBasics.html" class="text-reset">Computer Basics</a>
                 </p>
                 <p>
                   <a href="#" class="text-reset">Photoshop</a>
@@ -773,15 +773,14 @@
           <hr class="my-4">
           <h2 class="fs-5 fw-bold mb-3">Or use a third-party</h2>
           <button class="w-100 py-2 mb-2 btn btn-outline-primary rounded-3" type="submit">
-          <a href="#" class="me-4 text-reset pt-2"><i class="fa fa-facebook"></i></a>
-            Sign up with Facebook
-          </button>
+            <a href="#" class="me-4 text-reset"><img src="/media/facebook.png" class="icons"></a>Sign up with Facebook
+          </button> 
           <button class="w-100 py-2 mb-2 btn btn-outline-primary rounded-3" type="submit">
-              <a href="#" class="me-4 text-reset pt-2"><i class="fa fa-github"></i></a>
+            <a href="#" class="me-4 text-reset"><img src="/media/github.png" class="icons"></a>
             Sign up with GitHub
           </button>
           <button class="w-100 py-2 mb-2 btn btn-outline-primary rounded-3" type="submit">
-              <a href="#" class="me-4 text-reset pt-2"><i class="fa fa-google-plus"></i></a>
+            <a href="#" class="me-4 text-reset"><img src="/media/google.png" class="icons"></a>
             Sign up with Google
           </button>
           <hr>
@@ -798,7 +797,7 @@
     <div class="modal-content rounded-4 shadow">
       <div class="modal-header pt-5 px-5 pb-0 border-bottom-0">
         <div>
-          <h2 class="fw-bold mb-2">Sign-In</h2>
+          <h2 class="fw-bold mb-2">Login</h2>
           <h5>Continue learning today!</h5>
         </div>
         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
@@ -839,9 +838,10 @@
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
 
 <!-- Tom latest link -->
-<!-- <link
+<link
 href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
-rel="stylesheet"/>-->
+rel="stylesheet"
+/>
 <!-- MDB-->
 <!-- <link
 href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/4.4.0/mdb.min.css"
