@@ -24,66 +24,58 @@
 
     <!--Content-->
     <div class="container-fluid w-100 p-3">
-        <div class="row align-items-center p-2 dashbar"><!--Start of Profile Header-->
-            <div class="col-md-1 p-2 d-inline-flex justify-content-center">
-                <img src="/media/tomBgteam-1.jpg" class="img-fluid rounded-circle">
-            </div>
-            <div class="col-md-11 pt-2 mt-2">
-                <h4 class="userName rfs-2">Camille Padrui</h4>
-                <p class="role mb-0">BrainTech Instructor</p>
-                <p class="role mb-0"><b>ID : </b> 2020 - 00101</p>
-            </div>
-        </div><!--End of Profile Header-->
+        <div class="row position-relative">
+            <div class="col-md-2 px-3 py-0"><!--Start of Sidebar--> 
 
-        <div class="row">
-            <div class="col-md-2 p-0"><!--Start of Sidebar-->  
-                <div class="flex-shrink-0 p-3 bg-white">
-                    <ul class="list-unstyled ps-0">
-                      <li class="mb-1">
-                        <button class="btn btn-toggle d-inline-flex align-items-center rounded border-0 collapsed px-1 ms-1 py-2" data-bs-toggle="collapse" data-bs-target="#home-collapse" aria-expanded="false">
-                          Dashboard
-                        </button>
-                        <div class="collapse" id="home-collapse">
-                          <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
-                            <li><a href="#" class="link-dark d-inline-flex text-decoration-none rounded" id='dashCourseBtn'>Courses</a></li>
-                            <li class="isTeacher"><a href="#" class="link-dark d-inline-flex text-decoration-none rounded" id="dashMyStudentsBtn">My Students</a></li>
-                            <li><a href="#" class="link-dark d-inline-flex text-decoration-none rounded" id="dashMediaBtn">Media</a></li>
-                            <li><a href="#" class="link-dark d-inline-flex text-decoration-none rounded" id="dashAssignmentBtn">Assignment</a></li>
-                            <li><a href="#" class="link-dark d-inline-flex text-decoration-none rounded" id="dashEvaluationBtn">Evaluation</a></li>
-                          </ul>
-                        </div>
-                      </li>
-                      <li class="mb-1">
-                        <button class="btn btn2 btn-toggle2 d-inline-flex align-items-center rounded border-0 collapsed ms-1 ps-4 py-2" data-bs-toggle="collapse" data-bs-target="#dashboard-collapse" aria-expanded="false" id="dashScheduleBtn">
-                        Schedule
-                        </button>
-                      </li>
-                      <li class="mb-1">
-                        <button class="btn btn2 btn-toggle2 d-inline-flex align-items-center rounded border-0 collapsed ms-1 ps-4 py-2" data-bs-toggle="collapse" data-bs-target="#dashboard-collapse" aria-expanded="false" id="dashInboxBtn">
-                        Inbox
-                        </button>
-                      </li>
-                      
-                      <li class="border-top my-3"></li>
-                      <li class="mb-1">
-                        <button class="btn btn-toggle d-inline-flex align-items-center rounded border-0 collapsed px-1 ms-1 py-2" data-bs-toggle="collapse" data-bs-target="#account-collapse" aria-expanded="false">
-                          Account
-                        </button>
-                        <div class="collapse" id="account-collapse" style>
-                          <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
-                            <li><a href="#" class="link-dark d-inline-flex text-decoration-none rounded" id="dashProfileBtn">Profile</a></li>
-                            <li><a href="#" class="link-dark d-inline-flex text-decoration-none rounded" id="dashSettingsBtn">Settings</a></li>
-                            <li><a href="#" class="link-dark d-inline-flex text-decoration-none rounded">Sign out</a></li>
-                          </ul>
-                        </div>
-                      </li>
-                    </ul>
-                  </div>
+                <div class="row align-items-center p-2 dashbar"><!--Start of Profile Header-->
+                    <div class="col-md-4 p-0 d-inline-flex justify-content-center">
+                        <img src="/media/tomBgteam-4.jpg" class="img-fluid rounded-circle">
+                    </div>
+                    <div class="col-md-8 pt-2 mt-2 pe-0">
+                        <p class="userName fs-6"><strong>Mario Penduko</strong></h6>
+                        <p class="role mb-0">ID No: T-0005</p>
+                    </div>
+                </div><!--End of Profile Header-->
+
+                <div class="row">
+                    <div class="flex-shrink-0 p-3 bg-white">
+                        <ul class="list-unstyled ps-0">
+                        <li class="mb-1">
+                            <button class="btn btn-toggle d-inline-flex align-items-center rounded border-0 collapsed px-1 ms-1 py-2" data-bs-toggle="collapse" data-bs-target="#home-collapse" aria-expanded="false">
+                            Dashboard
+                            </button>
+                            <div class="collapse" id="home-collapse">
+                            <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+                                <li><a href="#" class="link-dark d-inline-flex text-decoration-none rounded" id='dashCourseBtn'>Overview</a></li>
+                                <li class="isTeacher"><a href="#" class="link-dark d-inline-flex text-decoration-none rounded" id="dashMyStudentsBtn">My Students</a></li>
+                                <li style="display: none;"><a href="#" class="link-dark d-inline-flex text-decoration-none rounded" id="dashAssignmentBtn">Assignment</a></li>
+                                <li style="display: none;"><a href="#" class="link-dark d-inline-flex text-decoration-none rounded" id="dashQuizBtn">Quizzes</a></li>
+                                <li style="display: none;"><a href="#" class="link-dark d-inline-flex text-decoration-none rounded" id="dashEvaluationBtn">Evaluation</a></li>
+                            </ul>
+                            </div>
+                        </li>
+                    
+                        
+                        <li class="border-top my-3"></li>
+                        <li class="mb-1">
+                            <button class="btn btn-toggle d-inline-flex align-items-center rounded border-0 collapsed px-1 ms-1 py-2" data-bs-toggle="collapse" data-bs-target="#account-collapse" aria-expanded="false">
+                            Account
+                            </button>
+                            <div class="collapse" id="account-collapse" style>
+                            <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+                                <li><a href="#" class="link-dark d-inline-flex text-decoration-none rounded" id="dashProfileBtn">Profile</a></li>
+                                <li><a href="#" class="link-dark d-inline-flex text-decoration-none rounded" id="logoutBtn">Logout</a></li>
+                            </ul>
+                            </div>
+                        </li>
+                        </ul>
+                    </div>
+                </div>
             </div><!--End of Sidebar-->
         
-            <div class="col-md-10 p-2" style="min-height: 75vh;"><!--Container for Dashboard Details-->
+            <div class="col-md-10 ps-5 pe-2" style="min-height: 75vh;"><!--Container for Dashboard Details-->
                 
-                <div id="dashCourse" class="row isTeacher isStudent dash" style="display:none;"><!--Start Course default display-->
+                <div id="dashCourse" class="row isTeacher isStudent dash" style="display:'';"><!--Start Overview default display-->
                     <div class="row "> 
                         <h1>Preparation</h1>
                     </div>
@@ -224,277 +216,393 @@
 
                 </div><!--End Course-->
                 
-                <div class="row isTeacher dash" style="display:'';" id="dashMyStudents"><!--Start My Students-->
-
-                    <div class="col-md-auto p-3">
-                        <div class="card" style="width: 18rem;">
-                            <img src="/media/tomBgteam-2.jpg" class="card-img-top pt-4 px-5 rounded-circle" alt="...">
-                            <div class="card-body">
-                            <h5 class="card-title">Student 1</h5>
-                            <p class="card-text">Progress</p>
-                            <div class="progressBar"></div>
-                            <a href="#" class="btn btn-primary">View</a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-md-auto p-3">
-                        <div class="card" style="width: 18rem;">
-                            <img src="/media/tomBgteam-2.jpg" class="card-img-top pt-4 px-5 rounded-circle" alt="...">
-                            <div class="card-body">
-                            <h5 class="card-title">Student 2</h5>
-                            <p class="card-text">Progress</p>
-                            <div class="progressBar"></div>
-                            <a href="#" class="btn btn-primary">View</a>
-                            </div>
-                        </div>
-                    </div>
+                <div class="row isTeacher dash" style="display:none;" id="dashMyStudents"><!--Start My Students-->
                  
-                 
+                    <div class="col-md-10 p-3"><!---Student Details Col-->
+                        <h3 class="text-center m-0">Student Details</h3>
 
-                </div><!--End My Students-->
                 
-                <div class="row isTeacher dash" style="display: none;" id="dashMedia"><!--Start Media-->
-                    <div class="col-md-4">
-                        <div class="card" style="width: 18rem;">
-                            <img src="/media/tomlesson1Img1.png" class="card-img-top" alt="...">
-                            <div class="card-body">
-                            <h5 class="card-title">Computer Basics</h5>
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                            <a href="#" class="btn btn-primary">View</a>
+                        <h5>Progress</h5>
+
+                        <div class="row d-flex align-items-center justify-content-start">
+
+                            <div class="col-md-3">
+                                <img src="/media/tomBgteam-2.jpg" class="rounded-circle" style="width: 8rem;">
+                            </div>
+
+                            <div class="col-md-9">
+                            <div>
+                                <p class="mb-0">Progress: 40%</p>
+                            </div>
+                            <div class="progress ps-0 pe-3 w-75 m-0">
+                                <div class="progress-bar bg-danger m-0" role="progressbar" style="width: 40%" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                            <br>
+                            <div>
+                                <p class="mb-0 fs-4">Student Name</p>
+                                <p class="mb-0">ID No: 001-001</p>
+                            </div>
+                            </div>
+
+                        </div>
+                        <br><br>
+                        <h5>Recent Activities</h5>
+                        
+                        <div class="row align-items-center justify-content-start">
+                            <div class="col-md-3">
+                                <img src="/media/tomChapter4Img12.png" class="img-fluid">
+                            </div>
+
+                            <div class="col-md-9">
+                                <p class="mb-0">Completed Lesson 4 of Basics of Computers</p>
+                                <br>
+                                <p>Got 80% rating for Lesson 4 Quiz</p>
                             </div>
                         </div>
-                    </div>
-                    <div class="col-md-4">
-                        <div class="card" style="width: 18rem;">
-                            <img src="/media/tomlesson1Img1.png" class="card-img-top" alt="...">
-                            <div class="card-body">
-                            <h5 class="card-title">Photoshop</h5>
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                            <a href="#" class="btn btn-primary">View</a>
+
+                        <br><br>
+                        <h5>Previous Evaluations</h5>
+                        
+                        <div class="row align-items-center justify-content-start">
+
+                            <div class="col-md-12">
+                                <table class="table table-hover">
+                                    <thead>
+                                        <tr>
+                                        <th>Date</th>
+                                        <th>Evaluation</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                        <td>08/10/2022</td>
+                                        <td>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet alias quod nesciunt culpa sapiente dolore qui possimus sit corrupti? Cumque, id eaque aut deserunt atque officia alias magnam laudantium commodi.</td>
+                                        </tr>
+                                        <tr>
+                                        <td>07/10/2022</td>
+                                        <td>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate, similique!</td>
+                                        </tr>
+                                    </tbody>
+                                    </table>
                             </div>
+
                         </div>
-                    </div>
-                    <div class="col-md-4">
-                        <div class="card" style="width: 18rem;">
-                            <img src="/media/tomlesson1Img1.png" class="card-img-top" alt="...">
-                            <div class="card-body">
-                            <h5 class="card-title">Graphic Design</h5>
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                            <a href="#" class="btn btn-primary">View</a>
-                            </div>
+                        <br><br>
+                        <div class="mb-3">
+                            <label for="exampleFormControlTextarea1" class="form-label">Add Evaluation</label>
+                            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
                         </div>
+                        <div>
+                        <button type="button" class="btn bg-primary p-1 text-light">Add Evaluation</button>
+                        </div>
+
+
+
+
+
+
                     </div>
 
-                </div><!--End Media-->
+                    <div class="col-md-2 border-start border-primary px-3"><!--Student List-->
+                        <h4 class="text-center m-0">My Students</h4>
+                        <div class="row flex-nowrap align-items-center justify-content-start my-2" style="background-color:#a7dafa;">
+                            <div class="col-3 p-1">
+                                <img src="/media/tomBgteam-2.jpg" class="rounded-circle p-0 img-fluid">
+                            </div>
+                            <div class="col-9 ps-3">
+                            <div class="progress ps-0 pe-3" style="height: 1vh; width: 7vw">
+                                <div class="progress-bar bg-danger" role="progressbar" style="width: 40%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                            <div>
+                                <p class="fs-10 mb-0">Student Name</p>
+                            </div>
+                            </div>
+                        </div>
+
+                        <div class="row flex-nowrap align-items-center justify-content-start my-2">
+                            <div class="col-3 p-1">
+                                <img src="/media/tomBgteam-2.jpg" class="rounded-circle p-0" style="width:2.5rem ;">
+                            </div>
+                            <div class="col-9 ps-3">
+                            <div class="progress ps-0 pe-3" style="height: 1vh; width: 7vw">
+                                <div class="progress-bar bg-warning" role="progressbar" style="width: 75%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                            <div>
+                                <p class="fs-10 mb-0">Student Name</p>
+                            </div>
+                            </div>
+                        </div>
+                        
+                        <div class="row flex-nowrap align-items-center justify-content-start my-2">
+                            <div class="col-3 p-1">
+                                <img src="/media/tomBgteam-2.jpg" class="rounded-circle p-0" style="width:2.5rem ;">
+                            </div>
+                            <div class="col-9 ps-3">
+                            <div class="progress ps-0 pe-3" style="height: 1vh; width: 7vw">
+                                <div class="progress-bar bg-success" role="progressbar" style="width: 90%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                            <div>
+                                <p class="fs-10 mb-0">Student Name</p>
+                            </div>
+                            </div>
+                        </div>
+
+                        <div class="row flex-nowrap align-items-center justify-content-start my-2">
+                            <div class="col-3 p-1">
+                                <img src="/media/tomBgteam-2.jpg" class="rounded-circle p-0" style="width:2.5rem ;">
+                            </div>
+                            <div class="col-9 ps-3">
+                            <div class="progress ps-0 pe-3" style="height: 1vh; width: 7vw">
+                                <div class="progress-bar bg-danger" role="progressbar" style="width: 20%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                            <div>
+                                <p class="fs-10 mb-0">Student Name</p>
+                            </div>
+                            </div>
+                        </div>
+
+
+
+
+                    </div>               
                 
+                </div><!--End of My Students-->
+                
+
                 <div class="row isStudent dash" style="display: none;" id="dashAssignment"><!--Start Assignment-->
                     <div class="col-md-4">
                         <div class="card" style="width: 18rem;">
-                            <img src="/media/tomlesson1Img1.png" class="card-img-top" alt="...">
+                            <img src="/media/tomChapter2Img5.jpg" class="card-img-top" alt="...">
                             <div class="card-body">
-                            <h5 class="card-title">Computer Basics</h5>
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                            <a href="#" class="btn btn-primary">View</a>
+                            <h5 class="card-title">Assignment 1</h5>
+                            <h5>History of Computers</h5>
+                            <p class="card-text">Research about the history of computers and how they have affected society.</p>
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-4">
-                        <div class="card" style="width: 18rem;">
-                            <img src="/media/tomlesson1Img1.png" class="card-img-top" alt="...">
-                            <div class="card-body">
-                            <h5 class="card-title">Photoshop</h5>
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                            <a href="#" class="btn btn-primary">View</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-4">
-                        <div class="card" style="width: 18rem;">
-                            <img src="/media/tomlesson1Img1.png" class="card-img-top" alt="...">
-                            <div class="card-body">
-                            <h5 class="card-title">Graphic Design</h5>
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                            <a href="#" class="btn btn-primary">View</a>
-                            </div>
-                        </div>
-                    </div>
+                   
 
                 </div><!--End Assignment-->
+
                 
-                <div class="row isTeacher dash" style="display: none;" id="dashEvaluation"><!--Start Evaluation-->
-                    <div class="col-md-4">
+                <div class="row isStudent dash" style="display: none;" id="dashQuiz"><!--Start Quiz-->
+                    <div class="col-md-auto">
                         <div class="card" style="width: 18rem;">
-                            <img src="/media/tomlesson1Img1.png" class="card-img-top" alt="...">
+                            <img src="/media/tomlesson1Img4.jpg" class="card-img-top" alt="...">
                             <div class="card-body">
                             <h5 class="card-title">Computer Basics</h5>
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                            <a href="#" class="btn btn-primary">View</a>
+                            <h5>Quiz 1</h5>
+                            <p class="card-text">Test out yourself with this Lesson 1 quiz.</p>
+                            <a href="/Questions1.html" class="btn btn-primary">Start Quiz</a>
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-4">
+                    <div class="col-md-auto">
                         <div class="card" style="width: 18rem;">
-                            <img src="/media/tomlesson1Img1.png" class="card-img-top" alt="...">
+                            <img src="/media/tomChapter2Img1.jpg" class="card-img-top" alt="...">
                             <div class="card-body">
-                            <h5 class="card-title">Photoshop</h5>
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                            <a href="#" class="btn btn-primary">View</a>
+                            <h5 class="card-title">Computer Basics</h5>
+                            <h5>Quiz 2</h5>
+                            <p class="card-text">Think you already know more about computers? Take Quiz 2!</p>
+                            <a href="Questions2.html" class="btn btn-primary">Start Quiz</a>
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-4">
-                        <div class="card" style="width: 18rem;">
-                            <img src="/media/tomlesson1Img1.png" class="card-img-top" alt="...">
-                            <div class="card-body">
-                            <h5 class="card-title">Graphic Design</h5>
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                            <a href="#" class="btn btn-primary">View</a>
+                   
+
+                </div><!--End Quiz-->
+            
+                <div class="row isTeacher dash" style="display: none;" id="dashEvaluation"><!--Start Evaluation-->
+                    <div class="col-md-12 p-3"><!---Student Details Col-->
+                        <h3 class="text-center m-0">Student Details</h3>
+                
+                        <h5>Progress</h5>
+
+                        <div class="row d-flex align-items-center justify-content-start">
+
+                            <div class="col-md-3">
+                                <img src="/media/tomBgteam-2.jpg" class="rounded-circle" style="width: 8rem;">
+                            </div>
+
+                            <div class="col-md-9">
+                            <div>
+                                <p class="mb-0">Progress: 40%</p>
+                            </div>
+                            <div class="progress ps-0 pe-3 w-75 m-0">
+                                <div class="progress-bar bg-danger m-0" role="progressbar" style="width: 40%" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                            <br>
+                            <div>
+                                <p class="mb-0 fs-4">Student Name</p>
+                                <p class="mb-0">ID No: 001-001</p>
+                            </div>
+                            </div>
+
+                        </div>
+                        <br><br>
+                        <h5>Recent Activities</h5>
+                        
+                        <div class="row align-items-center justify-content-start">
+                            <div class="col-md-3">
+                                <img src="/media/tomChapter4Img12.png" class="img-fluid">
+                            </div>
+
+                            <div class="col-md-9">
+                                <p class="mb-0">Completed Lesson 4 of Basics of Computers</p>
+                                <br>
+                                <p>Got 80% rating for Lesson 4 Quiz</p>
                             </div>
                         </div>
+
+                        <br><br>
+                        <h5>Previous Evaluations</h5>
+                        
+                        <div class="row align-items-center justify-content-start">
+
+                            <div class="col-md-12">
+                                <table class="table table-hover">
+                                    <thead>
+                                        <tr>
+                                        <th>Date</th>
+                                        <th>Evaluation</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                        <td>08/10/2022</td>
+                                        <td>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet alias quod nesciunt culpa sapiente dolore qui possimus sit corrupti? Cumque, id eaque aut deserunt atque officia alias magnam laudantium commodi.</td>
+                                        </tr>
+                                        <tr>
+                                        <td>07/10/2022</td>
+                                        <td>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate, similique!</td>
+                                        </tr>
+                                    </tbody>
+                                    </table>
+                            </div>
+
+                        </div>
+
                     </div>
+
 
                 </div><!--End Evaluation-->
-                
-                <div class="row isTeacher isStudent dash" style="display: none;" id="dashSchedule"><!--Start Schedule-->
-                    <div class="col-md-4">
-                        <div class="card" style="width: 18rem;">
-                            <img src="/media/tomlesson1Img1.png" class="card-img-top" alt="...">
-                            <div class="card-body">
-                            <h5 class="card-title">Computer Basics</h5>
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                            <a href="#" class="btn btn-primary">View</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-4">
-                        <div class="card" style="width: 18rem;">
-                            <img src="/media/tomlesson1Img1.png" class="card-img-top" alt="...">
-                            <div class="card-body">
-                            <h5 class="card-title">Photoshop</h5>
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                            <a href="#" class="btn btn-primary">View</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-4">
-                        <div class="card" style="width: 18rem;">
-                            <img src="/media/tomlesson1Img1.png" class="card-img-top" alt="...">
-                            <div class="card-body">
-                            <h5 class="card-title">Graphic Design</h5>
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                            <a href="#" class="btn btn-primary">View</a>
-                            </div>
-                        </div>
-                    </div>
+           
+                <div class="row isTeacher isStudent dash" style="display:none;" id="dashProfile"><!--Start Profile-->
 
-                </div><!--End Schedule-->
-                
-                <div class="row isTeacher isStudent dash" style="display: none;" id="dashInbox"><!--Start Inbox-->
-                    <div class="col-md-4">
-                        <div class="card" style="width: 18rem;">
-                            <img src="/media/tomlesson1Img1.png" class="card-img-top" alt="...">
-                            <div class="card-body">
-                            <h5 class="card-title">Computer Basics</h5>
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                            <a href="#" class="btn btn-primary">View</a>
+                    <div class="row justify-content-center">
+                        <div class="col-12 col-lg-10 col-xl-8 mx-auto">
+                            <div class="my-4">
+                                <form>
+                                    <div class="row mt-5 align-items-center">
+                                        <div class="col-md-3 text-center mb-5">
+                                            <div class="avatar avatar-xl">
+                                                <img src="/media/tomBgteam-4.jpg" alt="..." class="rounded-circle img-fluid" />
+                                            </div>
+                                        </div>
+                                        <div class="col">
+                                            <div class="row align-items-center">
+                                                <div class="col-md-7">
+                                                    <h4 class="mb-1">Penduko, Mario</h4>
+                                                    <p class="small mb-3"><span class="badge badge-dark">Manila, PH</span></p>
+                                                </div>
+                                            </div>
+                                            <div class="row mb-4">
+                                                <div class="col-md-7">
+                                                    <p class="text-muted">
+                                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris blandit nisl ullamcorper, rutrum metus in, congue lectus. In hac habitasse platea dictumst. Cras urna quam, malesuada vitae risus at,
+                                                        pretium blandit sapien.
+                                                    </p>
+                                                </div>
+                                                <div class="col">
+                                                    <p class="small mb-0 text-muted">School Company Ltd.</p>
+                                                    <p class="small mb-0 text-muted">P.O. Box 464, 5975 Roxas Avenue</p>
+                                                    <p class="small mb-0 text-muted">(537) 315-1481</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <hr class="my-4" />
+                                    <div class="form-row">
+                                        <div class="form-group col-md-6">
+                                            <label for="firstname">Mario</label>
+                                            <input type="text" id="firstname" class="form-control" placeholder="Mario" />
+                                        </div>
+                                        <div class="form-group col-md-6">
+                                            <label for="lastname">Penduko</label>
+                                            <input type="text" id="lastname" class="form-control" placeholder="Penduko" />
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="inputEmail4">Email</label>
+                                        <input type="email" class="form-control" id="inputEmail4" placeholder="mario@penduko.me" />
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="inputAddress5">Address</label>
+                                        <input type="text" class="form-control" id="inputAddress5" placeholder="P.O. Box 464, 5975 Roxas Avenue" />
+                                    </div>
+                                    <div class="form-row">
+                                        <div class="form-group col-md-6">
+                                            <label for="inputCompany5">Company/School</label>
+                                            <input type="text" class="form-control" id="inputCompany5" placeholder="School Company Ltd" />
+                                        </div>
+                                        <div class="form-group col-md-4">
+                                            <label for="inputState5">Region</label>
+                                            <select id="inputState5" class="form-control">
+                                                <option selected="">Choose...</option>
+                                                <option>Region I</option>
+                                                <option>Region II</option>
+                                                <option>Region III</option>
+                                                <option>Region IV</option>
+                                                <option>Region V</option>
+                                                <option>Region VI</option>
+                                                <option>Region VII</option>
+                                                <option>Region VIII</option>
+                                                <option>Region IX</option>
+                                                <option>Region X</option>
+                                                <option>Region XI</option>
+                                                <option>Region XII</option>
+                                            </select>
+                                        </div>
+                                        <div class="form-group col-md-2">
+                                            <label for="inputZip5">Zip</label>
+                                            <input type="text" class="form-control" id="inputZip5" placeholder="98232" />
+                                        </div>
+                                    </div>
+                                    <hr class="my-4" />
+                                    <div class="row mb-4">
+                                        <div class="col-md-6">
+                                            <div class="form-group">
+                                                <label for="inputPassword4">Old Password</label>
+                                                <input type="password" class="form-control" id="inputPassword5" />
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="inputPassword5">New Password</label>
+                                                <input type="password" class="form-control" id="inputPassword6" />
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="inputPassword6">Confirm Password</label>
+                                                <input type="password" class="form-control" id="inputPassword7" />
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <p class="mb-2">Password requirements</p>
+                                            <p class="small text-muted mb-2">To create a new password, you have to meet all of the following requirements:</p>
+                                            <ul class="small text-muted pl-4 mb-0">
+                                                <li>Minimum 8 character</li>
+                                                <li>At least one special character</li>
+                                                <li>At least one number</li>
+                                                <li>Can’t be the same as a previous password</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <button type="submit" class="btn btn-primary">Save Change</button>
+                                </form>
                             </div>
                         </div>
-                    </div>
-                    <div class="col-md-4">
-                        <div class="card" style="width: 18rem;">
-                            <img src="/media/tomlesson1Img1.png" class="card-img-top" alt="...">
-                            <div class="card-body">
-                            <h5 class="card-title">Photoshop</h5>
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                            <a href="#" class="btn btn-primary">View</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-4">
-                        <div class="card" style="width: 18rem;">
-                            <img src="/media/tomlesson1Img1.png" class="card-img-top" alt="...">
-                            <div class="card-body">
-                            <h5 class="card-title">Graphic Design</h5>
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                            <a href="#" class="btn btn-primary">View</a>
-                            </div>
-                        </div>
-                    </div>
 
-                </div><!--End Inbox-->
-                
-                <div class="row isTeacher isStudent dash" style="display: none;" id="dashProfile"><!--Start Profile-->
-                    <div class="col-md-4">
-                        <div class="card" style="width: 18rem;">
-                            <img src="/media/tomlesson1Img1.png" class="card-img-top" alt="...">
-                            <div class="card-body">
-                            <h5 class="card-title">Computer Basics</h5>
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                            <a href="#" class="btn btn-primary">View</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-4">
-                        <div class="card" style="width: 18rem;">
-                            <img src="/media/tomlesson1Img1.png" class="card-img-top" alt="...">
-                            <div class="card-body">
-                            <h5 class="card-title">Photoshop</h5>
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                            <a href="#" class="btn btn-primary">View</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-4">
-                        <div class="card" style="width: 18rem;">
-                            <img src="/media/tomlesson1Img1.png" class="card-img-top" alt="...">
-                            <div class="card-body">
-                            <h5 class="card-title">Graphic Design</h5>
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                            <a href="#" class="btn btn-primary">View</a>
-                            </div>
-                        </div>
                     </div>
 
                 </div><!--End Profile-->
-                
-                <div class="row isTeacher isStudent dash" style="display: none;" id="dashSettings"><!--Start Settings-->
-                    <div class="col-md-4">
-                        <div class="card" style="width: 18rem;">
-                            <img src="/media/tomlesson1Img1.png" class="card-img-top" alt="...">
-                            <div class="card-body">
-                            <h5 class="card-title">Computer Basics</h5>
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                            <a href="#" class="btn btn-primary">View</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-4">
-                        <div class="card" style="width: 18rem;">
-                            <img src="/media/tomlesson1Img1.png" class="card-img-top" alt="...">
-                            <div class="card-body">
-                            <h5 class="card-title">Photoshop</h5>
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                            <a href="#" class="btn btn-primary">View</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-4">
-                        <div class="card" style="width: 18rem;">
-                            <img src="/media/tomlesson1Img1.png" class="card-img-top" alt="...">
-                            <div class="card-body">
-                            <h5 class="card-title">Graphic Design</h5>
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                            <a href="#" class="btn btn-primary">View</a>
-                            </div>
-                        </div>
-                    </div>
-
-                </div><!--End Settings-->
-                
-
-              
-
 
             </div>
 
@@ -503,24 +611,11 @@
     </div>
     
 
-
-
-
-
-
-
-
-
-    </div>
-
-
-
-
-
     
 <!--External JS-->
 <script src="/js/melTemplates.js"></script>
 <script src="/js/melDashboard.js"></script>
+<script src="/js/permissions.js"></script>
 
 
 <!--JS CDNs-->

@@ -223,3 +223,7 @@ body{
 	background-color: rgba(6,66,115, .7);
 	border-radius: 30px;
 } */
+.fs-10 {
+	font-size: calc(0.8rem + 0.1vw)
+};
+
