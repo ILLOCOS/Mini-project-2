@@ -40,3 +40,23 @@ if (userStatus == 'true') {
     dashboardBtnMain.style.display = '';
 };
 
+
+const showDropdown = () => {
+    const navDropdown = document.querySelector('#navDropdown');
+    const navDropdownMenu = document.querySelector('#navDropdownMenu');
+  
+    navDropdown.classList.add('show');
+    navDropdownMenu.classList.add('show');
+    navDropdown.ariaExpanded = 'true';
+  };
+  
+  const hideDropdown = () => {
+    navDropdown.classList.remove('show');
+    navDropdownMenu.classList.remove('show');
+    navDropdown.ariaExpanded = 'false';
+  };
+  
+  navDropdown.addEventListener('mouseover', showDropdown);
+  navDropdown.addEventListener('mouseout', hideDropdown);
+  
+  
