@@ -29,8 +29,10 @@ const insertTemplates = () => {
 
     <!--Nav bar-->
     <nav class="navbar navbar-expand-lg navbar-light sticky-top">
-        <img src="/media/tomBrandlogo.png" alt="logo" height="50px">
-        <a class="navbar-brand mx-1 px-0" href="#"><strong>Brain</strong><b>Tech</b></a>  		
+        <a href="index.html">
+          <img src="/media/tomBrandlogo.png" alt="logo" height="50px">
+        </a>
+        <a class="navbar-brand mx-1 px-0" href="index.html"><strong>Brain</strong><b>Tech</b></a>  		
         <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
             <span class="navbar-toggler-icon"></span>
         </button>
@@ -312,7 +314,7 @@ const insertTemplates = () => {
               <div class="col-sm-3 col-lg-4 col-xl-3 mx-auto mb-4">
                 <!-- Content -->
                 <h6 class="text-uppercase fw-bold mb-4 ">
-                  <i class="fas fa-gem me-3"></i><img src="media/tomBrandlogo.png" alt="logo" height="75px">
+                  </i><img src="media/tomBrandlogo.png" alt="logo" height="75px">
                 </h6>
                 <p>
                 <b>BrainTech</b><br>
@@ -328,16 +330,16 @@ const insertTemplates = () => {
                   Page
                 </h6>
                 <p>
-                  <a href="#" class="text-reset">Home</a>
+                  <a href="index.html" class="text-reset">Home</a>
                 </p>
                 <p>
-                  <a href="#" class="text-reset">About</a>
+                  <a href="AboutUs.html" class="text-reset">About</a>
                 </p>
                 <p>
-                  <a href="#" class="text-reset">Contact</a>
+                  <a href="Contact.html" class="text-reset">Contact</a>
                 </p>
                 <p>
-                  <a href="#" class="text-reset">News</a>
+                  <a href="index.html#ourTeachers" class="text-reset">Our Teachers</a>
                 </p>
               </div>
       
@@ -348,7 +350,7 @@ const insertTemplates = () => {
                   Courses
                 </h6>
                 <p>
-                  <a href="#" class="text-reset">Computer Basics</a>
+                  <a href="ComputerBasics.html" class="text-reset">Computer Basics</a>
                 </p>
                 <p>
                   <a href="#" class="text-reset">Photoshop</a>
@@ -368,13 +370,13 @@ const insertTemplates = () => {
                 <h6 class="text-uppercase fw-bold mb-4">
                   Contact
                 </h6>
-                <p><i class="fa-phone-alt"></i> Pampanga, San Fernando 2010, Phil</p>
+                <p><i class="fas fa-home"></i> Pampanga, San Fernando 2010, Phil</p>
                 <p>
-                  <i class="fa-phone-alt"></i>
+                  <i class="fas fa-mail-bulk"></i>
                   BrainTech@e-Learning.com
                 </p>
-                <p><i class="fa-phone-alt"></i> + 01 654 345</p>
-                <p><i class="fa-phone-alt"></i> + 03 435 455</p>
+                <p><i class="fas fa-phone-alt"></i> + 01 654 345</p>
+                <p><i class="fas fa-phone-alt"></i> + 03 435 455</p>
               </div>
               <!-- Grid column -->
           </div>
@@ -422,15 +424,14 @@ const insertTemplates = () => {
           <hr class="my-4">
           <h2 class="fs-5 fw-bold mb-3">Or use a third-party</h2>
           <button class="w-100 py-2 mb-2 btn btn-outline-primary rounded-3" type="submit">
-          <a href="#" class="me-4 text-reset pt-2"><i class="fa fa-facebook"></i></a>
-            Sign up with Facebook
-          </button>
+            <a href="#" class="me-4 text-reset"><img src="/media/facebook.png" class="icons"></a>Sign up with Facebook
+          </button> 
           <button class="w-100 py-2 mb-2 btn btn-outline-primary rounded-3" type="submit">
-              <a href="#" class="me-4 text-reset pt-2"><i class="fa fa-github"></i></a>
+            <a href="#" class="me-4 text-reset"><img src="/media/github.png" class="icons"></a>
             Sign up with GitHub
           </button>
           <button class="w-100 py-2 mb-2 btn btn-outline-primary rounded-3" type="submit">
-              <a href="#" class="me-4 text-reset pt-2"><i class="fa fa-google-plus"></i></a>
+            <a href="#" class="me-4 text-reset"><img src="/media/google.png" class="icons"></a>
             Sign up with Google
           </button>
           <hr>
@@ -447,7 +448,7 @@ const insertTemplates = () => {
     <div class="modal-content rounded-4 shadow">
       <div class="modal-header pt-5 px-5 pb-0 border-bottom-0">
         <div>
-          <h2 class="fw-bold mb-2">Sign-In</h2>
+          <h2 class="fw-bold mb-2">Login</h2>
           <h5>Continue learning today!</h5>
         </div>
         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
