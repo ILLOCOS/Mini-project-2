@@ -50,7 +50,7 @@ const insertTemplates = () => {
                     </div>
                 </div>
                 <a href="dashboard.html" class="nav-item nav-link text-dark" style="display:none;" id="dashBtnMain">Dashboard</a>
-                <a href="#" class="nav-item nav-link text-dark">Contact</a>
+                <a href="Contact.html" class="nav-item nav-link text-dark">Contact</a>
             </div>
 
             <div class="navbar-nav ms-auto">
