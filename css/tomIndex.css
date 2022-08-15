@@ -1,7 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400&display=swap');
+*{
+	font-family: 'Poppins', sans-serif;
+}
 body{
 	background: white;
-	font-family: 'Poppins', sans-serif;
 }
 .form-inline {
 	display: inline-block;
@@ -217,7 +219,10 @@ body{
 .icons {
 	width: 1.25rem;
 }
-
+/* .courseHover{
+	background-color: rgba(6,66,115, .7);
+	border-radius: 30px;
+} */
 .fs-10 {
 	font-size: calc(0.8rem + 0.1vw)
 };
