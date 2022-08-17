@@ -755,17 +755,39 @@
       </div>
 
       <div class="modal-body p-5 pt-0">
-        <form class="">
+        <form class="" id="signUpBtn">
+          <div class="form-group">
+            <select id="signUpRole" class="form-control rounded-3"  style="height: 3.5rem;" required>
+                <option>Choose Role...</option>
+                <option value="Student">Student</option>
+                <option value="Instructor">Instructor</option>
+            </select>
+          </div>
+
+          <div class="row">
+          <div class="form-floating mb-3 col-sm-6">
+            <input type="text" class="form-control rounded-3" id="firstName" placeholder="Juan" required>
+            <label for="firstName" class="ps-4">First Name</label>
+          </div>
+          <div class="form-floating mb-3 col-sm-6">
+            <input type="text" class="form-control rounded-3" id="lastName" placeholder="Dela Cruz" required>
+            <label for="lastName" class="ps-4">Last Name</label>
+          </div>
+          </div>
+
           <div class="form-floating mb-3">
             <input type="email" class="form-control rounded-3" id="signUpEmailInput" placeholder="name@example.com">
+            <p id="emailCheck" class="text-danger"></p>
             <label for="signUpEmailInput">Email address</label>
           </div>
           <div class="form-floating mb-3">
-            <input type="password" class="form-control rounded-3" id="signUpPassword" placeholder="Password">
+            <input type="password" class="form-control rounded-3" id="signUpPassword" placeholder="Password" minlength="8">
+            <p id="passwordCheck" class="text-danger"></p>
             <label for="signUpPassword">Password</label>
           </div>
           <div class="form-floating mb-3">
-            <input type="password" class="form-control rounded-3" id="floatingConfirmPassword" placeholder="confirmPassword">
+            <input type="password" class="form-control rounded-3" id="confirmPassword" placeholder="confirmPassword" required>
+            <p id="confirmPasswordCheck" class="text-danger"></p>
             <label for="floatingConfirmPassword">Confirm Password</label>
           </div>
           <button class="w-100 mb-2 btn btn-lg rounded-3 btn-primary" type="submit">Sign up</button>
@@ -804,7 +826,7 @@
       </div>
 
       <div class="modal-body p-5 pt-0">
-        <form class="" action="/dashboard.html">
+        <form id="loginBtn" action="">
           <div class="form-floating mb-3">
             <input type="email" class="form-control rounded-3" id="loginEmailInput" placeholder="name@example.com" required="@">
             <label for="loginEmailInput">Email address</label>
@@ -813,7 +835,7 @@
             <input type="password" class="form-control rounded-3" id="loginPassword" placeholder="Password" required>
             <label for="loginPassword">Password</label>
           </div>
-          <button class="w-100 mb-2 btn btn-lg rounded-3 btn-primary" type="submit" id="loginBtn">Sign In</button>
+          <button class="w-100 mb-2 btn btn-lg rounded-3 btn-primary" type="submit">Login</button>
           <hr class="my-4">
           <p class="text-center">New to BrainTech? <a href=#modalSignUp data-bs-toggle="modal">Create an Account</a></p>
         </form>
