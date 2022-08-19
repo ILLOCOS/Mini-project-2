@@ -21,6 +21,12 @@
     .quote-input {
         height: 20vh;
     }
+    .correct{
+        color: green;
+    }
+    .incorrect{
+        color: red;
+    }
 
     </style>
 
@@ -40,7 +46,7 @@
         <div class="col-sm-12 pt-2">
             <div class="quote-display py-3 mx-5 px-5 fs-4" id="quoteDisplay"></div>
             <div>
-                <textarea id="quoteInput" class="quote-input w-75" autofocus></textarea>
+                <textarea id="quoteInput" class="quote-input w-75" autofocus placeholder="Type Here..."></textarea>
             </div>
             <button class="btn btn-success border border-3 border-light w-25" id="startBtn">Start</button>
             <button class="btn btn-danger border border-3 border-light w-25 d-none" id="stopBtn">Stop</button>
