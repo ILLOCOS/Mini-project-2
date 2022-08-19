@@ -94,7 +94,7 @@ function sendButton() {
 }
 
 function heartButton() {
-    buttonSendText("Heart clicked!")
+    buttonSendText("&#x1F493")
 }
 
 // Press enter to send a message
