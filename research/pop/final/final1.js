@@ -35,8 +35,22 @@ function getTime() {
 
 // Gets the first message
 function firstBotMessage() {
-    let firstMessage = "Greetings and good day, how can i help you today !"
-    document.getElementById("botStarterMessage").innerHTML = '<p class="botText"><span>' + firstMessage + '</span></p>';
+    let firstMessage = "Greetings and good day! How can I help you today?"
+    document.getElementById("botStarterMessage").innerHTML = 
+        `<p class="botText"><span>${firstMessage}</span></p>
+
+        <div>
+        <button id="q1Btn" onclick="getResponse(this.innerHTML)" class="btn btn-primary ms-3 my-1 p-1">What is BrainTech?</button>
+        </div>
+
+        <div>
+        <button id="q2Btn" class="btn btn-primary ms-3 my-1 p-1">What are the courses offered?</button>
+        </div>
+
+        <div>
+        <button id="q3Btn" class="btn btn-primary ms-3 my-1 p-1">How much?</button>
+        </div>
+        `;
 
     let time = getTime();
 
@@ -45,6 +59,25 @@ function firstBotMessage() {
 }
 
 firstBotMessage();
+
+
+
+
+// Questions on Buttons
+//Record on local storage default questions
+// Update message contents on local storage
+
+let firstMessage = 'This is the first message!';
+let message =  `<p class="botText"><span>${firstMessage}</span></p>
+<button id="q1Btn" onclick="getResponse('What is BrainTech?')" class="btn btn-primary ms-3 my-1 p-1">What is BrainTech?</button><br>
+<button id="q2Btn" class="btn btn-primary ms-3 my-1 p-1">What are the courses offered?</button>
+<button id="q3Btn" class="btn btn-primary ms-3 my-1 p-1">How much?</button>
+`;
+
+window.localStorage.setItem('message', message);
+
+
+
 
 // Retrieves the response
 function getHardResponse(userText) {
@@ -56,13 +89,21 @@ function getHardResponse(userText) {
 }
 
 //Gets the text text from the input box and processes it
-function getResponse() {
-    let userText = $("#textInput").val();
+function getResponse(userText) {
 
     if (userText == "") {
-        userText = "";
+        userText = $("#textInput").val();
     }
+    
+    // let textInput = $("#textInput").val();
 
+    // if (textInput == "") {
+    //     userText = "";
+    // }
+
+    
+    // userText = $("#textInput").val();
+    
     let userHtml = '<p class="userText"><span>' + userText + '</span></p>';
 
     $("#textInput").val("");
@@ -83,7 +124,7 @@ function buttonSendText(sampleText) {
     $("#chatbox").append(userHtml);
     document.getElementById("chat-bar-bottom").scrollIntoView(true);
 
-    //Uncomment this if you want the bot to respond to this buttonSendText event
+    // //Uncomment this if you want the bot to respond to this buttonSendText event
     // setTimeout(() => {
     //     getHardResponse(sampleText);
     // }, 1000)
@@ -94,7 +135,7 @@ function sendButton() {
 }
 
 function heartButton() {
-    buttonSendText("Heart clicked!")
+    buttonSendText("&#x1F496")
 }
 
 // Press enter to send a message

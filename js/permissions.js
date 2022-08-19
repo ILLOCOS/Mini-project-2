@@ -97,6 +97,7 @@ const emailDuplicateCheck = () => {
 
   } else {
     emailCheckMsg.innerHTML = null;
+    return true;
   };
 };
 
@@ -116,9 +117,10 @@ const passwordStrengthCheck = () => {
     } else {
 
         if (matchesSpecial.length == 0) {
-          passwordCheckMsg.innerHTML = 'At least one special character';
+          passwordCheckMsg.innerHTML = 'At least one special(!@#$,etc) character';
         } else {
             passwordCheckMsg.innerHTML = null;
+            return true;
         };
     };
   };
@@ -133,6 +135,7 @@ const confirmPassword = () => {
     confirmPasswordCheckMsg.innerHTML = 'Password does not match';
   } else {
     confirmPasswordCheckMsg.innerHTML = null;
+    return true;
   };
 };
 
@@ -162,36 +165,44 @@ const storeDetails = () => {
   if (emailValue in users) {
     alert('This email is already in use. Please try a different one.')
   } else {
-      users[emailValue] = [firstNameValue, lastNameValue, roleValue, passwordValue];
-
-      const userList = JSON.stringify(users);
-
-      window.localStorage.setItem('details', userList);
-
-      //Auto Login after Sign Up
-      window.localStorage.setItem('userEmail', emailValue);
-      const userEmail = window.localStorage.getItem('userEmail');
-
-      const isIn = {};
-      isIn[userEmail] = [firstNameValue, lastNameValue, roleValue];
-
-      const isInStr = JSON.stringify(isIn);
-      window.localStorage.setItem('isIn', isInStr);
-
-      const currentUser = JSON.parse(window.localStorage.getItem('isIn'));
-      const signUpForm = document.querySelector('#signUpBtn'); //disregard the 'Btn' part
-      const currentUserRole = currentUser[userEmail][2];
-      
-      if (currentUserRole == "Student") {
-        signUpForm.action = 'dashboard.html';
+      if (passwordStrengthCheck() != true) {
+        alert('Password is weak. Please change your password.')
       } else {
-          if (currentUserRole == "Instructor") {
-            signUpForm.action = "DashboardInstructor.html";
+          if (confirmPassword() != true) {
+            alert('Password does not match. Please confirm password')
           } else {
-            signUpForm.action = "index.html";
-          }
-        };
+              users[emailValue] = [firstNameValue, lastNameValue, roleValue, passwordValue];
+        
+              const userList = JSON.stringify(users);
+        
+              window.localStorage.setItem('details', userList);
+        
+              //Auto Login after Sign Up
+              window.localStorage.setItem('userEmail', emailValue);
+              const userEmail = window.localStorage.getItem('userEmail');
+        
+              const isIn = {};
+              isIn[userEmail] = [firstNameValue, lastNameValue, roleValue];
+        
+              const isInStr = JSON.stringify(isIn);
+              window.localStorage.setItem('isIn', isInStr);
+        
+              const currentUser = JSON.parse(window.localStorage.getItem('isIn'));
+              const signUpForm = document.querySelector('#signUpBtn'); //disregard the 'Btn' part
+              const currentUserRole = currentUser[userEmail][2];
+              
+              if (currentUserRole == "Student") {
+                signUpForm.action = 'dashboard.html';
+              } else {
+                  if (currentUserRole == "Instructor") {
+                    signUpForm.action = "DashboardInstructor.html";
+                  } else {
+                    signUpForm.action = "index.html";
+                  }
+                };
 
+              }
+          }
       }
 };
 

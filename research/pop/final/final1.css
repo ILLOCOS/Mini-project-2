@@ -6,7 +6,7 @@
 }
 
 .collapsible {
-    background-color: rgb(82, 151, 255);
+    background: linear-gradient(to bottom, #4096ee 0%,#4096ee 100%);
     color: white;
     cursor: pointer;
     padding: 18px;
