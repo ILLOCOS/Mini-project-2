@@ -1,7 +1,7 @@
 //Assign Variables to html elements
 const loginBtn = document.querySelector('#loginBtn'); //Modal
 const loginBtnMain = document.querySelector('#loginBtnMain'); //NavBar
-const logoutBtn = document.querySelector('#logoutBtn')
+const logoutBtn = document.querySelector('#logoutBtn') //Dashboard
 const logoutBtnMain = document.querySelector('#logoutBtnMain'); //NavBar
 const signUpBtn = document.querySelector('#signUpBtn'); //Modal
 const signUpBtnMain = document.querySelector('#signUpBtnMain'); //NavBar
@@ -27,9 +27,9 @@ const login = () => {
 
   //Validation Procedure
   // Search users obj in local storage and compare email and password
-  if (loginEmailInput in storedUsers && loginPasswordInput == storedUsers[loginEmailInput][3]) {
+  if (storedUsers != null && loginEmailInput in storedUsers && loginPasswordInput == storedUsers[loginEmailInput][3]) {
 
-    //Store user email
+    //Store current user email
     window.localStorage.setItem('userEmail', loginEmailInput);
     const userEmail = window.localStorage.getItem('userEmail');
 
@@ -52,6 +52,7 @@ const login = () => {
           loginForm.action = "index.html";
         }
       };
+
   } else {
     alert('Invalid email or password. Please try again.');
   };
@@ -236,9 +237,17 @@ logoutBtnMain.addEventListener('click', logout);
 
 signUpBtn.addEventListener('submit', storeDetails);
 
-console.log('Current User: ' + userEmail);
-console.log(storedUsers);
-console.log(currentUser);
+
+
+if (currentUser != null) {
+document.querySelector('#dashFirstName').innerHTML = currentUser[userEmail][0];
+document.querySelector('#dashLastName').innerHTML = currentUser[userEmail][1];
+};
+
+
+// console.log('Current User: ' + userEmail);
+// console.log(currentUser);
+// console.log(storedUsers);
 // window.localStorage.removeItem('details');
 // window.localStorage.removeItem('isIn');
 // window.localStorage.removeItem('userEmail')
