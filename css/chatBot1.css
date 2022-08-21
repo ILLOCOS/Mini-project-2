@@ -1,3 +1,13 @@
+.chatrobotIcon {
+    position: fixed;
+    bottom: 0;
+    right: 15px;
+    max-width: 7rem;
+    min-width: 3rem;
+    width: 6vw;
+    z-index: 2;
+}
+
 .chat-bar-collapsible {
     position: fixed;
     bottom: 0;
@@ -5,29 +15,33 @@
     box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
 }
 
-.collapsible {
+.chatcollapsible {
     background: linear-gradient(to bottom, #4096ee 0%,#4096ee 100%);
     color: white;
     cursor: pointer;
     padding: 18px;
-    width: 350px;
+    width: 22vw;
+    max-width: 20rem;
+    min-width: 15rem;
     text-align: left;
     outline: none;
-    font-size: 18px;
+    font-size: clamp(0.8rem, 1.25vw, 20px);
     border-radius: 10px 10px 0px 0px;
     border: 3px solid white;
     border-bottom: none;
 }
 
-.content {
+.chatcontent {
     max-height: 0;
     overflow: hidden;
     transition: max-height 0.2s ease-out;
     background-color: #f1f1f1;
 }
 
-.full-chat-block {
-    width: 350px;
+.chatfull-chat-block {
+    width: 22vw;
+    max-width: 20rem;
+    min-width: 15rem;
     background: white;
     text-align: center;
     overflow: auto;
@@ -36,7 +50,7 @@
     transition: max-height 0.2s ease-out;
 }
 
-.outer-container {
+.chatouter-container {
     min-height: 500px;
     bottom: 0%;
     position: relative;
@@ -50,6 +64,10 @@
     left: 0;
     scroll-behavior: smooth;
     hyphens: auto;
+}
+
+.chat-container button {
+    width: fit-content;
 }
 
 .chat-container::-webkit-scrollbar {
@@ -74,42 +92,47 @@
     box-sizing: border-box;
     width: 25%;
     float: right;
-    font-size: 20px;
+    font-size: clamp(0.8rem, 1.25vw, 20px);
 }
 
-#chat-icon:hover {
+.chat-icon:hover {
     opacity: .7;
 }
 
 /* Chat bubbles */
 
-#userInput {
+.chatInput {
     width: 75%;
 }
 
-.input-box {
+.chatIcon {
+    width: 2rem;
+    height: 2rem;
+}
+
+.chatinput-box {
     float: left;
     border: none;
     box-sizing: border-box;
     width: 100%;
     border-radius: 10px;
     padding: 10px;
-    font-size: 16px;
+    font-size: clamp(0.8rem, 1.25vw, 20px);
     color: #000;
     background-color: white;
     outline: none
 }
 
-.userText {
+.chatuserText {
     color: white;
     font-family: Helvetica;
-    font-size: 16px;
+    font-size: clamp(0.8rem, 1.25vw, 20px);
     font-weight: normal;
     text-align: right;
     clear: both;
 }
 
-.userText span {
+.chatuserText span {
     line-height: 1.5em;
     display: inline-block;
     background: #5ca6fa;
@@ -121,15 +144,19 @@
     animation: floatup .5s forwards
 }
 
-.botText {
+.chatbotText {
     color: #000;
     font-family: Helvetica;
     font-weight: normal;
-    font-size: 16px;
+    font-size: clamp(0.8rem, 1.25vw, 20px);
     text-align: left;
 }
 
-.botText span {
+.chatBtn {
+    font-size: clamp(0.8rem, 1.25vw, 20px);
+}
+
+.chatbotText span {
     line-height: 1.5em;
     display: inline-block;
     background: #e0e0e0;
@@ -152,8 +179,8 @@
     }
 }
 
-@media screen and (max-width:600px) {
-    .full-chat-block {
+@media screen and (max-width:300px) {
+    .chatfull-chat-block {
         width: 100%;
         border-radius: 0px;
     }
@@ -163,7 +190,7 @@
         right: 0;
         width: 100%;
     }
-    .collapsible {
+    .chatcollapsible {
         width: 100%;
         border: 0px;
         border-top: 3px solid white;

@@ -225,5 +225,8 @@ body{
 } */
 .fs-10 {
 	font-size: calc(0.8rem + 0.1vw)
-};
+}
 
+.typingHeader {
+	background:rgba(135, 224, 253, 0.8);
+}
