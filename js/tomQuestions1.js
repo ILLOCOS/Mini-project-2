@@ -113,5 +113,5 @@ submitBtn.addEventListener('click', () => {
     }
 })
 function myFunction() {
-    alert("Welcome to E-Learning platfrom");
+    alert("Welcome to E-Learning platform");
   }
