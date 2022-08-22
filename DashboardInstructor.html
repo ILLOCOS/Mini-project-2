@@ -47,7 +47,7 @@
                             <div class="collapse" id="home-collapse">
                             <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
                                 <li><a href="#" class="link-dark d-inline-flex text-decoration-none rounded" id='dashCourseBtn'>Overview</a></li>
-                                <li class="isTeacher"><a href="#" class="link-dark d-inline-flex text-decoration-none rounded" id="dashMyStudentsBtn">My Students</a></li>
+                                <li><a href="#" class="link-dark d-inline-flex text-decoration-none rounded" id="dashMyStudentsBtn">My Students</a></li>
                                 <li style="display: none;"><a href="#" class="link-dark d-inline-flex text-decoration-none rounded" id="dashAssignmentBtn">Assignment</a></li>
                                 <li style="display: none;"><a href="#" class="link-dark d-inline-flex text-decoration-none rounded" id="dashQuizBtn">Quizzes</a></li>
                                 <li style="display: none;"><a href="#" class="link-dark d-inline-flex text-decoration-none rounded" id="dashEvaluationBtn">Evaluation</a></li>
@@ -75,7 +75,7 @@
         
             <div class="col-md-10 ps-5 pe-2" style="min-height: 75vh;"><!--Container for Dashboard Details-->
                 
-                <div id="dashCourse" class="row isTeacher isStudent dash" style="display:'';"><!--Start Overview default display-->
+                <div id="dashCourse" class="row dash" style="display:'';"><!--Start Overview default display-->
                     <div class="row "> 
                         <h1>Preparation</h1>
                     </div>
@@ -214,9 +214,9 @@
                       </div>
                      
 
-                </div><!--End Course-->
+                </div><!--End Overview-->
                 
-                <div class="row isTeacher dash" style="display:none;" id="dashMyStudents"><!--Start My Students-->
+                <div class="row dash" style="display:none;" id="dashMyStudents"><!--Start My Students-->
                  
                     <div class="col-md-10 p-3"><!---Student Details Col-->
                         <h3 class="text-center m-0">Student Details</h3>
@@ -369,7 +369,7 @@
                 </div><!--End of My Students-->
                 
 
-                <div class="row isStudent dash" style="display: none;" id="dashAssignment"><!--Start Assignment-->
+                <div class="row dash" style="display: none;" id="dashAssignment"><!--Start Assignment-->
                     <div class="col-md-4">
                         <div class="card" style="width: 18rem;">
                             <img src="/media/tomChapter2Img5.jpg" class="card-img-top" alt="...">
@@ -385,7 +385,7 @@
                 </div><!--End Assignment-->
 
                 
-                <div class="row isStudent dash" style="display: none;" id="dashQuiz"><!--Start Quiz-->
+                <div class="row dash" style="display: none;" id="dashQuiz"><!--Start Quiz-->
                     <div class="col-md-auto">
                         <div class="card" style="width: 18rem;">
                             <img src="/media/tomlesson1Img4.jpg" class="card-img-top" alt="...">
@@ -412,7 +412,7 @@
 
                 </div><!--End Quiz-->
             
-                <div class="row isTeacher dash" style="display: none;" id="dashEvaluation"><!--Start Evaluation-->
+                <div class="row dash" style="display: none;" id="dashEvaluation"><!--Start Evaluation-->
                     <div class="col-md-12 p-3"><!---Student Details Col-->
                         <h3 class="text-center m-0">Student Details</h3>
                 
@@ -487,7 +487,7 @@
 
                 </div><!--End Evaluation-->
            
-                <div class="row isTeacher isStudent dash" style="display:none;" id="dashProfile"><!--Start Profile-->
+                <div class="row dash" style="display:none;" id="dashProfile"><!--Start Profile-->
 
                     <div class="row justify-content-center">
                         <div class="col-12 col-lg-10 col-xl-8 mx-auto">
