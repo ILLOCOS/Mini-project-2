@@ -1,0 +1,112 @@
+<!DOCTYPE HTML>
+<html lang="en">
+    <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css">
+    
+    <style>
+        #div1 {
+          width: 350px;
+          height: 100px;
+          padding: 10px;
+          border: 1px solid #aaaaaa;
+        }
+        </style>
+
+        <script>
+        function allowDrop(ev) {
+          ev.preventDefault();
+        }
+        
+        function drag(ev) {
+          ev.dataTransfer.setData("text", ev.target.id);
+        }
+        
+        function drop(ev) {
+          ev.preventDefault();
+          var data = ev.dataTransfer.getData("text");
+          ev.target.appendChild(document.getElementById(data));
+        }
+      </script>
+        </head>
+        <body>
+        
+<div class="container"> 
+
+  <div class="row">
+
+    <div class="col-md-4">
+      <p>Lets put the Mouse here</p>
+        
+      <div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+      <br>
+      <img id="drag1" src="computer-mouse-152249_960_720.png" draggable="true" ondragstart="drag(event)" width="236" height="69">
+      
+          <p>Lets put the Keyboard here</p>
+          
+          <div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+          <br>
+          <img id="dragKeyboard" src="k120-gallery-01-new.webp" draggable="true" ondragstart="drag(event)" width="236" height="69">
+          
+      
+              <p>Lets put the Monitor here</p>
+              
+              <div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+              <br>
+              <img id="dragMonitor" src="computer-monitor.webp" draggable="true" ondragstart="drag(event)" width="236" height="88">
+
+    </div>
+
+    <div class="col-md-4">
+      <p>Lets put the Case here</p>
+                
+      <div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+      <br>
+      <img id="dragCase" src="rYBsVmPQbi3jQdf95TY2ce-970-80.jpg" draggable="true" ondragstart="drag(event)" width="336" height="88">
+
+
+      <p>Lets put the Motherboard here</p>
+      
+      <div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+      <br>
+      <img id="dragMotherboard" src="Computer-motherboard.jpg" draggable="true" ondragstart="drag(event)" width="236" height="88">
+
+      <p>Lets put the HDD or SSD here</p>
+      
+      <div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+      <br>
+      <img id="dragHDDorSSD" src="hdd_vs_ssd_bz.webp" draggable="true" ondragstart="drag(event)" width="236" height="88">
+
+    </div>
+
+    <div class="col-md-4">
+      <p>Lets put the Processor here</p>
+                
+      <div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+      <br>
+      <img id="dragProcessor" src="cpu-upgrade-580x334 (1).jpg" draggable="true" ondragstart="drag(event)" width="336" height="88">
+
+
+      <p>Lets put the RAM here</p>
+      
+      <div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+      <br>
+      <img id="dragRAM" src="s5-a13-02-styles-ram-rwd.jpg.rendition.intel.web.1648.927.jpg" draggable="true" ondragstart="drag(event)" width="236" height="88">
+
+      <p>Lets put the PSU here</p>
+      
+      <div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+      <br>
+      <img id="dragPSU" src="Thermaltake-Smart-500W-Power-Supply.jpg" draggable="true" ondragstart="drag(event)" width="236" height="88">
+
+    </div>
+    </div>
+    </div>
+    </div>        
+      </body>
+      </html>
+                
+                
+          
