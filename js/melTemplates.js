@@ -39,7 +39,7 @@ const insertTemplates = () => {
         <!-- Collection of nav links, forms, and other content for toggling -->
         <div id="navbarCollapse" class="collapse navbar-collapse justify-content-start">
             <div class="navbar-nav mx-auto">
-                <a href="index.html" class="nav-item nav-link text-dark mainNav">Home</a>
+                <a href="index.html" class="nav-item nav-link text-dark mainNav active">Home</a>
                 <a href="AboutUs.html" class="nav-item nav-link text-dark mainNav">About</a>			
 
                 <div class="nav-item dropdown" id="navDropdown">
@@ -91,17 +91,17 @@ const insertTemplates = () => {
           <div class="accordion" id="accordionExample">
           <div class="accordion-item">
               <h2 class="accordion-header" id="headingOne">
-              <button id="headingOneBtn" class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+              <button id="headingOneBtn" class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
                   Chapter 1 : Introduction
               </button>
               </h2>
-              <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+              <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
               <div class="accordion-body">
                   <strong><a href="ComputerBasics.html#cB1">1. About This tutorial</a></strong><br> Learn what's covered in this free course.
               </div>
               </div>
 
-              <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+              <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
               <div class="accordion-body">
                   <strong><a href="ComputerBasics.html#cB2">2. What is Computer</a></strong><br> Learn what is computer  is and how it functions
               </div>
@@ -146,7 +146,7 @@ const insertTemplates = () => {
 
           <div class="accordion-item">
               <h2 class="accordion-header" id="headingThree">
-              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+              <button id="headingThreeBtn" class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
                   Chapter 3 : Software basics
               </button>
               </h2>
@@ -165,7 +165,7 @@ const insertTemplates = () => {
 
           <div class="accordion-item">
               <h2 class="accordion-header" id="headingFour">
-              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseThree">
+              <button id="headingFourBtn" class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseThree">
                   Chapter 4 : Using a Computer
               </button>
               </h2>
@@ -190,7 +190,7 @@ const insertTemplates = () => {
 
           <div class="accordion-item">
               <h2 class="accordion-header" id="headingFive">
-              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseThree">
+              <button id="headingFiveBtn" class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseThree">
                   Chapter 5 : Using the  Internet
               </button>
               </h2>
@@ -493,7 +493,7 @@ const insertTemplates = () => {
           </div>
         </div>
       </div>
-    </div>         
+    </div>             
     `;
 
     //Insert Header
@@ -535,25 +535,5 @@ const dashboardActive = () => {
 const contactActive = () => {
   home.remove('active');
   contact.add('active');
-};
-
-// Change open accordion of sidebar
-
-const collapseOne = document.querySelectorAll('#collapseOne');
-const collapseTwo = document.querySelectorAll('#collapseTwo');
-console.log(collapseTwo);
-const collapseThree = document.querySelectorAll('#collapseThree');
-const collapseFour = document.querySelectorAll('#collapseFour');
-const collapseFive = document.querySelectorAll('#collapseFive');
-const headingOneBtn = document.querySelector('#headingTwoBtn')
-const headingTwoBtn = document.querySelector('#headingTwoBtn')
-const headingThreeBtn = document.querySelector('#headingThreeBtn')
-const headingFourBtn = document.querySelector('#headingFourBtn')
-const headingFiveBtn = document.querySelector('#headingFiveBtn')
-
-// Collapse accordion one
-headingOneBtn.ariaExpanded = 'false';
-for (i in collapseOne) {
-  collapseOne[i].classList.remove('show');
 };
 
