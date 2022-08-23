@@ -91,13 +91,13 @@ const insertTemplates = () => {
           <div class="accordion" id="accordionExample">
           <div class="accordion-item">
               <h2 class="accordion-header" id="headingOne">
-              <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+              <button id="headingOneBtn" class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
                   Chapter 1 : Introduction
               </button>
               </h2>
               <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
               <div class="accordion-body">
-                  <strong><a href="ComputerBasics.html">1. About This tutorial</a></strong><br> Learn what's covered in this free course.
+                  <strong><a href="ComputerBasics.html#cB1">1. About This tutorial</a></strong><br> Learn what's covered in this free course.
               </div>
               </div>
 
@@ -109,7 +109,7 @@ const insertTemplates = () => {
           </div>
           <div class="accordion-item">
               <h2 class="accordion-header" id="headingTwo">
-              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+              <button id="headingTwoBtn" class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
                   Chapter 2 : Hardware Basics
               </button>
               </h2>
@@ -493,7 +493,7 @@ const insertTemplates = () => {
           </div>
         </div>
       </div>
-    </div>       
+    </div>         
     `;
 
     //Insert Header
@@ -520,18 +520,40 @@ const courses = mainNav[2].classList;
 const dashboard = mainNav[3].classList;
 const contact = mainNav[4].classList;
 
-const homeActive = () => {
-  home.add('active');
-};
 const aboutActive = () => {
+  home.remove('active');
   about.add('active');
 };
 const coursesActive = () => {
+  home.remove('active');
   courses.add('active');
 };
 const dashboardActive = () => {
+  home.remove('active');
   dashboard.add('active');
 };
 const contactActive = () => {
+  home.remove('active');
   contact.add('active');
 };
+
+// Change open accordion of sidebar
+
+const collapseOne = document.querySelectorAll('#collapseOne');
+const collapseTwo = document.querySelectorAll('#collapseTwo');
+console.log(collapseTwo);
+const collapseThree = document.querySelectorAll('#collapseThree');
+const collapseFour = document.querySelectorAll('#collapseFour');
+const collapseFive = document.querySelectorAll('#collapseFive');
+const headingOneBtn = document.querySelector('#headingTwoBtn')
+const headingTwoBtn = document.querySelector('#headingTwoBtn')
+const headingThreeBtn = document.querySelector('#headingThreeBtn')
+const headingFourBtn = document.querySelector('#headingFourBtn')
+const headingFiveBtn = document.querySelector('#headingFiveBtn')
+
+// Collapse accordion one
+headingOneBtn.ariaExpanded = 'false';
+for (i in collapseOne) {
+  collapseOne[i].classList.remove('show');
+};
+
