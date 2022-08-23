@@ -10,7 +10,7 @@
     <!--CSS CDNs-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
 
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="/css/maxcdnbootstrap.css">
 
     <!--Fonts/Icons/Misc Web Links-->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -110,13 +110,13 @@
           <div class="accordion" id="accordionExample">
           <div class="accordion-item">
               <h2 class="accordion-header" id="headingOne">
-              <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+              <button id="headingOneBtn" class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
                   Chapter 1 : Introduction
               </button>
               </h2>
               <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
               <div class="accordion-body">
-                  <strong><a href="ComputerBasics.html">1. About This tutorial</a></strong><br> Learn what's covered in this free course.
+                  <strong><a href="ComputerBasics.html#cB1">1. About This tutorial</a></strong><br> Learn what's covered in this free course.
               </div>
               </div>
 
@@ -128,7 +128,7 @@
           </div>
           <div class="accordion-item">
               <h2 class="accordion-header" id="headingTwo">
-              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+              <button id="headingTwoBtn" class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
                   Chapter 2 : Hardware Basics
               </button>
               </h2>
@@ -165,7 +165,7 @@
 
           <div class="accordion-item">
               <h2 class="accordion-header" id="headingThree">
-              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+              <button id="headingThreeBtn" class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
                   Chapter 3 : Software basics
               </button>
               </h2>
@@ -184,7 +184,7 @@
 
           <div class="accordion-item">
               <h2 class="accordion-header" id="headingFour">
-              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseThree">
+              <button id="headingFourBtn" class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseThree">
                   Chapter 4 : Using a Computer
               </button>
               </h2>
@@ -209,7 +209,7 @@
 
           <div class="accordion-item">
               <h2 class="accordion-header" id="headingFive">
-              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseThree">
+              <button id="headingFiveBtn" class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseThree">
                   Chapter 5 : Using the  Internet
               </button>
               </h2>
@@ -308,7 +308,7 @@
       <div class="carousel-inner">
         <div class="carousel-item active">
             <div class="banner row">
-                <div class="col-md-6 d-flex align-items-center">
+                <div class="col-sm-6 d-flex align-items-center">
                     <div class="pb-5 mt-5 ms-7">
                         <p class="pb-3"><b>Enroll now!!</b> <br> and get up to <b>20%</b> Discount</p>
                      
@@ -316,19 +316,20 @@
                         <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalSignUp">Enroll Now</button> 
                     </div>
                 </div>
-                <div class="col-md-6">
-                  <img src="media/melBanner1a.svg" alt="img" class="w-75 my-3 p-5">
+                <div class="col-sm-6 d-flex justify-content-center align-items-center">
+                  <img src="media/melBanner1a.svg" alt="img" class="my-3 p-2"
+                  style="width:clamp(15rem,40vw,40rem);">
                 </div>
             </div>
         </div>
         <div class="carousel-item">
           <div class="banner2 row">
-            <div class="col-md-6">
-              <img src="media/melBanner2b.svg" alt="img" class="w-100 my-5">
+            <div class="col-sm-6 d-flex justify-content-center align-items-center">
+              <img src="media/melBanner2b.svg" alt="img" style="width:clamp(25rem,70vw,70rem);">
             </div>
             <div class="col-md-6 d-flex align-items-center">
-              <div class="pb-5 mt-5 mx-5">
-                <p class="pb-3"><b>Join now!!</b> <br> And get our <b>FREE COURSES </b> here at BrainTech!</p>
+              <div class="pb-5 mx-3 ps-2">
+                <p class="pb-3"><b>Free Courses!!</b> <br>Get it here today at BrainTech!</p>
              
                 <button type="button" class="btn btn-primary">Contact Us</button>
                 <button type="button" class="btn btn-primary">Enroll Now</button> 
@@ -338,7 +339,7 @@
         </div>
         <div class="carousel-item">
           <div class="banner3 row">
-            <div class="col-md-6 d-flex align-items-center">
+            <div class="col-sm-6 d-flex justify-content-center align-items-center">
               <div class="pb-5 mt-5 ms-7">
                   <p class="pb-3">What are you waiting for? <br> <b>Join now!!</b></p>
                
@@ -346,8 +347,8 @@
                   <button type="button" class="btn btn-primary">Enroll Now</button> 
               </div>
             </div>
-            <div class="col-md-6">
-              <img src="media/melBanner3a.svg" alt="img" class="w-75 my-3 p-5 flip">
+            <div class="col-sm-6 d-flex justify-content-center align-items-center">
+              <img src="media/melBanner3a.svg" alt="img" class="flip" style="width:clamp(15rem,40vw,40rem);">
             </div>
           </div>
         </div>
@@ -389,16 +390,16 @@
 
     <!--Awards-->
     <div class="container-fluid p-5">
-    <div class="awards row mt-5 rfs ">
-      <h1 class="text-center pt-5 px-0 rfs ">Awards and Accolades</h1>
-      <div class="col-md-4 p-5">
-        <img src="/media/melAwards1.png" class="img-fluid p-2">
+    <div class="awards row mt-5 rfs">
+      <h1 class="pt-5 px-0 rfs text-center">Awards and Accolades</h1>
+      <div class="col-sm-4 p-2 text-center">
+        <img src="/media/melAwards1.png" class="p-2" style="width:clamp(10rem,20vw,20rem);">
       </div>
-      <div class="col-md-4 p-5">
-        <img src="/media/melAwards2.png" class="img-fluid p-2">
+      <div class="col-sm-4 p-2 text-center">
+        <img src="/media/melAwards2.png" class="p-2" style="width:clamp(10rem,20vw,20rem);">
       </div>
-      <div class="col-md-4 p-5">
-        <img src="/media/melAwards3.png" class="img-fluid p-2">
+      <div class="col-sm-4 p-2 text-center">
+        <img src="/media/melAwards3.png" class="p-2" style="width:clamp(10rem,20vw,20rem);">
       </div>
     </div>
     </div>
@@ -407,104 +408,104 @@
     <!--Course Offered-->
     <div class="container-lg mt-5 px-5">
       <h1 class="text-center pb-5 rfs">Courses Offered</h1>
-    <div class="row">
+      <div class="row d-flex justify-content-center">
 
-      <div class="containerImage col-md-3 d-flex justify-content-center p-2 ">
-        <img src="/media/tomCourseImg.svg" alt="Avatar" class="image p-3">
-        <div class="overlay overlayTop" >
-            <div class="text">
-              Learn what a computer is and how it functions.</div>
+        <div class="containerImage col-md-3 d-flex justify-content-center p-2">
+          <img src="/media/tomCourseImg.svg" alt="Avatar" class="image p-3">
+          <div class="overlay overlayTop" >
+              <div class="text">
+                Learn what a computer is and how it functions.</div>
+          </div>
+          </a>
         </div>
-        </a>
-      </div>
+        
+        <div class="col-md-3 p-3 courseCentered">
+          <div>
+            <h3>Computer Basics</h3>
+          </div>
+          <div>
+            <br>
+            <h6><strong>Start:</strong> September 1 2022 <br><br>
+                <strong>Class hour:</strong> 8 AM - 5PM <br><br>
+                <strong> Duration:</strong> 12-15 weeks <br><br>
+                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalSignUp"> Enroll Now</button>
+            </h6>
+          </div>
+        </div>
+
+
+        <div class="containerImage col-md-3 d-flex justify-content-center p-2">
+          <img src="/media/tomPhotoshop.svg" alt="Avatar" class="image  p-3">
+          <div class="overlay overlayTop" >
+              <div class="text">
+                Learn more about how Photoshop works.</div>
+          </div>
+          </a>
+        </div>
+        
+        <div class="col-md-3 p-3 courseCentered">
+          <div>
+            <h3>Photoshop</h3>
+          </div>
+          <div>
+            <br>
+            <h6><strong>Start:</strong> September 1 2022 <br><br>
+                <strong>Class hour:</strong> 8 AM - 5PM <br><br>
+                <strong> Duration:</strong> 12-15 weeks <br><br>
+                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalSignUp"> Enroll Now</button>
+            </h6>
+          </div>
+        </div>
+
+      <div class="row d-flex justify-content-center">
       
-      <div class="col-md-3 p-3 ">
-        <div>
-          <h3>Computer Basics</h3>
+        <div class="containerImage col-md-3 d-flex justify-content-center p-2 ">
+          <img src="/media/tomMobileMarketing.svg" alt="Avatar" class="image  p-3">
+          <div class="overlay overlayTop" >
+              <div class="text"> Learn about Content Marketing</div>
+          </div>
+          </a>
         </div>
-        <div>
-          <br>
-          <h6><strong>Start:</strong> September 1 2022 <br><br>
-              <strong>Class hour:</strong> 8 AM - 5PM <br><br>
-              <strong> Duration:</strong> 12-15 weeks <br><br>
-              <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalSignUp"> Enroll Now</button>
-          </h6>
+        
+        <div class="col-md-3 p-3 courseCentered">
+          <div>
+            <h3>Digital Marketing</h3>
+          </div>
+          <div>
+            <br>
+            <h6><strong>Start:</strong> September 1 2022 <br><br>
+                <strong>Class hour:</strong> 8 AM - 5PM <br><br>
+                <strong> Duration:</strong> 12-15 weeks <br><br>
+                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalSignUp"> Enroll Now</button>
+            </h6>
+          </div>
         </div>
-      </div>
 
-
-      <div class="containerImage col-md-3 d-flex justify-content-center p-2 ">
-        <img src="/media/tomPhotoshop.svg" alt="Avatar" class="image  p-3">
-        <div class="overlay overlayTop" >
-            <div class="text">
-              Learn more about how Photoshop works.</div>
-        </div>
-        </a>
-      </div>
       
-      <div class="col-md-3 p-3">
-        <div>
-          <h3>Photoshop</h3>
+        <div class="containerImage col-md-3 d-flex justify-content-center p-2 ">
+          <img src="/media/tomGraphicDesign.svg" alt="Avatar" class="image  p-3">
+          <div class="overlay overlayTop" >
+              <div class="text">
+                Learn all integral element of graphic design.</div>
+          </div>
+          </a>
         </div>
-        <div>
-          <br>
-          <h6><strong>Start:</strong> September 1 2022 <br><br>
-              <strong>Class hour:</strong> 8 AM - 5PM <br><br>
-              <strong> Duration:</strong> 12-15 weeks <br><br>
-              <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalSignUp"> Enroll Now</button>
-          </h6>
-        </div>
-      </div>
-
-    <div class="row">
-     
-      <div class="containerImage col-md-3 d-flex justify-content-center p-2 ">
-        <img src="/media/tomMobileMarketing.svg" alt="Avatar" class="image  p-3">
-        <div class="overlay overlayTop" >
-            <div class="text"> Learn about Content Marketing</div>
-        </div>
-        </a>
-      </div>
-      
-      <div class="col-md-3 p-3">
-        <div>
-          <h3>Digital Marketing</h3>
-        </div>
-        <div>
-          <br>
-          <h6><strong>Start:</strong> September 1 2022 <br><br>
-              <strong>Class hour:</strong> 8 AM - 5PM <br><br>
-              <strong> Duration:</strong> 12-15 weeks <br><br>
-              <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalSignUp"> Enroll Now</button>
-          </h6>
+        
+        <div class="col-md-3 p-3 courseCentered">
+          <div>
+            <h3>Graphic Design</h3>
+          </div>
+          <div>
+            <br>
+            <h6><strong>Start:</strong> September 1 2022 <br><br>
+                <strong>Class hour:</strong> 8 AM - 5PM <br><br>
+                <strong> Duration:</strong> 12-15 weeks <br><br>
+                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalSignUp"> Enroll Now</button>
+            </h6>
+          </div>
         </div>
       </div>
-
-     
-      <div class="containerImage col-md-3 d-flex justify-content-center p-2 ">
-        <img src="/media/tomGraphicDesign.svg" alt="Avatar" class="image  p-3">
-        <div class="overlay overlayTop" >
-            <div class="text">
-              Learn all integral element of graphic design.</div>
-        </div>
-        </a>
       </div>
-      
-      <div class="col-md-3 p-3">
-        <div>
-          <h3>Graphic Design</h3>
-        </div>
-        <div>
-          <br>
-          <h6><strong>Start:</strong> September 1 2022 <br><br>
-              <strong>Class hour:</strong> 8 AM - 5PM <br><br>
-              <strong> Duration:</strong> 12-15 weeks <br><br>
-              <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalSignUp"> Enroll Now</button>
-          </h6>
-        </div>
-      </div>
-    </div>
-  </div>
     </div>
     <br><br>
 
@@ -556,7 +557,7 @@
     
             <div class="col-md-3  d-flex justify-content-center  p-2">
               <div class="card" style="width: 15rem;">
-                <img src="/media/tomBgteam-3.jpg" class="card-img-top" alt="myteam">
+                <img src="/media/tomBgteam-5.jpg" class="card-img-top" alt="myteam">
                 <div class="card-body">
                   <p class="card-text fs-5"><Strong>Amira Kerr</Strong> <br> <sub>Graphic Designer</sub></p>
                 </div>
@@ -578,55 +579,55 @@
 
     <!--Testimonials-->
     <div class="container p-5-fluid">
-    <h1 class="text-center rfs mt-3">Hear What Our Students Say</h1>
-    <p style="text-align:center">From old school to new school, here are some testimonials from students.</p>
+      <h1 class="text-center rfs mt-3">Hear What Our Students Say</h1>
+      <p style="text-align:center">From old school to new school, here are some testimonials from students.</p>
 
-    <div class="slideshow-container p-5">
-      <div class="mySlides fadeTestimonial">
-        <div class="row d-flex justify-content-center testimonialsBg">
-          <div class="col-md-6 d-flex align-items-center">
-              <img src="/media/daxTestimonial1.jpeg" class="img-fluid p-2 rounded-circle">
+      <div class="slideshow-container p-5">
+        <div class="mySlides fadeTestimonial">
+          <div class="row d-flex justify-content-center testimonialsBg">
+            <div class="col-md-6 d-flex align-items-center">
+                <img src="/media/daxTestimonial1.jpeg" class="img-fluid p-2 rounded-circle">
+            </div>
+            <div class="col-md-6 d-flex align-items-center justify-content-center p-5">
+              <h3><i>"Here at BrainTech, its nice to learn."</i>
+                <sub>- Lady Madonna</sub>
+              </h3>
+            </div>
           </div>
-          <div class="col-md-6 d-flex align-items-center p-5">
-            <h3><i>"Here at BrainTech, its nice to learn and to earn"</i>
-              <sub>- Lady Madonna</sub>
-            </h3>
+        </div>
+
+        <div class="mySlides fadeTestimonial">
+          <div class="row d-flex justify-content-center testimonialsBg">
+            <div class="col-md-6 d-flex align-items-center justify-content-center p-5">
+              <h3><i>"It's so nice here at BrainTech, learning has never been so easy"</i>
+                <sub>- Cindy Lou</sub>
+              </h3>
+            </div>
+            <div class="col-md-6 d-flex align-items-center">
+              <img src="/media/daxTestimonial3.jpeg" class="flip img-fluid p-2 rounded-circle">
+            </div>
+          </div>
+        </div>
+
+        <div class="mySlides fadeTestimonial">
+          <div class="row d-flex justify-content-center testimonialsBg">
+            <div class="col-md-6 d-flex align-items-center">
+                <img src="/media/daxTestimonial2.jpg" class="img-fluid p-2 rounded-circle">
+            </div>
+            <div class="col-md-6 d-flex align-items-center justify-content-center p-5">
+              <h3><i>"At BrainTech, it feels like home."</i>
+                <sub>- Nikki Minaj</sub>
+              </h3>
+            </div>
           </div>
         </div>
       </div>
-
-      <div class="mySlides fadeTestimonial">
-        <div class="row d-flex justify-content-center testimonialsBg">
-          <div class="col-md-6 d-flex align-items-center p-5">
-            <h3><i>"It's so nice here at BrainTech, learning has never been so easy"</i>
-              <sub>- Cindy Lou</sub>
-            </h3>
-          </div>
-          <div class="col-md-6 d-flex align-items-center">
-            <img src="/media/daxTestimonial3.jpeg" class="flip img-fluid p-2 rounded-circle">
-          </div>
-        </div>
+      <br>
+      <div style="text-align:center">
+        <span class="dot"></span> 
+        <span class="dot"></span> 
+        <span class="dot"></span> 
       </div>
-
-      <div class="mySlides fadeTestimonial">
-        <div class="row d-flex justify-content-center testimonialsBg">
-          <div class="col-md-6 d-flex align-items-center">
-              <img src="/media/daxTestimonial2.jpg" class="img-fluid p-2 rounded-circle">
-          </div>
-          <div class="col-md-6 d-flex align-items-center p-5">
-            <h3><i>"At BrainTech E-learning, it feels like home, you feel me, homie"</i>
-              <sub>- Nikki Minaj</sub>
-            </h3>
-          </div>
-        </div>
-      </div>
-    </div>
-    <br>
-    <div style="text-align:center">
-      <span class="dot"></span> 
-      <span class="dot"></span> 
-      <span class="dot"></span> 
-    </div>
 
     </div>
     <br>
