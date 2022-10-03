@@ -32,7 +32,7 @@
                         <img src="/media/tomBgteam-2.jpg" class="img-fluid rounded-circle">
                     </div>
                     <div class="col-md-8 pt-2 mt-2 pe-0">
-                        <p class="userName fs-6"><strong>Student Name</strong></h6>
+                        <p class="userName fs-6"><strong><span id="dashFirstName"></span> <span id="dashLastName"></span></strong></h6>
                         <p class="role mb-0">ID No: S-001-001</p>
                     </div>
                 </div><!--End of Profile Header-->
@@ -49,14 +49,13 @@
                             <div class="collapse" id="home-collapse">
                             <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
                                 <li><a href="#" class="link-dark d-inline-flex text-decoration-none rounded" id='dashCourseBtn'>Courses</a></li>
-                                <li class="isTeacher" style="display: none;"><a href="#" class="link-dark d-inline-flex text-decoration-none rounded" id="dashMyStudentsBtn">My Students</a></li>
+                                <li style="display: none;"><a href="#" class="link-dark d-inline-flex text-decoration-none rounded" id="dashMyStudentsBtn">My Students</a></li>
                                 <li><a href="#" class="link-dark d-inline-flex text-decoration-none rounded" id="dashAssignmentBtn">Assignment</a></li>
                                 <li><a href="#" class="link-dark d-inline-flex text-decoration-none rounded" id="dashQuizBtn">Quizzes</a></li>
                                 <li><a href="#" class="link-dark d-inline-flex text-decoration-none rounded" id="dashEvaluationBtn">Evaluation</a></li>
                             </ul>
                             </div>
                         </li>
-                    
                         
                         <li class="border-top my-3"></li>
                         <li class="mb-1">
@@ -79,7 +78,7 @@
         
             <div class="col-md-10 ps-5 pe-2" style="min-height: 75vh;"><!--Container for Dashboard Details-->
                 
-                <div id="dashCourse" class="row isTeacher isStudent dash" style="display:'';"><!--Start Course default display-->
+                <div id="dashCourse" class="row dash" style="display:'';"><!--Start Course default display-->
                     <div class="col-md-auto d-flex justify-content-center p-3">
                         <div class="card" style="width: 18rem;">
                             <img src="/media/tomCourseImg.svg" class="card-img-top p-4" alt="...">
@@ -113,161 +112,8 @@
                     </div>
 
                 </div><!--End Course-->
-                
-                <div class="row isTeacher dash" style="display: none;" id="dashMyStudents"><!--Start My Students-->
-                 
-                    <div class="col-md-10 p-3"><!---Student Details Col-->
-                        <h3 class="text-center m-0">Student Details</h3>
 
-                
-                        <h5>Progress</h5>
-
-                        <div class="row d-flex align-items-center justify-content-start">
-
-                            <div class="col-md-3">
-                                <img src="/media/tomBgteam-2.jpg" class="rounded-circle" style="width: 8rem;">
-                            </div>
-
-                            <div class="col-md-9">
-                            <div>
-                                <p class="mb-0">Progress: 40%</p>
-                            </div>
-                            <div class="progress ps-0 pe-3 w-75 m-0">
-                                <div class="progress-bar bg-danger m-0" role="progressbar" style="width: 40%" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100"></div>
-                            </div>
-                            <br>
-                            <div>
-                                <p class="mb-0 fs-4">Student Name</p>
-                                <p class="mb-0">ID No: 001-001</p>
-                            </div>
-                            </div>
-
-                        </div>
-                        <br><br>
-                        <h5>Recent Activities</h5>
-                        
-                        <div class="row align-items-center justify-content-start">
-                            <div class="col-md-3">
-                                <img src="/media/tomChapter4Img12.png" class="img-fluid">
-                            </div>
-
-                            <div class="col-md-9">
-                                <p class="mb-0">Completed Lesson 4 of Basics of Computers</p>
-                                <br>
-                                <p>Got 80% rating for Lesson 4 Quiz</p>
-                            </div>
-                        </div>
-
-                        <br><br>
-                        <h5>Previous Evaluations</h5>
-                        
-                        <div class="row align-items-center justify-content-start">
-
-                            <div class="col-md-12">
-                                <table class="table table-hover">
-                                    <thead>
-                                        <tr>
-                                        <th>Date</th>
-                                        <th>Evaluation</th>
-                                        </tr>
-                                    </thead>
-                                    <tbody>
-                                        <tr>
-                                        <td>08/10/2022</td>
-                                        <td>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet alias quod nesciunt culpa sapiente dolore qui possimus sit corrupti? Cumque, id eaque aut deserunt atque officia alias magnam laudantium commodi.</td>
-                                        </tr>
-                                        <tr>
-                                        <td>07/10/2022</td>
-                                        <td>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate, similique!</td>
-                                        </tr>
-                                    </tbody>
-                                    </table>
-                            </div>
-
-                        </div>
-                        <br><br>
-                        <div class="mb-3">
-                            <label for="exampleFormControlTextarea1" class="form-label">Add Evaluation</label>
-                            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-                        </div>
-                        <div>
-                        <button type="button" class="btn bg-primary p-1 text-light">Add Evaluation</button>
-                        </div>
-
-
-
-
-
-
-                    </div>
-
-                    <div class="col-md-2 border-start border-primary px-3"><!--Student List-->
-                        <h4 class="text-center m-0">My Students</h4>
-                        <div class="row flex-nowrap align-items-center justify-content-start my-2" style="background-color:#a7dafa;">
-                            <div class="col-3 p-1">
-                                <img src="/media/tomBgteam-2.jpg" class="rounded-circle p-0 img-fluid">
-                            </div>
-                            <div class="col-9 ps-3">
-                            <div class="progress ps-0 pe-3" style="height: 1vh; width: 7vw">
-                                <div class="progress-bar bg-danger" role="progressbar" style="width: 40%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
-                            </div>
-                            <div>
-                                <p class="fs-10 mb-0">Student Name</p>
-                            </div>
-                            </div>
-                        </div>
-
-                        <div class="row flex-nowrap align-items-center justify-content-start my-2">
-                            <div class="col-3 p-1">
-                                <img src="/media/tomBgteam-2.jpg" class="rounded-circle p-0" style="width:2.5rem ;">
-                            </div>
-                            <div class="col-9 ps-3">
-                            <div class="progress ps-0 pe-3" style="height: 1vh; width: 7vw">
-                                <div class="progress-bar bg-warning" role="progressbar" style="width: 75%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
-                            </div>
-                            <div>
-                                <p class="fs-10 mb-0">Student Name</p>
-                            </div>
-                            </div>
-                        </div>
-                        
-                        <div class="row flex-nowrap align-items-center justify-content-start my-2">
-                            <div class="col-3 p-1">
-                                <img src="/media/tomBgteam-2.jpg" class="rounded-circle p-0" style="width:2.5rem ;">
-                            </div>
-                            <div class="col-9 ps-3">
-                            <div class="progress ps-0 pe-3" style="height: 1vh; width: 7vw">
-                                <div class="progress-bar bg-success" role="progressbar" style="width: 90%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
-                            </div>
-                            <div>
-                                <p class="fs-10 mb-0">Student Name</p>
-                            </div>
-                            </div>
-                        </div>
-
-                        <div class="row flex-nowrap align-items-center justify-content-start my-2">
-                            <div class="col-3 p-1">
-                                <img src="/media/tomBgteam-2.jpg" class="rounded-circle p-0" style="width:2.5rem ;">
-                            </div>
-                            <div class="col-9 ps-3">
-                            <div class="progress ps-0 pe-3" style="height: 1vh; width: 7vw">
-                                <div class="progress-bar bg-danger" role="progressbar" style="width: 20%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
-                            </div>
-                            <div>
-                                <p class="fs-10 mb-0">Student Name</p>
-                            </div>
-                            </div>
-                        </div>
-
-
-
-
-                    </div>               
-                
-                </div><!--End of My Students-->
-                
-
-                <div class="row isStudent dash" style="display: none;" id="dashAssignment"><!--Start Assignment-->
+                <div class="row dash" style="display: none;" id="dashAssignment"><!--Start Assignment-->
                     <div class="col-md-4">
                         <div class="card" style="width: 18rem;">
                             <img src="/media/tomChapter2Img5.jpg" class="card-img-top" alt="...">
@@ -281,9 +127,8 @@
                    
 
                 </div><!--End Assignment-->
-
                 
-                <div class="row isStudent dash" style="display: none;" id="dashQuiz"><!--Start Quiz-->
+                <div class="row dash" style="display: none;" id="dashQuiz"><!--Start Quiz-->
                     <div class="col-md-auto">
                         <div class="card" style="width: 18rem;">
                             <img src="/media/tomlesson1Img4.jpg" class="card-img-top" alt="...">
@@ -310,7 +155,7 @@
 
                 </div><!--End Quiz-->
             
-                <div class="row isTeacher dash" style="display: none;" id="dashEvaluation"><!--Start Evaluation-->
+                <div class="row dash" style="display: none;" id="dashEvaluation"><!--Start Evaluation-->
                     <div class="col-md-12 p-3"><!---Student Details Col-->
                         <h3 class="text-center m-0">My Progress</h3>
                 
@@ -384,7 +229,7 @@
 
                 </div><!--End Evaluation-->
            
-                <div class="row isTeacher isStudent dash" style="display:none;" id="dashProfile"><!--Start Profile-->
+                <div class="row dash" style="display:none;" id="dashProfile"><!--Start Profile-->
 
                     <div class="row justify-content-center">
                         <div class="col-12 col-lg-10 col-xl-8 mx-auto">

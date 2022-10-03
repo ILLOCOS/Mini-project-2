@@ -71,3 +71,68 @@ dashProfileBtn.addEventListener('click', displayProfile);
 
 
 
+// Hightlight active element in students list
+const studentList = document.querySelector('#myStudentList');
+const btns = studentList.getElementsByClassName("list-group-item");
+
+for (let i = 0; i < btns.length; i++) {
+    btns[i].addEventListener("click", function() {
+        let current = studentList.getElementsByClassName("active");
+        current[0].className = current[0].className.replace(" active", "");
+        this.className += " active";
+  });
+}
+
+
+
+
+// Algo for student list
+// Get student list from backend --> will return an array
+
+
+// studentList = [{backendArray}, {student info}]
+// for data in studentList {
+//     let firstName = data[i].firstname;
+//     let lastName = data[i].lastName;
+//     let progress = data[i].progress;
+//     let profilePic = data[i].img;
+//     let studentHTML = `
+//              <div>${firstName}</div>
+//              <div>${lastName}</div>...
+
+//     mystudent.insertAdjacentHTML('beforeend', studentHTML)...
+// }
+
+
+
+
+// const addThis = `<button href="#" class="list-group-item list-group-item-action">
+// <div class="d-flex w-100 justify-content-between">
+//   <h5 class="mb-1">List group item heading</h5>
+//   <small class="text-muted">3 days ago</small>
+// </div>
+// <p class="mb-1">Some placeholder content in a paragraph.</p>
+// <small class="text-muted">And some muted small print.</small>
+// </button>`;
+
+// studentList.insertAdjacentHTML('beforeend', addThis);
+
+
+
+
+// NOT INCLUDED YET ▼
+// // Hightlight active element in sidebar dashboard
+// const dashSidebarContainer = document.getElementById("dashSidebar");
+// const dashSidebarEl = dashSidebarContainer.getElementsByClassName("rounded");
+
+// for (let i = 0; i < dashSidebarEl.length; i++) {
+//     dashSidebarEl[i].addEventListener("click", function() {
+//         let current = dashSidebarEl.getElementsByClassName("active2");
+//         current[0].className = current[0].className.replace(" active2", "");
+//         this.className += " active2";
+//   });
+// }
+
+
+
+

@@ -81,10 +81,10 @@ quoteInputElement.addEventListener('input', () => {
 
 
 
-const getRandomQuote = () => {
-    return fetch(randomQuote)
-        .then(res => res.json())
-        .then(data => data.content)
+const getRandomQuote = async () => {
+    const res = await fetch(randomQuote);
+    const data = await res.json();
+    return data.content;
 };
 
 async function renderNewQuote() {
